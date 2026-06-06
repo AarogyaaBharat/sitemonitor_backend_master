@@ -4,6 +4,7 @@ import { logger } from '../utils/logger.js';
 import { processScanDomain } from '../jobs/scanDomain.processor.js';
 import { processInventoryScan } from '../jobs/inventoryScan.processor.js';
 import { processQaScan } from '../jobs/qaScan.processor.js';
+import { processAccessibilityScan } from '../jobs/accessibilityScan.processor.js';
 import { runGlobalScan } from './orchestrator.service.js';
 
 const redisConnection = new IORedis(process.env.REDIS_URL || 'redis://127.0.0.1:6379', {
@@ -42,6 +43,10 @@ export const initWorker = () => {
     if (job.name === 'qa-scan') {
       logger.info(`[Job ${job.id}] 🔎 Starting QA scan for: ${job.data.domainName}`);
       return await processQaScan(job);
+    }
+    if (job.name === 'accessibility-scan') {
+      logger.info(`[Job ${job.id}] ♿ Starting Accessibility scan for: ${job.data.domainName}`);
+      return await processAccessibilityScan(job);
     }
     logger.info(`[Job ${job.id}] 🔍 Starting scan for: ${job.data.domainName}`);
     return await processScanDomain(job);
@@ -111,6 +116,27 @@ export const addQaScanJob = async (jobData) => {
     sourceDomainDocId,
   } = jobData;
   return await seoScanQueue.add('qa-scan', {
+    domainName,
+    pageLimit,
+    scanSubdomains,
+    executeJs,
+    sourceDb,
+    sourceUri,
+    sourceDomainDocId,
+  });
+};
+
+export const addAccessibilityScanJob = async (jobData) => {
+  const {
+    domainName,
+    pageLimit,
+    scanSubdomains,
+    executeJs,
+    sourceDb,
+    sourceUri,
+    sourceDomainDocId,
+  } = jobData;
+  return await seoScanQueue.add('accessibility-scan', {
     domainName,
     pageLimit,
     scanSubdomains,

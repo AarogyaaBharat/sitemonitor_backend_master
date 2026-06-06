@@ -8,8 +8,10 @@
     "dev": "nodemon src/server.js"
   },
   "dependencies": {
+    "@axe-core/puppeteer": "^4.11.3",
     "@bull-board/api": "^5.21.3",
     "@bull-board/express": "^5.21.3",
+    "axe-core": "^4.12.0",
     "axios": "^1.6.8",
     "bullmq": "^5.7.1",
     "cheerio": "^1.0.0-rc.12",
@@ -23,7 +25,6 @@
     "mongoose": "^8.3.1",
     "nspell": "^2.1.5",
     "puppeteer": "^22.6.5",
-
     "winston": "^3.13.0",
     "winston-daily-rotate-file": "^5.0.0",
     "write-good": "^1.0.8",

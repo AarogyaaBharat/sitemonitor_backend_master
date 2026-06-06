@@ -1,5 +1,5 @@
 import express from 'express';
-import { addScanJob, addInventoryScanJob, addQaScanJob, seoScanQueue } from '../services/queue.js';
+import { addScanJob, addInventoryScanJob, addQaScanJob, addAccessibilityScanJob, seoScanQueue } from '../services/queue.js';
 import { mongoMultiConnector } from '../services/mongoMultiConnector.js';
 import { logger } from '../utils/logger.js';
 import mongoose from 'mongoose';
@@ -75,6 +75,37 @@ router.post('/qa', async (req, res) => {
       sourceDomainDocId,
     });
     res.json({ success: true, message: 'QA scan job enqueued', jobId: job.id });
+  } catch (error) {
+    res.status(500).json({ success: false, error: error.message });
+  }
+});
+
+router.post('/accessibility', async (req, res) => {
+  const {
+    dm_url,
+    dm_max_scanned_pages,
+    dm_scan_subdomains,
+    dm_render_pages_execute_js,
+    sourceDb,
+    sourceUri,
+    sourceDomainDocId,
+  } = req.body;
+  if (!dm_url) return res.status(400).json({ error: 'dm_url is required' });
+  if (!sourceDb || !sourceUri) {
+    return res.status(400).json({ error: 'sourceDb and sourceUri are required' });
+  }
+  try {
+    const job = await addAccessibilityScanJob({
+      domainName: dm_url,
+      pageLimit: dm_max_scanned_pages || 500,
+      scanSubdomains: dm_scan_subdomains ?? true,
+      executeJs: dm_render_pages_execute_js ?? false,
+      fullResourceReport: true,
+      sourceDb,
+      sourceUri,
+      sourceDomainDocId,
+    });
+    res.json({ success: true, message: 'Accessibility scan job enqueued', jobId: job.id });
   } catch (error) {
     res.status(500).json({ success: false, error: error.message });
   }

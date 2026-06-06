@@ -347,6 +347,14 @@ export const processScanDomain = async (job) => {
         } catch (qaErr) {
           logger.error(`Error executing QA scan for ${domainName}: ${qaErr.message}`);
         }
+
+        // Accessibility scan – page-wise accessibility data
+        try {
+          const { runAccessibilityScan } = await import('../services/accessibilityScanner.js');
+          await runAccessibilityScan(domainName, reports, scanJobId, conn);
+        } catch (accErr) {
+          logger.error(`Error executing Accessibility scan for ${domainName}: ${accErr.message}`);
+        }
       } catch (sumErr) {
         logger.error(`Error calculating summary for ${domainName}: ${sumErr.message}`);
       }
