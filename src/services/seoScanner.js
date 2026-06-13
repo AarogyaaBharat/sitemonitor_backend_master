@@ -204,7 +204,22 @@ class SeoScanner {
     return Math.max(0, Math.min(20, grade)); // Clamp between 0 and 20
   }
 
-  analyzeSpelling(text) {
+  async fetchGoogleSuggestions(word) {
+    try {
+      const res = await axios.get(`https://suggestqueries.google.com/complete/search?client=firefox&q=${encodeURIComponent(word)}`, {
+        timeout: 3000,
+        validateStatus: () => true
+      });
+      if (res.status === 200 && Array.isArray(res.data) && Array.isArray(res.data[1])) {
+        return res.data[1];
+      }
+    } catch (err) {
+      logger.warn(`Google suggestion fetch failed for ${word}: ${err.message}`);
+    }
+    return [];
+  }
+
+  async analyzeSpelling(text) {
     if (!this.spell) return { count: 0, keywords: [], corrections: [] };
     const tokens = String(text).toLowerCase().match(/\b[a-z]{2,}(?:'[a-z]+)?\b/g) || [];
     const missCounts = new Map();
@@ -216,10 +231,24 @@ class SeoScanner {
       missCounts.set(w, (missCounts.get(w) || 0) + 1);
     });
     const sorted = [...missCounts.entries()].sort((a, b) => b[1] - a[1]);
+    
+    const correctionsToProcess = sorted.slice(0, 20);
+    const corrections = await Promise.all(
+      correctionsToProcess.map(async ([w]) => {
+        const googleSuggestions = await this.fetchGoogleSuggestions(w);
+        const localSuggestions = this.spell.suggest(w).slice(0, 5);
+        const finalSuggestions = googleSuggestions.length > 0 ? googleSuggestions : localSuggestions;
+        return {
+          word: w,
+          suggestions: finalSuggestions
+        };
+      })
+    );
+
     return {
       count: [...missCounts.values()].reduce((a, b) => a + b, 0),
       keywords: sorted.slice(0, 45).map(([w]) => w),
-      corrections: sorted.slice(0, 20).map(([w]) => ({ word: w, suggestions: this.spell.suggest(w).slice(0, 5) }))
+      corrections
     };
   }
 
@@ -645,7 +674,7 @@ class SeoScanner {
     const bodyText = $('body').text() || '';
     
     const wordCount = bodyText.split(/\s+/).filter(Boolean).length;
-    const spelling = this.analyzeSpelling(bodyText);
+    const spelling = await this.analyzeSpelling(bodyText);
     const writingHints = this.analyzeWriting(bodyText);
     const headingTexts = [];
     $('h1, h2, h3, h4, h5, h6').each((i, el) => {
