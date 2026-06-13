@@ -32,6 +32,20 @@ export class PolicyEvaluator {
   }
 
   /**
+   * Helper to parse string sizes (e.g. '11.61KB', '1.5MB') into bytes
+   */
+  static parseSizeToBytes(sizeStr) {
+    if (!sizeStr) return 0;
+    if (typeof sizeStr === 'number') return sizeStr;
+    const str = String(sizeStr).trim().toUpperCase();
+    const val = parseFloat(str) || 0;
+    if (str.includes('GB')) return val * 1024 * 1024 * 1024;
+    if (str.includes('MB')) return val * 1024 * 1024;
+    if (str.includes('KB')) return val * 1024;
+    return val; // Assume bytes
+  }
+
+  /**
    * Helper for text comparison logic.
    */
   static textMatch(content, searchVal, type) {
@@ -96,28 +110,46 @@ export class PolicyEvaluator {
    */
   static evaluateRule(rule, pageData) {
     const { type, searchType, searchValue, containing, comparison, characterCount, value: ruleValue, unit } = rule;
-    const expectedValue = characterCount || ruleValue || 0;
+    const expectedValue = characterCount || ruleValue || searchValue || 0;
+    const effectiveComparison = comparison || searchType;
+    const effectiveUnit = unit || containing;
     const normalizedSearch = this.normalizeSearchType(searchType);
     const searchVal = (searchValue || '').toLowerCase();
 
     // Helper for evaluating items in an array (links, images, headings)
     const evaluateArray = (items, getValFunc, isNumeric = false) => {
-      if (!items || !Array.isArray(items)) return { isMatch: false, matchCount: 0, totalCount: 0 };
+      if (!items || !Array.isArray(items)) return { isMatch: false, matchCount: 0, totalCount: 0, matchedText: [] };
       let count = 0;
+      let matchedText = [];
       items.forEach(item => {
         const val = getValFunc(item);
+        let isItemMatch = false;
         if (isNumeric) {
           let target = expectedValue;
           if (type === 'image-size' || type === 'file-size') {
-            if (unit === 'KB') target *= 1024;
-            else if (unit === 'MB') target *= 1024 * 1024;
+            if (effectiveUnit === 'KB') target *= 1024;
+            else if (effectiveUnit === 'MB') target *= 1024 * 1024;
           }
-          if (this.compareNumeric(val, target, comparison)) count++;
+          isItemMatch = this.compareNumeric(val, target, effectiveComparison);
         } else {
-          if (this.textMatch(val, searchVal, normalizedSearch)) count++;
+          isItemMatch = this.textMatch(val, searchVal, normalizedSearch);
+        }
+        if (isItemMatch) {
+          count++;
+          if (typeof item === 'string') {
+            matchedText.push(item);
+          } else if (item.url) {
+            matchedText.push(`${item.url}${item.size ? ` (${item.size})` : ''}`);
+          } else if (item.anchorText) {
+            matchedText.push(item.anchorText);
+          } else if (item.content) {
+            matchedText.push(item.content);
+          } else if (item.alt) {
+            matchedText.push(item.alt);
+          }
         }
       });
-      return { isMatch: count > 0, matchCount: count, totalCount: items.length };
+      return { isMatch: count > 0, matchCount: count, totalCount: items.length, matchedText };
     };
 
     // --- 1. Rule Evaluation Logic ---
@@ -127,39 +159,39 @@ export class PolicyEvaluator {
       // Numeric/Length (Single Value)
       case 'page-title-length':
         result.matchCount = (pageData.meta?.title || '').length;
-        result.isMatch = this.compareNumeric(result.matchCount, expectedValue, comparison);
+        result.isMatch = this.compareNumeric(result.matchCount, expectedValue, effectiveComparison);
         result.matchCount = result.isMatch ? 1 : 0;
         break;
 
       case 'file-size':
         let size = pageData.performance?.pageSizeKB || 0;
-        if (unit === 'Bytes') size *= 1024;
-        if (unit === 'MB') size /= 1024;
-        result.isMatch = this.compareNumeric(size, expectedValue, comparison);
+        if (effectiveUnit === 'Bytes') size *= 1024;
+        if (effectiveUnit === 'MB') size /= 1024;
+        result.isMatch = this.compareNumeric(size, expectedValue, effectiveComparison);
         result.matchCount = result.isMatch ? 1 : 0;
         break;
 
       case 'external-link-count':
         result.matchCount = pageData.links?.external || 0;
-        result.isMatch = this.compareNumeric(result.matchCount, expectedValue, comparison);
+        result.isMatch = this.compareNumeric(result.matchCount, expectedValue, effectiveComparison);
         result.matchCount = result.isMatch ? 1 : 0;
         break;
 
       case 'incoming-link-count':
         result.matchCount = pageData.links?.internal || 0;
-        result.isMatch = this.compareNumeric(result.matchCount, expectedValue, comparison);
+        result.isMatch = this.compareNumeric(result.matchCount, expectedValue, effectiveComparison);
         result.matchCount = result.isMatch ? 1 : 0;
         break;
 
       case 'meta-header-length':
         result.matchCount = (pageData.meta?.description || '').length;
-        result.isMatch = this.compareNumeric(result.matchCount, expectedValue, comparison);
+        result.isMatch = this.compareNumeric(result.matchCount, expectedValue, effectiveComparison);
         result.matchCount = result.isMatch ? 1 : 0;
         break;
 
       // Numeric (Array Based)
       case 'image-size':
-        result = evaluateArray(pageData.imageAnalysis?.imageLoadDetails, img => img.sizeBytes || 0, true);
+        result = evaluateArray(pageData.imageAnalysis?.imageLoadDetails, img => this.parseSizeToBytes(img.size), true);
         break;
 
       case 'link-text-length':
@@ -243,8 +275,8 @@ export class PolicyEvaluator {
           "College": 16
         };
         const actualGrade = pageData.textMetrics?.readabilityScore || 0;
-        const targetGrade = gradeMapping[rule.readabilityScore] || parseFloat(rule.readabilityScore) || 0;
-        result.isMatch = this.compareNumeric(actualGrade, targetGrade, rule.searchFor || comparison);
+        const targetGrade = gradeMapping[rule.readabilityScore] || parseFloat(rule.readabilityScore) || parseFloat(expectedValue) || 0;
+        result.isMatch = this.compareNumeric(actualGrade, targetGrade, rule.searchFor || effectiveComparison);
         result.matchCount = result.isMatch ? 1 : 0;
         break;
 
@@ -256,13 +288,37 @@ export class PolicyEvaluator {
 
     // --- 2. Post-Process (Containing/Not Containing) ---
     if (containing === 'not-containing') {
-      return { 
+      result = { 
         isMatch: !result.isMatch, 
         matchCount: result.isMatch ? 0 : 1, 
         totalCount: result.totalCount 
       };
     }
 
+    // --- 3. Format Logger Output ---
+    let actualValForLog = '';
+    if (type === 'page-title-length') actualValForLog = (pageData.meta?.title || '').length;
+    else if (type === 'file-size') actualValForLog = pageData.performance?.pageSizeKB || 0;
+    else if (type === 'external-link-count') actualValForLog = pageData.links?.external || 0;
+    else if (type === 'incoming-link-count') actualValForLog = pageData.links?.internal || 0;
+    else if (type === 'meta-header-length') actualValForLog = (pageData.meta?.description || '').length;
+    else if (type === 'readability-level') actualValForLog = pageData.textMetrics?.readabilityScore || 0;
+    else if (type === 'page-title') actualValForLog = `"${(pageData.meta?.title || '').substring(0, 30)}"`;
+    else if (type === 'meta-description') actualValForLog = `"${(pageData.meta?.description || '').substring(0, 30)}"`;
+    else if (type === 'page-url') actualValForLog = `"${(pageData.url || '').substring(0, 50)}"`;
+    else if (['image-size', 'image-text', 'image-text-length'].includes(type)) actualValForLog = `[${pageData.imageAnalysis?.imageLoadDetails?.length || 0} images]`;
+    else if (['link-text', 'link', 'link-text-length'].includes(type)) actualValForLog = `[${pageData.links?.linkDetails?.length || 0} links]`;
+    else if (['heading-text', 'header-text-length'].includes(type)) actualValForLog = `[${pageData.headings?.headingDetails?.length || 0} headings]`;
+    else actualValForLog = `[Content length: ${(pageData.bodyText || '').length}]`;
+
+    const icon = result.isMatch ? "✅ MATCH" : "❌ NO MATCH";
+    const isNumericType = ['page-title-length', 'file-size', 'external-link-count', 'incoming-link-count', 'meta-header-length', 'image-size', 'link-text-length', 'image-text-length', 'header-text-length', 'readability-level'].includes(type);
+    const searchToLog = isNumericType ? effectiveComparison : normalizedSearch;
+    const operatorLog = searchToLog || comparison || '';
+    const unitLog = containing || effectiveUnit || unit ? ` (${containing || effectiveUnit || unit})` : '';
+
+    logger.info(`   -> 🔍 Scan [${type}] | Target: "${searchVal || expectedValue || ''}"${unitLog} | Operator: "${operatorLog}" | Actual: ${actualValForLog} | Result: ${icon}`);
+    
     return result;
   }
 
@@ -274,13 +330,14 @@ export class PolicyEvaluator {
     if (!rules || rules.length === 0) return { isMatch: false, matchedRules: [] };
 
     const evaluationResults = rules.map(rule => {
-      const { isMatch, matchCount, totalCount } = this.evaluateRule(rule, pageData);
+      const { isMatch, matchCount, totalCount, matchedText } = this.evaluateRule(rule, pageData);
       return {
         ruleId: rule.id || rule._id,
         ruleName: rule.ruleName,
         isMatch,
         matchCount,
-        totalCount
+        totalCount,
+        matchedText
       };
     });
     

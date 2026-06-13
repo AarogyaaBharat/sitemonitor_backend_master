@@ -5,6 +5,7 @@ import { processScanDomain } from '../jobs/scanDomain.processor.js';
 import { processInventoryScan } from '../jobs/inventoryScan.processor.js';
 import { processQaScan } from '../jobs/qaScan.processor.js';
 import { processAccessibilityScan } from '../jobs/accessibilityScan.processor.js';
+import { processPolicyScan } from '../jobs/policyScan.processor.js';
 import { runGlobalScan } from './orchestrator.service.js';
 
 const redisConnection = new IORedis(process.env.REDIS_URL || 'redis://127.0.0.1:6379', {
@@ -48,6 +49,10 @@ export const initWorker = () => {
       logger.info(`[Job ${job.id}] ♿ Starting Accessibility scan for: ${job.data.domainName}`);
       return await processAccessibilityScan(job);
     }
+    if (job.name === 'policy-scan') {
+      logger.info(`[Job ${job.id}] 🛡️ Starting Policy scan for: ${job.data.domainName}`);
+      return await processPolicyScan(job);
+    }
     logger.info(`[Job ${job.id}] 🔍 Starting scan for: ${job.data.domainName}`);
     return await processScanDomain(job);
   }, {
@@ -78,6 +83,20 @@ export const clearQueue = async () => {
     logger.info(`🧹 Queue "${QUEUE_NAME}" cleared recursively.`);
   } catch (error) {
     logger.error(`❌ Failed to clear queue: ${error.message}`);
+  }
+};
+
+/**
+ * Enqueue a Policy scan job.
+ */
+export const addPolicyScanJob = async (domainData) => {
+  try {
+    const job = await seoScanQueue.add('policy-scan', domainData);
+    logger.info(`Added Policy Scan Job for ${domainData.domainName} to queue, Job ID: ${job.id}`);
+    return job;
+  } catch (error) {
+    logger.error(`Error adding policy scan job: ${error.message}`);
+    throw error;
   }
 };
 

@@ -1,5 +1,5 @@
 import express from 'express';
-import { addScanJob, addInventoryScanJob, addQaScanJob, addAccessibilityScanJob, seoScanQueue } from '../services/queue.js';
+import { addScanJob, addInventoryScanJob, addQaScanJob, addAccessibilityScanJob, addPolicyScanJob, seoScanQueue } from '../services/queue.js';
 import { mongoMultiConnector } from '../services/mongoMultiConnector.js';
 import { logger } from '../utils/logger.js';
 import mongoose from 'mongoose';
@@ -106,6 +106,30 @@ router.post('/accessibility', async (req, res) => {
       sourceDomainDocId,
     });
     res.json({ success: true, message: 'Accessibility scan job enqueued', jobId: job.id });
+  } catch (error) {
+    res.status(500).json({ success: false, error: error.message });
+  }
+});
+
+router.post('/policy', async (req, res) => {
+  const {
+    dm_url,
+    domainId,
+    sourceDb,
+    sourceUri,
+  } = req.body;
+  if (!domainId || !dm_url) return res.status(400).json({ error: 'domainId and dm_url are required' });
+  if (!sourceDb || !sourceUri) {
+    return res.status(400).json({ error: 'sourceDb and sourceUri are required' });
+  }
+  try {
+    const job = await addPolicyScanJob({
+      domainId,
+      domainName: dm_url,
+      sourceDb,
+      sourceUri,
+    });
+    res.json({ success: true, message: 'Policy scan job enqueued', jobId: job.id });
   } catch (error) {
     res.status(500).json({ success: false, error: error.message });
   }

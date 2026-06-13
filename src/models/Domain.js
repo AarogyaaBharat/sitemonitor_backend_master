@@ -26,6 +26,12 @@ export const DomainSchema = new mongoose.Schema({
     default: 'pending'
   },
   dm_accessibility_last_scan_at: { type: Date },
+  dm_policy_status: {
+    type: String,
+    enum: ['pending', 'scanning', 'completed', 'failed'],
+    default: 'pending'
+  },
+  dm_policy_last_scan_at: { type: Date },
   dm_ignored_spellings: [{ type: String }],
   dm_max_scanned_pages: { type: Number, default: 500 },
   dm_scan_subdomains: { type: Boolean, default: true },
