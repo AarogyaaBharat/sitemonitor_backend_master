@@ -1,6 +1,7 @@
 import { scanDomain } from '../services/seoScanner.js';
 import { runQaScan } from '../services/qaScanner.js';
 import { DomainSchema } from '../models/Domain.js';
+import { ActivityLogSchema } from '../models/ActivityLog.js';
 import { mongoMultiConnector } from '../services/mongoMultiConnector.js';
 import { logger } from '../utils/logger.js';
 
@@ -77,6 +78,24 @@ export const processQaScan = async (job) => {
         dm_qa_last_scan_at: new Date(),
         dm_updated_at: new Date(),
       });
+
+      // Log activity
+      try {
+        const ActivityLogModel = conn.model('ActivityLog', ActivityLogSchema);
+        await ActivityLogModel.create({
+          action: 'SCAN_COMPLETED',
+          details: `QA scan completed successfully for domain '${domainName}'. Crawled ${reports.length} pages.`,
+          metadata: {
+            domainId: sourceDomainDocId,
+            domainName,
+            scanType: 'qa',
+            pagesScanned: reports.length,
+            durationMs: Date.now() - startTime
+          }
+        });
+      } catch (logErr) {
+        logger.warn(`Could not log QA scan completion to ActivityLog: ${logErr.message}`);
+      }
     }
 
     const durationMs = Date.now() - startTime;
@@ -90,6 +109,23 @@ export const processQaScan = async (job) => {
           dm_qa_status: 'failed',
           dm_updated_at: new Date(),
         });
+
+        // Log activity
+        try {
+          const ActivityLogModel = conn.model('ActivityLog', ActivityLogSchema);
+          await ActivityLogModel.create({
+            action: 'SCAN_FAILED',
+            details: `QA scan failed for domain '${domainName}': ${err.message}`,
+            metadata: {
+              domainId: sourceDomainDocId,
+              domainName,
+              scanType: 'qa',
+              error: err.message
+            }
+          });
+        } catch (logErr) {
+          logger.warn(`Could not log QA scan failure to ActivityLog: ${logErr.message}`);
+        }
       } catch (updateErr) {
         logger.warn(`Could not set QA status to failed: ${updateErr.message}`);
       }

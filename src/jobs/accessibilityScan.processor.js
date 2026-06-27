@@ -1,6 +1,7 @@
 import { scanDomain } from '../services/seoScanner.js';
 import { runAccessibilityScan } from '../services/accessibilityScanner.js';
 import { DomainSchema } from '../models/Domain.js';
+import { ActivityLogSchema } from '../models/ActivityLog.js';
 import { mongoMultiConnector } from '../services/mongoMultiConnector.js';
 import { logger } from '../utils/logger.js';
 
@@ -64,6 +65,24 @@ export const processAccessibilityScan = async (job) => {
         dm_accessibility_last_scan_at: new Date(),
         dm_updated_at: new Date(),
       });
+
+      // Log activity
+      try {
+        const ActivityLogModel = conn.model('ActivityLog', ActivityLogSchema);
+        await ActivityLogModel.create({
+          action: 'SCAN_COMPLETED',
+          details: `Accessibility scan completed successfully for domain '${domainName}'. Checked ${reports.length} pages.`,
+          metadata: {
+            domainId: sourceDomainDocId,
+            domainName,
+            scanType: 'accessibility',
+            pagesScanned: reports.length,
+            durationMs: Date.now() - startTime
+          }
+        });
+      } catch (logErr) {
+        logger.warn(`Could not log accessibility scan completion to ActivityLog: ${logErr.message}`);
+      }
     }
 
     const durationMs = Date.now() - startTime;
@@ -77,6 +96,23 @@ export const processAccessibilityScan = async (job) => {
           dm_accessibility_status: 'failed',
           dm_updated_at: new Date(),
         });
+
+        // Log activity
+        try {
+          const ActivityLogModel = conn.model('ActivityLog', ActivityLogSchema);
+          await ActivityLogModel.create({
+            action: 'SCAN_FAILED',
+            details: `Accessibility scan failed for domain '${domainName}': ${err.message}`,
+            metadata: {
+              domainId: sourceDomainDocId,
+              domainName,
+              scanType: 'accessibility',
+              error: err.message
+            }
+          });
+        } catch (logErr) {
+          logger.warn(`Could not log accessibility scan failure to ActivityLog: ${logErr.message}`);
+        }
       } catch (updateErr) {
         logger.warn(`Could not set Accessibility status to failed: ${updateErr.message}`);
       }

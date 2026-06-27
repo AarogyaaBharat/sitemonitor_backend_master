@@ -2,6 +2,7 @@ import { scanDomain } from '../services/seoScanner.js';
 import { DomainReportSchema } from '../models/DomainReport.js';
 import { DomainSummarySchema } from '../models/DomainSummary.js';
 import { DomainSchema } from '../models/Domain.js';
+import { ActivityLogSchema } from '../models/ActivityLog.js';
 import { mongoMultiConnector } from '../services/mongoMultiConnector.js';
 import { logger } from '../utils/logger.js';
 import { calculateNextScanAt } from '../utils/scheduling.js';
@@ -377,6 +378,23 @@ export const processScanDomain = async (job) => {
             dm_next_scan_at: nextScanAt,
             dm_updated_at: new Date() 
         });
+
+        // Log activity
+        try {
+          const ActivityLogModel = conn.model('ActivityLog', ActivityLogSchema);
+          await ActivityLogModel.create({
+            action: 'SCAN_COMPLETED',
+            details: `Scan completed successfully for domain '${domain?.dm_title || domainName}'. Crawled ${reports.length} pages.`,
+            metadata: {
+              domainId: sourceDomainDocId,
+              domainName,
+              pagesScanned: reports.length,
+              durationMs
+            }
+          });
+        } catch (logErr) {
+          logger.warn(`Could not log scan completion to ActivityLog: ${logErr.message}`);
+        }
       } catch (e) { logger.warn(`Could not update status to completed: ${e.message}`); }
     }
 
@@ -389,11 +407,28 @@ export const processScanDomain = async (job) => {
       try {
         const conn = await mongoMultiConnector.getClientConnection(sourceUri, sourceDb);
         const DomainModel = conn.model('Domain', DomainSchema);
+        const domain = await DomainModel.findById(sourceDomainDocId);
         await DomainModel.findByIdAndUpdate(sourceDomainDocId, { 
             dm_seo_status: 'failed',
             dm_last_scan_at: new Date(),
             dm_updated_at: new Date()
         });
+
+        // Log activity
+        try {
+          const ActivityLogModel = conn.model('ActivityLog', ActivityLogSchema);
+          await ActivityLogModel.create({
+            action: 'SCAN_FAILED',
+            details: `Scan failed for domain '${domain?.dm_title || domainName}': ${error.message}`,
+            metadata: {
+              domainId: sourceDomainDocId,
+              domainName,
+              error: error.message
+            }
+          });
+        } catch (logErr) {
+          logger.warn(`Could not log scan failure to ActivityLog: ${logErr.message}`);
+        }
       } catch (e) { logger.warn(`Could not update status to failed: ${e.message}`); }
     }
     throw error;

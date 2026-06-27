@@ -2,6 +2,7 @@ import { DomainSchema } from '../models/Domain.js';
 import { PolicySchema } from '../models/Policy.js';
 import { PolicyReportSchema } from '../models/PolicyReport.js';
 import { DomainReportSchema } from '../models/DomainReport.js';
+import { ActivityLogSchema } from '../models/ActivityLog.js';
 import { PolicySummarySchema } from '../models/PolicySummary.js';
 import { PolicyEvaluator } from '../services/policyEvaluator.js';
 import { mongoMultiConnector } from '../services/mongoMultiConnector.js';
@@ -236,6 +237,24 @@ export const processPolicyScan = async (job) => {
         dm_policy_last_scan_at: new Date(),
         dm_updated_at: new Date(),
       });
+
+      // Log activity
+      try {
+        const ActivityLogModel = conn.model('ActivityLog', ActivityLogSchema);
+        await ActivityLogModel.create({
+          action: 'SCAN_COMPLETED',
+          details: `Policy scan completed successfully for domain '${domainName}'. Evaluated ${reports.length} pages.`,
+          metadata: {
+            domainId,
+            domainName,
+            scanType: 'policy',
+            pagesScanned: reports.length,
+            durationMs: Date.now() - startTime
+          }
+        });
+      } catch (logErr) {
+        logger.warn(`Could not log policy scan completion to ActivityLog: ${logErr.message}`);
+      }
     }
 
     const durationMs = Date.now() - startTime;
@@ -250,6 +269,23 @@ export const processPolicyScan = async (job) => {
           dm_policy_status: 'failed',
           dm_updated_at: new Date(),
         });
+
+        // Log activity
+        try {
+          const ActivityLogModel = conn.model('ActivityLog', ActivityLogSchema);
+          await ActivityLogModel.create({
+            action: 'SCAN_FAILED',
+            details: `Policy scan failed for domain '${domainName}': ${err.message}`,
+            metadata: {
+              domainId,
+              domainName,
+              scanType: 'policy',
+              error: err.message
+            }
+          });
+        } catch (logErr) {
+          logger.warn(`Could not log policy scan failure to ActivityLog: ${logErr.message}`);
+        }
       } catch (updateErr) {
         logger.warn(`Could not set Policy status to failed: ${updateErr.message}`);
       }
