@@ -33,6 +33,8 @@ export const DomainSchema = new mongoose.Schema({
   },
   dm_policy_last_scan_at: { type: Date },
   dm_ignored_spellings: [{ type: String }],
+  dm_custom_urls: [{ type: String }],
+  dm_last_scan_error: { type: String, default: "" },
   dm_max_scanned_pages: { type: Number, default: 500 },
   dm_scan_subdomains: { type: Boolean, default: true },
   dm_render_pages_execute_js: { type: Boolean, default: false },

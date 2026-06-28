@@ -51,6 +51,7 @@ export const processQaScan = async (job) => {
       scanSubdomains: scanSubdomains ?? true,
       executeJs: executeJs ?? false,
       fullResourceReport: fullResourceReport ?? true,
+      customUrls: domainDoc?.dm_custom_urls || job.data.dm_custom_urls,
     });
 
     reports.forEach((report) => {

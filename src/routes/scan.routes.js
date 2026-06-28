@@ -20,7 +20,8 @@ router.post('/trigger', async (req, res) => {
         executeJs: domain.dm_render_pages_execute_js,
         sourceDb: domain.sourceDb,
         sourceUri: domain.sourceUri,
-        sourceDomainDocId: domain._id
+        sourceDomainDocId: domain._id,
+        dm_custom_urls: domain.dm_custom_urls
       });
       jobs.push({ domain: domain.dm_url, jobId: job.id });
     }
@@ -33,7 +34,7 @@ router.post('/trigger', async (req, res) => {
 
 
 router.post('/domain', async (req, res) => {
-  const { dm_url, dm_max_scanned_pages, dm_scan_subdomains, dm_render_pages_execute_js, sourceDb, sourceUri, sourceDomainDocId } = req.body;
+  const { dm_url, dm_max_scanned_pages, dm_scan_subdomains, dm_render_pages_execute_js, sourceDb, sourceUri, sourceDomainDocId, dm_custom_urls } = req.body;
   if (!dm_url) return res.status(400).json({ error: 'dm_url is required' });
   try {
     const job = await addScanJob({ 
@@ -43,7 +44,8 @@ router.post('/domain', async (req, res) => {
         executeJs: dm_render_pages_execute_js ?? false,
         sourceDb,
         sourceUri,
-        sourceDomainDocId
+        sourceDomainDocId,
+        dm_custom_urls
     });
     res.json({ success: true, message: 'Job enqueued', jobId: job.id });
   } catch (error) { res.status(500).json({ error: error.message }); }

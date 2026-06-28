@@ -101,7 +101,7 @@ export const addPolicyScanJob = async (domainData) => {
 };
 
 export const addScanJob = async (domainData) => {
-  const { domainName, pageLimit, scanSubdomains, executeJs, sourceDb, sourceUri, sourceDomainDocId } = domainData;
+  const { domainName, pageLimit, scanSubdomains, executeJs, sourceDb, sourceUri, sourceDomainDocId, dm_custom_urls } = domainData;
   return await seoScanQueue.add('scan-domain', {
     domainName,
     pageLimit,
@@ -109,7 +109,8 @@ export const addScanJob = async (domainData) => {
     executeJs,
     sourceDb,
     sourceUri,
-    sourceDomainDocId
+    sourceDomainDocId,
+    dm_custom_urls
   });
 };
 

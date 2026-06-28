@@ -2667,3 +2667,779 @@
 {"level":"info","message":"✅ Orchestrator: Finished. Total jobs enqueued: 0","timestamp":"2026-06-27 16:45:01"}
 {"level":"info","message":"Job repeat:c10eea93bf68cc56fd5c63b351df3d32:1782558900000 (Orchestrator) completed successfully.","timestamp":"2026-06-27 16:45:01"}
 {"level":"info","message":"SIGINT signal received. Closing resources...","timestamp":"2026-06-27 16:45:23"}
+{"level":"info","message":"BullBoard dashboard available at http://localhost:4100/admin/queues","timestamp":"2026-06-27 16:47:46"}
+{"level":"info","message":"SEO Scan Worker initialized.","timestamp":"2026-06-27 16:47:46"}
+{"level":"info","message":"🧹 Queue \"seo-scan-queue\" cleared recursively.","timestamp":"2026-06-27 16:47:46"}
+{"level":"info","message":"⏰ Scheduled global orchestration every 1 minutes.","timestamp":"2026-06-27 16:47:46"}
+{"level":"info","message":"SEO Scanner Service running on port 4100","timestamp":"2026-06-27 16:47:46"}
+{"level":"info","message":"🚀 SCAN_ON_STARTUP is enabled. Triggering global orchestration...","timestamp":"2026-06-27 16:47:46"}
+{"level":"info","message":"Orchestrator: Starting global scan orchestration... [STARTUP MODE]","timestamp":"2026-06-27 16:47:46"}
+{"level":"info","message":"🔗 Connecting to MASTER database: master","timestamp":"2026-06-27 16:47:46"}
+{"level":"info","message":"Orchestrator: Found 2 tenants to process.","timestamp":"2026-06-27 16:47:47"}
+{"level":"info","message":"📁 Switching to CLIENT database: tenant_rbi (Tenant: rbi)","timestamp":"2026-06-27 16:47:47"}
+{"level":"info","message":"✅ Successfully connected to database: tenant_rbi","timestamp":"2026-06-27 16:47:47"}
+{"level":"info","message":"Orchestrator: No domains found for tenant rbi (excluding those currently scanning).","timestamp":"2026-06-27 16:47:47"}
+{"level":"info","message":"📁 Switching to CLIENT database: tenant_sbi (Tenant: sbi)","timestamp":"2026-06-27 16:47:47"}
+{"level":"info","message":"✅ Successfully connected to database: tenant_sbi","timestamp":"2026-06-27 16:47:48"}
+{"level":"info","message":"Orchestrator: No domains found for tenant sbi (excluding those currently scanning).","timestamp":"2026-06-27 16:47:48"}
+{"level":"info","message":"Orchestrator: Master DB connection closed.","timestamp":"2026-06-27 16:47:48"}
+{"level":"info","message":"✅ Orchestrator: Finished. Total jobs enqueued: 0","timestamp":"2026-06-27 16:47:48"}
+{"level":"info","message":"✅ Initial global scan orchestration completed.","timestamp":"2026-06-27 16:47:48"}
+{"level":"info","message":"[Job repeat:c10eea93bf68cc56fd5c63b351df3d32:1782559080000] 🚀 Executing scheduled global orchestration...","timestamp":"2026-06-27 16:48:00"}
+{"level":"info","message":"Orchestrator: Starting global scan orchestration... ","timestamp":"2026-06-27 16:48:00"}
+{"level":"info","message":"🔗 Connecting to MASTER database: master","timestamp":"2026-06-27 16:48:00"}
+{"level":"info","message":"Orchestrator: Found 2 tenants to process.","timestamp":"2026-06-27 16:48:01"}
+{"level":"info","message":"📁 Switching to CLIENT database: tenant_rbi (Tenant: rbi)","timestamp":"2026-06-27 16:48:01"}
+{"level":"info","message":"Orchestrator: No domains found for tenant rbi (excluding those currently scanning).","timestamp":"2026-06-27 16:48:01"}
+{"level":"info","message":"📁 Switching to CLIENT database: tenant_sbi (Tenant: sbi)","timestamp":"2026-06-27 16:48:01"}
+{"level":"info","message":"Orchestrator: No domains found for tenant sbi (excluding those currently scanning).","timestamp":"2026-06-27 16:48:01"}
+{"level":"info","message":"Orchestrator: Master DB connection closed.","timestamp":"2026-06-27 16:48:01"}
+{"level":"info","message":"✅ Orchestrator: Finished. Total jobs enqueued: 0","timestamp":"2026-06-27 16:48:01"}
+{"level":"info","message":"Job repeat:c10eea93bf68cc56fd5c63b351df3d32:1782559080000 (Orchestrator) completed successfully.","timestamp":"2026-06-27 16:48:01"}
+{"level":"info","message":"[Job repeat:c10eea93bf68cc56fd5c63b351df3d32:1782559140000] 🚀 Executing scheduled global orchestration...","timestamp":"2026-06-27 16:49:00"}
+{"level":"info","message":"Orchestrator: Starting global scan orchestration... ","timestamp":"2026-06-27 16:49:00"}
+{"level":"info","message":"🔗 Connecting to MASTER database: master","timestamp":"2026-06-27 16:49:00"}
+{"level":"info","message":"Orchestrator: Found 2 tenants to process.","timestamp":"2026-06-27 16:49:00"}
+{"level":"info","message":"📁 Switching to CLIENT database: tenant_rbi (Tenant: rbi)","timestamp":"2026-06-27 16:49:00"}
+{"level":"info","message":"Orchestrator: No domains found for tenant rbi (excluding those currently scanning).","timestamp":"2026-06-27 16:49:00"}
+{"level":"info","message":"📁 Switching to CLIENT database: tenant_sbi (Tenant: sbi)","timestamp":"2026-06-27 16:49:00"}
+{"level":"info","message":"Orchestrator: No domains found for tenant sbi (excluding those currently scanning).","timestamp":"2026-06-27 16:49:00"}
+{"level":"info","message":"Orchestrator: Master DB connection closed.","timestamp":"2026-06-27 16:49:00"}
+{"level":"info","message":"✅ Orchestrator: Finished. Total jobs enqueued: 0","timestamp":"2026-06-27 16:49:00"}
+{"level":"info","message":"Job repeat:c10eea93bf68cc56fd5c63b351df3d32:1782559140000 (Orchestrator) completed successfully.","timestamp":"2026-06-27 16:49:00"}
+{"level":"info","message":"[Job repeat:c10eea93bf68cc56fd5c63b351df3d32:1782559200000] 🚀 Executing scheduled global orchestration...","timestamp":"2026-06-27 16:50:00"}
+{"level":"info","message":"Orchestrator: Starting global scan orchestration... ","timestamp":"2026-06-27 16:50:00"}
+{"level":"info","message":"🔗 Connecting to MASTER database: master","timestamp":"2026-06-27 16:50:00"}
+{"level":"info","message":"Orchestrator: Found 2 tenants to process.","timestamp":"2026-06-27 16:50:01"}
+{"level":"info","message":"📁 Switching to CLIENT database: tenant_rbi (Tenant: rbi)","timestamp":"2026-06-27 16:50:01"}
+{"level":"info","message":"Orchestrator: No domains found for tenant rbi (excluding those currently scanning).","timestamp":"2026-06-27 16:50:01"}
+{"level":"info","message":"📁 Switching to CLIENT database: tenant_sbi (Tenant: sbi)","timestamp":"2026-06-27 16:50:01"}
+{"level":"info","message":"Orchestrator: No domains found for tenant sbi (excluding those currently scanning).","timestamp":"2026-06-27 16:50:01"}
+{"level":"info","message":"Orchestrator: Master DB connection closed.","timestamp":"2026-06-27 16:50:01"}
+{"level":"info","message":"✅ Orchestrator: Finished. Total jobs enqueued: 0","timestamp":"2026-06-27 16:50:01"}
+{"level":"info","message":"Job repeat:c10eea93bf68cc56fd5c63b351df3d32:1782559200000 (Orchestrator) completed successfully.","timestamp":"2026-06-27 16:50:01"}
+{"level":"info","message":"[Job repeat:c10eea93bf68cc56fd5c63b351df3d32:1782559260000] 🚀 Executing scheduled global orchestration...","timestamp":"2026-06-27 16:51:00"}
+{"level":"info","message":"Orchestrator: Starting global scan orchestration... ","timestamp":"2026-06-27 16:51:00"}
+{"level":"info","message":"🔗 Connecting to MASTER database: master","timestamp":"2026-06-27 16:51:00"}
+{"level":"info","message":"Orchestrator: Found 2 tenants to process.","timestamp":"2026-06-27 16:51:01"}
+{"level":"info","message":"📁 Switching to CLIENT database: tenant_rbi (Tenant: rbi)","timestamp":"2026-06-27 16:51:01"}
+{"level":"info","message":"Orchestrator: No domains found for tenant rbi (excluding those currently scanning).","timestamp":"2026-06-27 16:51:01"}
+{"level":"info","message":"📁 Switching to CLIENT database: tenant_sbi (Tenant: sbi)","timestamp":"2026-06-27 16:51:01"}
+{"level":"info","message":"Orchestrator: No domains found for tenant sbi (excluding those currently scanning).","timestamp":"2026-06-27 16:51:01"}
+{"level":"info","message":"Orchestrator: Master DB connection closed.","timestamp":"2026-06-27 16:51:01"}
+{"level":"info","message":"✅ Orchestrator: Finished. Total jobs enqueued: 0","timestamp":"2026-06-27 16:51:01"}
+{"level":"info","message":"Job repeat:c10eea93bf68cc56fd5c63b351df3d32:1782559260000 (Orchestrator) completed successfully.","timestamp":"2026-06-27 16:51:01"}
+{"level":"info","message":"[Job repeat:c10eea93bf68cc56fd5c63b351df3d32:1782559320000] 🚀 Executing scheduled global orchestration...","timestamp":"2026-06-27 16:52:00"}
+{"level":"info","message":"Orchestrator: Starting global scan orchestration... ","timestamp":"2026-06-27 16:52:00"}
+{"level":"info","message":"🔗 Connecting to MASTER database: master","timestamp":"2026-06-27 16:52:00"}
+{"level":"info","message":"Orchestrator: Found 2 tenants to process.","timestamp":"2026-06-27 16:52:00"}
+{"level":"info","message":"📁 Switching to CLIENT database: tenant_rbi (Tenant: rbi)","timestamp":"2026-06-27 16:52:00"}
+{"level":"info","message":"Orchestrator: No domains found for tenant rbi (excluding those currently scanning).","timestamp":"2026-06-27 16:52:00"}
+{"level":"info","message":"📁 Switching to CLIENT database: tenant_sbi (Tenant: sbi)","timestamp":"2026-06-27 16:52:00"}
+{"level":"info","message":"Orchestrator: No domains found for tenant sbi (excluding those currently scanning).","timestamp":"2026-06-27 16:52:00"}
+{"level":"info","message":"Orchestrator: Master DB connection closed.","timestamp":"2026-06-27 16:52:00"}
+{"level":"info","message":"✅ Orchestrator: Finished. Total jobs enqueued: 0","timestamp":"2026-06-27 16:52:00"}
+{"level":"info","message":"Job repeat:c10eea93bf68cc56fd5c63b351df3d32:1782559320000 (Orchestrator) completed successfully.","timestamp":"2026-06-27 16:52:00"}
+{"level":"info","message":"[Job repeat:c10eea93bf68cc56fd5c63b351df3d32:1782559380000] 🚀 Executing scheduled global orchestration...","timestamp":"2026-06-27 16:53:00"}
+{"level":"info","message":"Orchestrator: Starting global scan orchestration... ","timestamp":"2026-06-27 16:53:00"}
+{"level":"info","message":"🔗 Connecting to MASTER database: master","timestamp":"2026-06-27 16:53:00"}
+{"level":"info","message":"Orchestrator: Found 2 tenants to process.","timestamp":"2026-06-27 16:53:01"}
+{"level":"info","message":"📁 Switching to CLIENT database: tenant_rbi (Tenant: rbi)","timestamp":"2026-06-27 16:53:01"}
+{"level":"info","message":"Orchestrator: No domains found for tenant rbi (excluding those currently scanning).","timestamp":"2026-06-27 16:53:01"}
+{"level":"info","message":"📁 Switching to CLIENT database: tenant_sbi (Tenant: sbi)","timestamp":"2026-06-27 16:53:01"}
+{"level":"info","message":"Orchestrator: No domains found for tenant sbi (excluding those currently scanning).","timestamp":"2026-06-27 16:53:01"}
+{"level":"info","message":"Orchestrator: Master DB connection closed.","timestamp":"2026-06-27 16:53:01"}
+{"level":"info","message":"✅ Orchestrator: Finished. Total jobs enqueued: 0","timestamp":"2026-06-27 16:53:01"}
+{"level":"info","message":"Job repeat:c10eea93bf68cc56fd5c63b351df3d32:1782559380000 (Orchestrator) completed successfully.","timestamp":"2026-06-27 16:53:01"}
+{"level":"info","message":"[Job repeat:c10eea93bf68cc56fd5c63b351df3d32:1782559440000] 🚀 Executing scheduled global orchestration...","timestamp":"2026-06-27 16:54:00"}
+{"level":"info","message":"Orchestrator: Starting global scan orchestration... ","timestamp":"2026-06-27 16:54:00"}
+{"level":"info","message":"🔗 Connecting to MASTER database: master","timestamp":"2026-06-27 16:54:00"}
+{"level":"info","message":"Orchestrator: Found 2 tenants to process.","timestamp":"2026-06-27 16:54:01"}
+{"level":"info","message":"📁 Switching to CLIENT database: tenant_rbi (Tenant: rbi)","timestamp":"2026-06-27 16:54:01"}
+{"level":"info","message":"Orchestrator: No domains found for tenant rbi (excluding those currently scanning).","timestamp":"2026-06-27 16:54:01"}
+{"level":"info","message":"📁 Switching to CLIENT database: tenant_sbi (Tenant: sbi)","timestamp":"2026-06-27 16:54:01"}
+{"level":"info","message":"Orchestrator: No domains found for tenant sbi (excluding those currently scanning).","timestamp":"2026-06-27 16:54:01"}
+{"level":"info","message":"Orchestrator: Master DB connection closed.","timestamp":"2026-06-27 16:54:01"}
+{"level":"info","message":"✅ Orchestrator: Finished. Total jobs enqueued: 0","timestamp":"2026-06-27 16:54:01"}
+{"level":"info","message":"Job repeat:c10eea93bf68cc56fd5c63b351df3d32:1782559440000 (Orchestrator) completed successfully.","timestamp":"2026-06-27 16:54:01"}
+{"level":"info","message":"[Job repeat:c10eea93bf68cc56fd5c63b351df3d32:1782559500000] 🚀 Executing scheduled global orchestration...","timestamp":"2026-06-27 16:55:00"}
+{"level":"info","message":"Orchestrator: Starting global scan orchestration... ","timestamp":"2026-06-27 16:55:00"}
+{"level":"info","message":"🔗 Connecting to MASTER database: master","timestamp":"2026-06-27 16:55:00"}
+{"level":"info","message":"Orchestrator: Found 2 tenants to process.","timestamp":"2026-06-27 16:55:00"}
+{"level":"info","message":"📁 Switching to CLIENT database: tenant_rbi (Tenant: rbi)","timestamp":"2026-06-27 16:55:00"}
+{"level":"info","message":"Orchestrator: No domains found for tenant rbi (excluding those currently scanning).","timestamp":"2026-06-27 16:55:00"}
+{"level":"info","message":"📁 Switching to CLIENT database: tenant_sbi (Tenant: sbi)","timestamp":"2026-06-27 16:55:00"}
+{"level":"info","message":"Orchestrator: No domains found for tenant sbi (excluding those currently scanning).","timestamp":"2026-06-27 16:55:00"}
+{"level":"info","message":"Orchestrator: Master DB connection closed.","timestamp":"2026-06-27 16:55:00"}
+{"level":"info","message":"✅ Orchestrator: Finished. Total jobs enqueued: 0","timestamp":"2026-06-27 16:55:00"}
+{"level":"info","message":"Job repeat:c10eea93bf68cc56fd5c63b351df3d32:1782559500000 (Orchestrator) completed successfully.","timestamp":"2026-06-27 16:55:00"}
+{"level":"info","message":"[Job repeat:c10eea93bf68cc56fd5c63b351df3d32:1782559560000] 🚀 Executing scheduled global orchestration...","timestamp":"2026-06-27 16:56:00"}
+{"level":"info","message":"Orchestrator: Starting global scan orchestration... ","timestamp":"2026-06-27 16:56:00"}
+{"level":"info","message":"🔗 Connecting to MASTER database: master","timestamp":"2026-06-27 16:56:00"}
+{"level":"info","message":"Orchestrator: Found 2 tenants to process.","timestamp":"2026-06-27 16:56:01"}
+{"level":"info","message":"📁 Switching to CLIENT database: tenant_rbi (Tenant: rbi)","timestamp":"2026-06-27 16:56:01"}
+{"level":"info","message":"Orchestrator: No domains found for tenant rbi (excluding those currently scanning).","timestamp":"2026-06-27 16:56:01"}
+{"level":"info","message":"📁 Switching to CLIENT database: tenant_sbi (Tenant: sbi)","timestamp":"2026-06-27 16:56:01"}
+{"level":"info","message":"Orchestrator: No domains found for tenant sbi (excluding those currently scanning).","timestamp":"2026-06-27 16:56:01"}
+{"level":"info","message":"Orchestrator: Master DB connection closed.","timestamp":"2026-06-27 16:56:01"}
+{"level":"info","message":"✅ Orchestrator: Finished. Total jobs enqueued: 0","timestamp":"2026-06-27 16:56:01"}
+{"level":"info","message":"Job repeat:c10eea93bf68cc56fd5c63b351df3d32:1782559560000 (Orchestrator) completed successfully.","timestamp":"2026-06-27 16:56:01"}
+{"level":"info","message":"[Job repeat:c10eea93bf68cc56fd5c63b351df3d32:1782559620000] 🚀 Executing scheduled global orchestration...","timestamp":"2026-06-27 16:57:00"}
+{"level":"info","message":"Orchestrator: Starting global scan orchestration... ","timestamp":"2026-06-27 16:57:00"}
+{"level":"info","message":"🔗 Connecting to MASTER database: master","timestamp":"2026-06-27 16:57:00"}
+{"level":"info","message":"Orchestrator: Found 2 tenants to process.","timestamp":"2026-06-27 16:57:01"}
+{"level":"info","message":"📁 Switching to CLIENT database: tenant_rbi (Tenant: rbi)","timestamp":"2026-06-27 16:57:01"}
+{"level":"info","message":"Orchestrator: No domains found for tenant rbi (excluding those currently scanning).","timestamp":"2026-06-27 16:57:01"}
+{"level":"info","message":"📁 Switching to CLIENT database: tenant_sbi (Tenant: sbi)","timestamp":"2026-06-27 16:57:01"}
+{"level":"info","message":"Orchestrator: No domains found for tenant sbi (excluding those currently scanning).","timestamp":"2026-06-27 16:57:01"}
+{"level":"info","message":"Orchestrator: Master DB connection closed.","timestamp":"2026-06-27 16:57:01"}
+{"level":"info","message":"✅ Orchestrator: Finished. Total jobs enqueued: 0","timestamp":"2026-06-27 16:57:01"}
+{"level":"info","message":"Job repeat:c10eea93bf68cc56fd5c63b351df3d32:1782559620000 (Orchestrator) completed successfully.","timestamp":"2026-06-27 16:57:01"}
+{"level":"info","message":"[Job repeat:c10eea93bf68cc56fd5c63b351df3d32:1782559680000] 🚀 Executing scheduled global orchestration...","timestamp":"2026-06-27 16:58:00"}
+{"level":"info","message":"Orchestrator: Starting global scan orchestration... ","timestamp":"2026-06-27 16:58:00"}
+{"level":"info","message":"🔗 Connecting to MASTER database: master","timestamp":"2026-06-27 16:58:00"}
+{"level":"info","message":"Orchestrator: Found 2 tenants to process.","timestamp":"2026-06-27 16:58:00"}
+{"level":"info","message":"📁 Switching to CLIENT database: tenant_rbi (Tenant: rbi)","timestamp":"2026-06-27 16:58:00"}
+{"level":"info","message":"Orchestrator: No domains found for tenant rbi (excluding those currently scanning).","timestamp":"2026-06-27 16:58:00"}
+{"level":"info","message":"📁 Switching to CLIENT database: tenant_sbi (Tenant: sbi)","timestamp":"2026-06-27 16:58:00"}
+{"level":"info","message":"Orchestrator: No domains found for tenant sbi (excluding those currently scanning).","timestamp":"2026-06-27 16:58:01"}
+{"level":"info","message":"Orchestrator: Master DB connection closed.","timestamp":"2026-06-27 16:58:01"}
+{"level":"info","message":"✅ Orchestrator: Finished. Total jobs enqueued: 0","timestamp":"2026-06-27 16:58:01"}
+{"level":"info","message":"Job repeat:c10eea93bf68cc56fd5c63b351df3d32:1782559680000 (Orchestrator) completed successfully.","timestamp":"2026-06-27 16:58:01"}
+{"level":"info","message":"[Job repeat:c10eea93bf68cc56fd5c63b351df3d32:1782559740000] 🚀 Executing scheduled global orchestration...","timestamp":"2026-06-27 16:59:00"}
+{"level":"info","message":"Orchestrator: Starting global scan orchestration... ","timestamp":"2026-06-27 16:59:00"}
+{"level":"info","message":"🔗 Connecting to MASTER database: master","timestamp":"2026-06-27 16:59:00"}
+{"level":"info","message":"Orchestrator: Found 2 tenants to process.","timestamp":"2026-06-27 16:59:01"}
+{"level":"info","message":"📁 Switching to CLIENT database: tenant_rbi (Tenant: rbi)","timestamp":"2026-06-27 16:59:01"}
+{"level":"info","message":"Orchestrator: No domains found for tenant rbi (excluding those currently scanning).","timestamp":"2026-06-27 16:59:01"}
+{"level":"info","message":"📁 Switching to CLIENT database: tenant_sbi (Tenant: sbi)","timestamp":"2026-06-27 16:59:01"}
+{"level":"info","message":"Orchestrator: No domains found for tenant sbi (excluding those currently scanning).","timestamp":"2026-06-27 16:59:01"}
+{"level":"info","message":"Orchestrator: Master DB connection closed.","timestamp":"2026-06-27 16:59:01"}
+{"level":"info","message":"✅ Orchestrator: Finished. Total jobs enqueued: 0","timestamp":"2026-06-27 16:59:01"}
+{"level":"info","message":"Job repeat:c10eea93bf68cc56fd5c63b351df3d32:1782559740000 (Orchestrator) completed successfully.","timestamp":"2026-06-27 16:59:01"}
+{"level":"info","message":"[Job repeat:c10eea93bf68cc56fd5c63b351df3d32:1782559800000] 🚀 Executing scheduled global orchestration...","timestamp":"2026-06-27 17:00:00"}
+{"level":"info","message":"Orchestrator: Starting global scan orchestration... ","timestamp":"2026-06-27 17:00:00"}
+{"level":"info","message":"🔗 Connecting to MASTER database: master","timestamp":"2026-06-27 17:00:00"}
+{"level":"info","message":"Orchestrator: Found 2 tenants to process.","timestamp":"2026-06-27 17:00:01"}
+{"level":"info","message":"📁 Switching to CLIENT database: tenant_rbi (Tenant: rbi)","timestamp":"2026-06-27 17:00:01"}
+{"level":"info","message":"Orchestrator: No domains found for tenant rbi (excluding those currently scanning).","timestamp":"2026-06-27 17:00:01"}
+{"level":"info","message":"📁 Switching to CLIENT database: tenant_sbi (Tenant: sbi)","timestamp":"2026-06-27 17:00:01"}
+{"level":"info","message":"Orchestrator: No domains found for tenant sbi (excluding those currently scanning).","timestamp":"2026-06-27 17:00:01"}
+{"level":"info","message":"Orchestrator: Master DB connection closed.","timestamp":"2026-06-27 17:00:01"}
+{"level":"info","message":"✅ Orchestrator: Finished. Total jobs enqueued: 0","timestamp":"2026-06-27 17:00:01"}
+{"level":"info","message":"Job repeat:c10eea93bf68cc56fd5c63b351df3d32:1782559800000 (Orchestrator) completed successfully.","timestamp":"2026-06-27 17:00:01"}
+{"level":"info","message":"[Job repeat:c10eea93bf68cc56fd5c63b351df3d32:1782559860000] 🚀 Executing scheduled global orchestration...","timestamp":"2026-06-27 17:01:00"}
+{"level":"info","message":"Orchestrator: Starting global scan orchestration... ","timestamp":"2026-06-27 17:01:00"}
+{"level":"info","message":"🔗 Connecting to MASTER database: master","timestamp":"2026-06-27 17:01:00"}
+{"level":"info","message":"Orchestrator: Found 2 tenants to process.","timestamp":"2026-06-27 17:01:00"}
+{"level":"info","message":"📁 Switching to CLIENT database: tenant_rbi (Tenant: rbi)","timestamp":"2026-06-27 17:01:00"}
+{"level":"info","message":"Orchestrator: No domains found for tenant rbi (excluding those currently scanning).","timestamp":"2026-06-27 17:01:00"}
+{"level":"info","message":"📁 Switching to CLIENT database: tenant_sbi (Tenant: sbi)","timestamp":"2026-06-27 17:01:00"}
+{"level":"info","message":"Orchestrator: No domains found for tenant sbi (excluding those currently scanning).","timestamp":"2026-06-27 17:01:01"}
+{"level":"info","message":"Orchestrator: Master DB connection closed.","timestamp":"2026-06-27 17:01:01"}
+{"level":"info","message":"✅ Orchestrator: Finished. Total jobs enqueued: 0","timestamp":"2026-06-27 17:01:01"}
+{"level":"info","message":"Job repeat:c10eea93bf68cc56fd5c63b351df3d32:1782559860000 (Orchestrator) completed successfully.","timestamp":"2026-06-27 17:01:01"}
+{"level":"info","message":"[Job repeat:c10eea93bf68cc56fd5c63b351df3d32:1782559920000] 🚀 Executing scheduled global orchestration...","timestamp":"2026-06-27 17:02:00"}
+{"level":"info","message":"Orchestrator: Starting global scan orchestration... ","timestamp":"2026-06-27 17:02:00"}
+{"level":"info","message":"🔗 Connecting to MASTER database: master","timestamp":"2026-06-27 17:02:00"}
+{"level":"info","message":"Orchestrator: Found 2 tenants to process.","timestamp":"2026-06-27 17:02:01"}
+{"level":"info","message":"📁 Switching to CLIENT database: tenant_rbi (Tenant: rbi)","timestamp":"2026-06-27 17:02:01"}
+{"level":"info","message":"Orchestrator: No domains found for tenant rbi (excluding those currently scanning).","timestamp":"2026-06-27 17:02:01"}
+{"level":"info","message":"📁 Switching to CLIENT database: tenant_sbi (Tenant: sbi)","timestamp":"2026-06-27 17:02:01"}
+{"level":"info","message":"Orchestrator: No domains found for tenant sbi (excluding those currently scanning).","timestamp":"2026-06-27 17:02:01"}
+{"level":"info","message":"Orchestrator: Master DB connection closed.","timestamp":"2026-06-27 17:02:01"}
+{"level":"info","message":"✅ Orchestrator: Finished. Total jobs enqueued: 0","timestamp":"2026-06-27 17:02:01"}
+{"level":"info","message":"Job repeat:c10eea93bf68cc56fd5c63b351df3d32:1782559920000 (Orchestrator) completed successfully.","timestamp":"2026-06-27 17:02:01"}
+{"level":"info","message":"[Job repeat:c10eea93bf68cc56fd5c63b351df3d32:1782559980000] 🚀 Executing scheduled global orchestration...","timestamp":"2026-06-27 17:03:00"}
+{"level":"info","message":"Orchestrator: Starting global scan orchestration... ","timestamp":"2026-06-27 17:03:00"}
+{"level":"info","message":"🔗 Connecting to MASTER database: master","timestamp":"2026-06-27 17:03:00"}
+{"level":"info","message":"Orchestrator: Found 2 tenants to process.","timestamp":"2026-06-27 17:03:01"}
+{"level":"info","message":"📁 Switching to CLIENT database: tenant_rbi (Tenant: rbi)","timestamp":"2026-06-27 17:03:01"}
+{"level":"info","message":"Orchestrator: No domains found for tenant rbi (excluding those currently scanning).","timestamp":"2026-06-27 17:03:01"}
+{"level":"info","message":"📁 Switching to CLIENT database: tenant_sbi (Tenant: sbi)","timestamp":"2026-06-27 17:03:01"}
+{"level":"info","message":"Orchestrator: No domains found for tenant sbi (excluding those currently scanning).","timestamp":"2026-06-27 17:03:01"}
+{"level":"info","message":"Orchestrator: Master DB connection closed.","timestamp":"2026-06-27 17:03:01"}
+{"level":"info","message":"✅ Orchestrator: Finished. Total jobs enqueued: 0","timestamp":"2026-06-27 17:03:01"}
+{"level":"info","message":"Job repeat:c10eea93bf68cc56fd5c63b351df3d32:1782559980000 (Orchestrator) completed successfully.","timestamp":"2026-06-27 17:03:01"}
+{"level":"info","message":"[Job repeat:c10eea93bf68cc56fd5c63b351df3d32:1782560040000] 🚀 Executing scheduled global orchestration...","timestamp":"2026-06-27 17:04:00"}
+{"level":"info","message":"Orchestrator: Starting global scan orchestration... ","timestamp":"2026-06-27 17:04:00"}
+{"level":"info","message":"🔗 Connecting to MASTER database: master","timestamp":"2026-06-27 17:04:00"}
+{"level":"info","message":"Orchestrator: Found 2 tenants to process.","timestamp":"2026-06-27 17:04:01"}
+{"level":"info","message":"📁 Switching to CLIENT database: tenant_rbi (Tenant: rbi)","timestamp":"2026-06-27 17:04:01"}
+{"level":"info","message":"Orchestrator: No domains found for tenant rbi (excluding those currently scanning).","timestamp":"2026-06-27 17:04:01"}
+{"level":"info","message":"📁 Switching to CLIENT database: tenant_sbi (Tenant: sbi)","timestamp":"2026-06-27 17:04:01"}
+{"level":"info","message":"Orchestrator: No domains found for tenant sbi (excluding those currently scanning).","timestamp":"2026-06-27 17:04:01"}
+{"level":"info","message":"Orchestrator: Master DB connection closed.","timestamp":"2026-06-27 17:04:01"}
+{"level":"info","message":"✅ Orchestrator: Finished. Total jobs enqueued: 0","timestamp":"2026-06-27 17:04:01"}
+{"level":"info","message":"Job repeat:c10eea93bf68cc56fd5c63b351df3d32:1782560040000 (Orchestrator) completed successfully.","timestamp":"2026-06-27 17:04:01"}
+{"level":"info","message":"[Job repeat:c10eea93bf68cc56fd5c63b351df3d32:1782560100000] 🚀 Executing scheduled global orchestration...","timestamp":"2026-06-27 17:05:00"}
+{"level":"info","message":"Orchestrator: Starting global scan orchestration... ","timestamp":"2026-06-27 17:05:00"}
+{"level":"info","message":"🔗 Connecting to MASTER database: master","timestamp":"2026-06-27 17:05:00"}
+{"level":"info","message":"Orchestrator: Found 2 tenants to process.","timestamp":"2026-06-27 17:05:01"}
+{"level":"info","message":"📁 Switching to CLIENT database: tenant_rbi (Tenant: rbi)","timestamp":"2026-06-27 17:05:01"}
+{"level":"info","message":"Orchestrator: No domains found for tenant rbi (excluding those currently scanning).","timestamp":"2026-06-27 17:05:01"}
+{"level":"info","message":"📁 Switching to CLIENT database: tenant_sbi (Tenant: sbi)","timestamp":"2026-06-27 17:05:01"}
+{"level":"info","message":"Orchestrator: No domains found for tenant sbi (excluding those currently scanning).","timestamp":"2026-06-27 17:05:01"}
+{"level":"info","message":"Orchestrator: Master DB connection closed.","timestamp":"2026-06-27 17:05:01"}
+{"level":"info","message":"✅ Orchestrator: Finished. Total jobs enqueued: 0","timestamp":"2026-06-27 17:05:01"}
+{"level":"info","message":"Job repeat:c10eea93bf68cc56fd5c63b351df3d32:1782560100000 (Orchestrator) completed successfully.","timestamp":"2026-06-27 17:05:01"}
+{"level":"info","message":"[Job repeat:c10eea93bf68cc56fd5c63b351df3d32:1782560160000] 🚀 Executing scheduled global orchestration...","timestamp":"2026-06-27 17:06:00"}
+{"level":"info","message":"Orchestrator: Starting global scan orchestration... ","timestamp":"2026-06-27 17:06:00"}
+{"level":"info","message":"🔗 Connecting to MASTER database: master","timestamp":"2026-06-27 17:06:00"}
+{"level":"info","message":"Orchestrator: Found 2 tenants to process.","timestamp":"2026-06-27 17:06:00"}
+{"level":"info","message":"📁 Switching to CLIENT database: tenant_rbi (Tenant: rbi)","timestamp":"2026-06-27 17:06:00"}
+{"level":"info","message":"Orchestrator: No domains found for tenant rbi (excluding those currently scanning).","timestamp":"2026-06-27 17:06:00"}
+{"level":"info","message":"📁 Switching to CLIENT database: tenant_sbi (Tenant: sbi)","timestamp":"2026-06-27 17:06:00"}
+{"level":"info","message":"Orchestrator: No domains found for tenant sbi (excluding those currently scanning).","timestamp":"2026-06-27 17:06:00"}
+{"level":"info","message":"Orchestrator: Master DB connection closed.","timestamp":"2026-06-27 17:06:00"}
+{"level":"info","message":"✅ Orchestrator: Finished. Total jobs enqueued: 0","timestamp":"2026-06-27 17:06:00"}
+{"level":"info","message":"Job repeat:c10eea93bf68cc56fd5c63b351df3d32:1782560160000 (Orchestrator) completed successfully.","timestamp":"2026-06-27 17:06:00"}
+{"level":"info","message":"[Job repeat:c10eea93bf68cc56fd5c63b351df3d32:1782560220000] 🚀 Executing scheduled global orchestration...","timestamp":"2026-06-27 17:07:00"}
+{"level":"info","message":"Orchestrator: Starting global scan orchestration... ","timestamp":"2026-06-27 17:07:00"}
+{"level":"info","message":"🔗 Connecting to MASTER database: master","timestamp":"2026-06-27 17:07:00"}
+{"level":"info","message":"Orchestrator: Found 2 tenants to process.","timestamp":"2026-06-27 17:07:01"}
+{"level":"info","message":"📁 Switching to CLIENT database: tenant_rbi (Tenant: rbi)","timestamp":"2026-06-27 17:07:01"}
+{"level":"info","message":"Orchestrator: No domains found for tenant rbi (excluding those currently scanning).","timestamp":"2026-06-27 17:07:01"}
+{"level":"info","message":"📁 Switching to CLIENT database: tenant_sbi (Tenant: sbi)","timestamp":"2026-06-27 17:07:01"}
+{"level":"info","message":"Orchestrator: No domains found for tenant sbi (excluding those currently scanning).","timestamp":"2026-06-27 17:07:01"}
+{"level":"info","message":"Orchestrator: Master DB connection closed.","timestamp":"2026-06-27 17:07:01"}
+{"level":"info","message":"✅ Orchestrator: Finished. Total jobs enqueued: 0","timestamp":"2026-06-27 17:07:01"}
+{"level":"info","message":"Job repeat:c10eea93bf68cc56fd5c63b351df3d32:1782560220000 (Orchestrator) completed successfully.","timestamp":"2026-06-27 17:07:01"}
+{"level":"info","message":"[Job repeat:c10eea93bf68cc56fd5c63b351df3d32:1782560280000] 🚀 Executing scheduled global orchestration...","timestamp":"2026-06-27 17:08:00"}
+{"level":"info","message":"Orchestrator: Starting global scan orchestration... ","timestamp":"2026-06-27 17:08:00"}
+{"level":"info","message":"🔗 Connecting to MASTER database: master","timestamp":"2026-06-27 17:08:00"}
+{"level":"info","message":"Orchestrator: Found 2 tenants to process.","timestamp":"2026-06-27 17:08:01"}
+{"level":"info","message":"📁 Switching to CLIENT database: tenant_rbi (Tenant: rbi)","timestamp":"2026-06-27 17:08:01"}
+{"level":"info","message":"Orchestrator: No domains found for tenant rbi (excluding those currently scanning).","timestamp":"2026-06-27 17:08:01"}
+{"level":"info","message":"📁 Switching to CLIENT database: tenant_sbi (Tenant: sbi)","timestamp":"2026-06-27 17:08:01"}
+{"level":"info","message":"Orchestrator: No domains found for tenant sbi (excluding those currently scanning).","timestamp":"2026-06-27 17:08:01"}
+{"level":"info","message":"Orchestrator: Master DB connection closed.","timestamp":"2026-06-27 17:08:01"}
+{"level":"info","message":"✅ Orchestrator: Finished. Total jobs enqueued: 0","timestamp":"2026-06-27 17:08:01"}
+{"level":"info","message":"Job repeat:c10eea93bf68cc56fd5c63b351df3d32:1782560280000 (Orchestrator) completed successfully.","timestamp":"2026-06-27 17:08:01"}
+{"level":"info","message":"[Job repeat:c10eea93bf68cc56fd5c63b351df3d32:1782560340000] 🚀 Executing scheduled global orchestration...","timestamp":"2026-06-27 17:09:00"}
+{"level":"info","message":"Orchestrator: Starting global scan orchestration... ","timestamp":"2026-06-27 17:09:00"}
+{"level":"info","message":"🔗 Connecting to MASTER database: master","timestamp":"2026-06-27 17:09:00"}
+{"level":"info","message":"Orchestrator: Found 2 tenants to process.","timestamp":"2026-06-27 17:09:00"}
+{"level":"info","message":"📁 Switching to CLIENT database: tenant_rbi (Tenant: rbi)","timestamp":"2026-06-27 17:09:00"}
+{"level":"info","message":"Orchestrator: No domains found for tenant rbi (excluding those currently scanning).","timestamp":"2026-06-27 17:09:01"}
+{"level":"info","message":"📁 Switching to CLIENT database: tenant_sbi (Tenant: sbi)","timestamp":"2026-06-27 17:09:01"}
+{"level":"info","message":"Orchestrator: No domains found for tenant sbi (excluding those currently scanning).","timestamp":"2026-06-27 17:09:01"}
+{"level":"info","message":"Orchestrator: Master DB connection closed.","timestamp":"2026-06-27 17:09:01"}
+{"level":"info","message":"✅ Orchestrator: Finished. Total jobs enqueued: 0","timestamp":"2026-06-27 17:09:01"}
+{"level":"info","message":"Job repeat:c10eea93bf68cc56fd5c63b351df3d32:1782560340000 (Orchestrator) completed successfully.","timestamp":"2026-06-27 17:09:01"}
+{"level":"info","message":"[Job repeat:c10eea93bf68cc56fd5c63b351df3d32:1782560400000] 🚀 Executing scheduled global orchestration...","timestamp":"2026-06-27 17:10:00"}
+{"level":"info","message":"Orchestrator: Starting global scan orchestration... ","timestamp":"2026-06-27 17:10:00"}
+{"level":"info","message":"🔗 Connecting to MASTER database: master","timestamp":"2026-06-27 17:10:00"}
+{"level":"info","message":"Orchestrator: Found 2 tenants to process.","timestamp":"2026-06-27 17:10:01"}
+{"level":"info","message":"📁 Switching to CLIENT database: tenant_rbi (Tenant: rbi)","timestamp":"2026-06-27 17:10:01"}
+{"level":"info","message":"Orchestrator: No domains found for tenant rbi (excluding those currently scanning).","timestamp":"2026-06-27 17:10:01"}
+{"level":"info","message":"📁 Switching to CLIENT database: tenant_sbi (Tenant: sbi)","timestamp":"2026-06-27 17:10:01"}
+{"level":"info","message":"Orchestrator: No domains found for tenant sbi (excluding those currently scanning).","timestamp":"2026-06-27 17:10:01"}
+{"level":"info","message":"Orchestrator: Master DB connection closed.","timestamp":"2026-06-27 17:10:01"}
+{"level":"info","message":"✅ Orchestrator: Finished. Total jobs enqueued: 0","timestamp":"2026-06-27 17:10:01"}
+{"level":"info","message":"Job repeat:c10eea93bf68cc56fd5c63b351df3d32:1782560400000 (Orchestrator) completed successfully.","timestamp":"2026-06-27 17:10:01"}
+{"level":"info","message":"[Job repeat:c10eea93bf68cc56fd5c63b351df3d32:1782560460000] 🚀 Executing scheduled global orchestration...","timestamp":"2026-06-27 17:11:00"}
+{"level":"info","message":"Orchestrator: Starting global scan orchestration... ","timestamp":"2026-06-27 17:11:00"}
+{"level":"info","message":"🔗 Connecting to MASTER database: master","timestamp":"2026-06-27 17:11:00"}
+{"level":"info","message":"Orchestrator: Found 2 tenants to process.","timestamp":"2026-06-27 17:11:01"}
+{"level":"info","message":"📁 Switching to CLIENT database: tenant_rbi (Tenant: rbi)","timestamp":"2026-06-27 17:11:01"}
+{"level":"info","message":"Orchestrator: No domains found for tenant rbi (excluding those currently scanning).","timestamp":"2026-06-27 17:11:01"}
+{"level":"info","message":"📁 Switching to CLIENT database: tenant_sbi (Tenant: sbi)","timestamp":"2026-06-27 17:11:01"}
+{"level":"info","message":"Orchestrator: No domains found for tenant sbi (excluding those currently scanning).","timestamp":"2026-06-27 17:11:01"}
+{"level":"info","message":"Orchestrator: Master DB connection closed.","timestamp":"2026-06-27 17:11:01"}
+{"level":"info","message":"✅ Orchestrator: Finished. Total jobs enqueued: 0","timestamp":"2026-06-27 17:11:01"}
+{"level":"info","message":"Job repeat:c10eea93bf68cc56fd5c63b351df3d32:1782560460000 (Orchestrator) completed successfully.","timestamp":"2026-06-27 17:11:01"}
+{"level":"info","message":"[Job repeat:c10eea93bf68cc56fd5c63b351df3d32:1782560520000] 🚀 Executing scheduled global orchestration...","timestamp":"2026-06-27 17:12:00"}
+{"level":"info","message":"Orchestrator: Starting global scan orchestration... ","timestamp":"2026-06-27 17:12:00"}
+{"level":"info","message":"🔗 Connecting to MASTER database: master","timestamp":"2026-06-27 17:12:00"}
+{"level":"info","message":"Orchestrator: Found 2 tenants to process.","timestamp":"2026-06-27 17:12:00"}
+{"level":"info","message":"📁 Switching to CLIENT database: tenant_rbi (Tenant: rbi)","timestamp":"2026-06-27 17:12:00"}
+{"level":"info","message":"Orchestrator: No domains found for tenant rbi (excluding those currently scanning).","timestamp":"2026-06-27 17:12:00"}
+{"level":"info","message":"📁 Switching to CLIENT database: tenant_sbi (Tenant: sbi)","timestamp":"2026-06-27 17:12:00"}
+{"level":"info","message":"Orchestrator: No domains found for tenant sbi (excluding those currently scanning).","timestamp":"2026-06-27 17:12:00"}
+{"level":"info","message":"Orchestrator: Master DB connection closed.","timestamp":"2026-06-27 17:12:00"}
+{"level":"info","message":"✅ Orchestrator: Finished. Total jobs enqueued: 0","timestamp":"2026-06-27 17:12:00"}
+{"level":"info","message":"Job repeat:c10eea93bf68cc56fd5c63b351df3d32:1782560520000 (Orchestrator) completed successfully.","timestamp":"2026-06-27 17:12:00"}
+{"level":"info","message":"[Job repeat:c10eea93bf68cc56fd5c63b351df3d32:1782560580000] 🚀 Executing scheduled global orchestration...","timestamp":"2026-06-27 17:13:00"}
+{"level":"info","message":"Orchestrator: Starting global scan orchestration... ","timestamp":"2026-06-27 17:13:00"}
+{"level":"info","message":"🔗 Connecting to MASTER database: master","timestamp":"2026-06-27 17:13:00"}
+{"level":"info","message":"Orchestrator: Found 2 tenants to process.","timestamp":"2026-06-27 17:13:01"}
+{"level":"info","message":"📁 Switching to CLIENT database: tenant_rbi (Tenant: rbi)","timestamp":"2026-06-27 17:13:01"}
+{"level":"info","message":"Orchestrator: No domains found for tenant rbi (excluding those currently scanning).","timestamp":"2026-06-27 17:13:01"}
+{"level":"info","message":"📁 Switching to CLIENT database: tenant_sbi (Tenant: sbi)","timestamp":"2026-06-27 17:13:01"}
+{"level":"info","message":"Orchestrator: No domains found for tenant sbi (excluding those currently scanning).","timestamp":"2026-06-27 17:13:01"}
+{"level":"info","message":"Orchestrator: Master DB connection closed.","timestamp":"2026-06-27 17:13:01"}
+{"level":"info","message":"✅ Orchestrator: Finished. Total jobs enqueued: 0","timestamp":"2026-06-27 17:13:01"}
+{"level":"info","message":"Job repeat:c10eea93bf68cc56fd5c63b351df3d32:1782560580000 (Orchestrator) completed successfully.","timestamp":"2026-06-27 17:13:01"}
+{"level":"info","message":"[Job repeat:c10eea93bf68cc56fd5c63b351df3d32:1782560640000] 🚀 Executing scheduled global orchestration...","timestamp":"2026-06-27 17:14:00"}
+{"level":"info","message":"Orchestrator: Starting global scan orchestration... ","timestamp":"2026-06-27 17:14:00"}
+{"level":"info","message":"🔗 Connecting to MASTER database: master","timestamp":"2026-06-27 17:14:00"}
+{"level":"info","message":"Orchestrator: Found 2 tenants to process.","timestamp":"2026-06-27 17:14:01"}
+{"level":"info","message":"📁 Switching to CLIENT database: tenant_rbi (Tenant: rbi)","timestamp":"2026-06-27 17:14:01"}
+{"level":"info","message":"Orchestrator: No domains found for tenant rbi (excluding those currently scanning).","timestamp":"2026-06-27 17:14:01"}
+{"level":"info","message":"📁 Switching to CLIENT database: tenant_sbi (Tenant: sbi)","timestamp":"2026-06-27 17:14:01"}
+{"level":"info","message":"Orchestrator: No domains found for tenant sbi (excluding those currently scanning).","timestamp":"2026-06-27 17:14:01"}
+{"level":"info","message":"Orchestrator: Master DB connection closed.","timestamp":"2026-06-27 17:14:01"}
+{"level":"info","message":"✅ Orchestrator: Finished. Total jobs enqueued: 0","timestamp":"2026-06-27 17:14:01"}
+{"level":"info","message":"Job repeat:c10eea93bf68cc56fd5c63b351df3d32:1782560640000 (Orchestrator) completed successfully.","timestamp":"2026-06-27 17:14:01"}
+{"level":"info","message":"[Job repeat:c10eea93bf68cc56fd5c63b351df3d32:1782560700000] 🚀 Executing scheduled global orchestration...","timestamp":"2026-06-27 17:15:00"}
+{"level":"info","message":"Orchestrator: Starting global scan orchestration... ","timestamp":"2026-06-27 17:15:00"}
+{"level":"info","message":"🔗 Connecting to MASTER database: master","timestamp":"2026-06-27 17:15:00"}
+{"level":"info","message":"Orchestrator: Found 2 tenants to process.","timestamp":"2026-06-27 17:15:00"}
+{"level":"info","message":"📁 Switching to CLIENT database: tenant_rbi (Tenant: rbi)","timestamp":"2026-06-27 17:15:00"}
+{"level":"info","message":"Orchestrator: No domains found for tenant rbi (excluding those currently scanning).","timestamp":"2026-06-27 17:15:01"}
+{"level":"info","message":"📁 Switching to CLIENT database: tenant_sbi (Tenant: sbi)","timestamp":"2026-06-27 17:15:01"}
+{"level":"info","message":"Orchestrator: No domains found for tenant sbi (excluding those currently scanning).","timestamp":"2026-06-27 17:15:01"}
+{"level":"info","message":"Orchestrator: Master DB connection closed.","timestamp":"2026-06-27 17:15:01"}
+{"level":"info","message":"✅ Orchestrator: Finished. Total jobs enqueued: 0","timestamp":"2026-06-27 17:15:01"}
+{"level":"info","message":"Job repeat:c10eea93bf68cc56fd5c63b351df3d32:1782560700000 (Orchestrator) completed successfully.","timestamp":"2026-06-27 17:15:01"}
+{"level":"info","message":"[Job repeat:c10eea93bf68cc56fd5c63b351df3d32:1782560760000] 🚀 Executing scheduled global orchestration...","timestamp":"2026-06-27 17:16:00"}
+{"level":"info","message":"Orchestrator: Starting global scan orchestration... ","timestamp":"2026-06-27 17:16:00"}
+{"level":"info","message":"🔗 Connecting to MASTER database: master","timestamp":"2026-06-27 17:16:00"}
+{"level":"info","message":"Orchestrator: Found 2 tenants to process.","timestamp":"2026-06-27 17:16:01"}
+{"level":"info","message":"📁 Switching to CLIENT database: tenant_rbi (Tenant: rbi)","timestamp":"2026-06-27 17:16:01"}
+{"level":"info","message":"Orchestrator: No domains found for tenant rbi (excluding those currently scanning).","timestamp":"2026-06-27 17:16:01"}
+{"level":"info","message":"📁 Switching to CLIENT database: tenant_sbi (Tenant: sbi)","timestamp":"2026-06-27 17:16:01"}
+{"level":"info","message":"Orchestrator: No domains found for tenant sbi (excluding those currently scanning).","timestamp":"2026-06-27 17:16:01"}
+{"level":"info","message":"Orchestrator: Master DB connection closed.","timestamp":"2026-06-27 17:16:01"}
+{"level":"info","message":"✅ Orchestrator: Finished. Total jobs enqueued: 0","timestamp":"2026-06-27 17:16:01"}
+{"level":"info","message":"Job repeat:c10eea93bf68cc56fd5c63b351df3d32:1782560760000 (Orchestrator) completed successfully.","timestamp":"2026-06-27 17:16:01"}
+{"level":"info","message":"[Job repeat:c10eea93bf68cc56fd5c63b351df3d32:1782560820000] 🚀 Executing scheduled global orchestration...","timestamp":"2026-06-27 17:17:01"}
+{"level":"info","message":"Orchestrator: Starting global scan orchestration... ","timestamp":"2026-06-27 17:17:01"}
+{"level":"info","message":"🔗 Connecting to MASTER database: master","timestamp":"2026-06-27 17:17:01"}
+{"level":"info","message":"Orchestrator: Found 2 tenants to process.","timestamp":"2026-06-27 17:17:01"}
+{"level":"info","message":"📁 Switching to CLIENT database: tenant_rbi (Tenant: rbi)","timestamp":"2026-06-27 17:17:01"}
+{"level":"info","message":"Orchestrator: No domains found for tenant rbi (excluding those currently scanning).","timestamp":"2026-06-27 17:17:01"}
+{"level":"info","message":"📁 Switching to CLIENT database: tenant_sbi (Tenant: sbi)","timestamp":"2026-06-27 17:17:01"}
+{"level":"info","message":"Orchestrator: No domains found for tenant sbi (excluding those currently scanning).","timestamp":"2026-06-27 17:17:01"}
+{"level":"info","message":"Orchestrator: Master DB connection closed.","timestamp":"2026-06-27 17:17:01"}
+{"level":"info","message":"✅ Orchestrator: Finished. Total jobs enqueued: 0","timestamp":"2026-06-27 17:17:01"}
+{"level":"info","message":"Job repeat:c10eea93bf68cc56fd5c63b351df3d32:1782560820000 (Orchestrator) completed successfully.","timestamp":"2026-06-27 17:17:01"}
+{"level":"info","message":"[Job repeat:c10eea93bf68cc56fd5c63b351df3d32:1782560880000] 🚀 Executing scheduled global orchestration...","timestamp":"2026-06-27 17:18:00"}
+{"level":"info","message":"Orchestrator: Starting global scan orchestration... ","timestamp":"2026-06-27 17:18:00"}
+{"level":"info","message":"🔗 Connecting to MASTER database: master","timestamp":"2026-06-27 17:18:00"}
+{"level":"info","message":"Orchestrator: Found 2 tenants to process.","timestamp":"2026-06-27 17:18:01"}
+{"level":"info","message":"📁 Switching to CLIENT database: tenant_rbi (Tenant: rbi)","timestamp":"2026-06-27 17:18:01"}
+{"level":"info","message":"Orchestrator: No domains found for tenant rbi (excluding those currently scanning).","timestamp":"2026-06-27 17:18:01"}
+{"level":"info","message":"📁 Switching to CLIENT database: tenant_sbi (Tenant: sbi)","timestamp":"2026-06-27 17:18:01"}
+{"level":"info","message":"Orchestrator: No domains found for tenant sbi (excluding those currently scanning).","timestamp":"2026-06-27 17:18:01"}
+{"level":"info","message":"Orchestrator: Master DB connection closed.","timestamp":"2026-06-27 17:18:01"}
+{"level":"info","message":"✅ Orchestrator: Finished. Total jobs enqueued: 0","timestamp":"2026-06-27 17:18:01"}
+{"level":"info","message":"Job repeat:c10eea93bf68cc56fd5c63b351df3d32:1782560880000 (Orchestrator) completed successfully.","timestamp":"2026-06-27 17:18:01"}
+{"level":"info","message":"[Job repeat:c10eea93bf68cc56fd5c63b351df3d32:1782560940000] 🚀 Executing scheduled global orchestration...","timestamp":"2026-06-27 17:19:00"}
+{"level":"info","message":"Orchestrator: Starting global scan orchestration... ","timestamp":"2026-06-27 17:19:00"}
+{"level":"info","message":"🔗 Connecting to MASTER database: master","timestamp":"2026-06-27 17:19:00"}
+{"level":"info","message":"Orchestrator: Found 2 tenants to process.","timestamp":"2026-06-27 17:19:01"}
+{"level":"info","message":"📁 Switching to CLIENT database: tenant_rbi (Tenant: rbi)","timestamp":"2026-06-27 17:19:01"}
+{"level":"info","message":"Orchestrator: No domains found for tenant rbi (excluding those currently scanning).","timestamp":"2026-06-27 17:19:01"}
+{"level":"info","message":"📁 Switching to CLIENT database: tenant_sbi (Tenant: sbi)","timestamp":"2026-06-27 17:19:01"}
+{"level":"info","message":"Orchestrator: No domains found for tenant sbi (excluding those currently scanning).","timestamp":"2026-06-27 17:19:01"}
+{"level":"info","message":"Orchestrator: Master DB connection closed.","timestamp":"2026-06-27 17:19:01"}
+{"level":"info","message":"✅ Orchestrator: Finished. Total jobs enqueued: 0","timestamp":"2026-06-27 17:19:01"}
+{"level":"info","message":"Job repeat:c10eea93bf68cc56fd5c63b351df3d32:1782560940000 (Orchestrator) completed successfully.","timestamp":"2026-06-27 17:19:01"}
+{"level":"info","message":"[Job repeat:c10eea93bf68cc56fd5c63b351df3d32:1782561000000] 🚀 Executing scheduled global orchestration...","timestamp":"2026-06-27 17:20:00"}
+{"level":"info","message":"Orchestrator: Starting global scan orchestration... ","timestamp":"2026-06-27 17:20:00"}
+{"level":"info","message":"🔗 Connecting to MASTER database: master","timestamp":"2026-06-27 17:20:00"}
+{"level":"info","message":"Orchestrator: Found 2 tenants to process.","timestamp":"2026-06-27 17:20:00"}
+{"level":"info","message":"📁 Switching to CLIENT database: tenant_rbi (Tenant: rbi)","timestamp":"2026-06-27 17:20:00"}
+{"level":"info","message":"Orchestrator: No domains found for tenant rbi (excluding those currently scanning).","timestamp":"2026-06-27 17:20:00"}
+{"level":"info","message":"📁 Switching to CLIENT database: tenant_sbi (Tenant: sbi)","timestamp":"2026-06-27 17:20:00"}
+{"level":"info","message":"Orchestrator: No domains found for tenant sbi (excluding those currently scanning).","timestamp":"2026-06-27 17:20:00"}
+{"level":"info","message":"Orchestrator: Master DB connection closed.","timestamp":"2026-06-27 17:20:00"}
+{"level":"info","message":"✅ Orchestrator: Finished. Total jobs enqueued: 0","timestamp":"2026-06-27 17:20:00"}
+{"level":"info","message":"Job repeat:c10eea93bf68cc56fd5c63b351df3d32:1782561000000 (Orchestrator) completed successfully.","timestamp":"2026-06-27 17:20:00"}
+{"level":"info","message":"[Job repeat:c10eea93bf68cc56fd5c63b351df3d32:1782561060000] 🚀 Executing scheduled global orchestration...","timestamp":"2026-06-27 17:21:00"}
+{"level":"info","message":"Orchestrator: Starting global scan orchestration... ","timestamp":"2026-06-27 17:21:00"}
+{"level":"info","message":"🔗 Connecting to MASTER database: master","timestamp":"2026-06-27 17:21:00"}
+{"level":"info","message":"Orchestrator: Found 2 tenants to process.","timestamp":"2026-06-27 17:21:01"}
+{"level":"info","message":"📁 Switching to CLIENT database: tenant_rbi (Tenant: rbi)","timestamp":"2026-06-27 17:21:01"}
+{"level":"info","message":"Orchestrator: No domains found for tenant rbi (excluding those currently scanning).","timestamp":"2026-06-27 17:21:01"}
+{"level":"info","message":"📁 Switching to CLIENT database: tenant_sbi (Tenant: sbi)","timestamp":"2026-06-27 17:21:01"}
+{"level":"info","message":"Orchestrator: No domains found for tenant sbi (excluding those currently scanning).","timestamp":"2026-06-27 17:21:01"}
+{"level":"info","message":"Orchestrator: Master DB connection closed.","timestamp":"2026-06-27 17:21:01"}
+{"level":"info","message":"✅ Orchestrator: Finished. Total jobs enqueued: 0","timestamp":"2026-06-27 17:21:01"}
+{"level":"info","message":"Job repeat:c10eea93bf68cc56fd5c63b351df3d32:1782561060000 (Orchestrator) completed successfully.","timestamp":"2026-06-27 17:21:01"}
+{"level":"info","message":"[Job repeat:c10eea93bf68cc56fd5c63b351df3d32:1782561120000] 🚀 Executing scheduled global orchestration...","timestamp":"2026-06-27 17:22:01"}
+{"level":"info","message":"Orchestrator: Starting global scan orchestration... ","timestamp":"2026-06-27 17:22:01"}
+{"level":"info","message":"🔗 Connecting to MASTER database: master","timestamp":"2026-06-27 17:22:01"}
+{"level":"info","message":"Orchestrator: Found 2 tenants to process.","timestamp":"2026-06-27 17:22:01"}
+{"level":"info","message":"📁 Switching to CLIENT database: tenant_rbi (Tenant: rbi)","timestamp":"2026-06-27 17:22:01"}
+{"level":"info","message":"Orchestrator: No domains found for tenant rbi (excluding those currently scanning).","timestamp":"2026-06-27 17:22:01"}
+{"level":"info","message":"📁 Switching to CLIENT database: tenant_sbi (Tenant: sbi)","timestamp":"2026-06-27 17:22:01"}
+{"level":"info","message":"Orchestrator: No domains found for tenant sbi (excluding those currently scanning).","timestamp":"2026-06-27 17:22:01"}
+{"level":"info","message":"Orchestrator: Master DB connection closed.","timestamp":"2026-06-27 17:22:01"}
+{"level":"info","message":"✅ Orchestrator: Finished. Total jobs enqueued: 0","timestamp":"2026-06-27 17:22:01"}
+{"level":"info","message":"Job repeat:c10eea93bf68cc56fd5c63b351df3d32:1782561120000 (Orchestrator) completed successfully.","timestamp":"2026-06-27 17:22:01"}
+{"level":"info","message":"[Job repeat:c10eea93bf68cc56fd5c63b351df3d32:1782561180000] 🚀 Executing scheduled global orchestration...","timestamp":"2026-06-27 17:23:00"}
+{"level":"info","message":"Orchestrator: Starting global scan orchestration... ","timestamp":"2026-06-27 17:23:00"}
+{"level":"info","message":"🔗 Connecting to MASTER database: master","timestamp":"2026-06-27 17:23:00"}
+{"level":"info","message":"Orchestrator: Found 2 tenants to process.","timestamp":"2026-06-27 17:23:00"}
+{"level":"info","message":"📁 Switching to CLIENT database: tenant_rbi (Tenant: rbi)","timestamp":"2026-06-27 17:23:00"}
+{"level":"info","message":"Orchestrator: No domains found for tenant rbi (excluding those currently scanning).","timestamp":"2026-06-27 17:23:00"}
+{"level":"info","message":"📁 Switching to CLIENT database: tenant_sbi (Tenant: sbi)","timestamp":"2026-06-27 17:23:00"}
+{"level":"info","message":"Orchestrator: No domains found for tenant sbi (excluding those currently scanning).","timestamp":"2026-06-27 17:23:00"}
+{"level":"info","message":"Orchestrator: Master DB connection closed.","timestamp":"2026-06-27 17:23:00"}
+{"level":"info","message":"✅ Orchestrator: Finished. Total jobs enqueued: 0","timestamp":"2026-06-27 17:23:00"}
+{"level":"info","message":"Job repeat:c10eea93bf68cc56fd5c63b351df3d32:1782561180000 (Orchestrator) completed successfully.","timestamp":"2026-06-27 17:23:00"}
+{"level":"info","message":"[Job repeat:c10eea93bf68cc56fd5c63b351df3d32:1782561240000] 🚀 Executing scheduled global orchestration...","timestamp":"2026-06-27 17:24:00"}
+{"level":"info","message":"Orchestrator: Starting global scan orchestration... ","timestamp":"2026-06-27 17:24:00"}
+{"level":"info","message":"🔗 Connecting to MASTER database: master","timestamp":"2026-06-27 17:24:00"}
+{"level":"info","message":"Orchestrator: Found 2 tenants to process.","timestamp":"2026-06-27 17:24:01"}
+{"level":"info","message":"📁 Switching to CLIENT database: tenant_rbi (Tenant: rbi)","timestamp":"2026-06-27 17:24:01"}
+{"level":"info","message":"Orchestrator: No domains found for tenant rbi (excluding those currently scanning).","timestamp":"2026-06-27 17:24:01"}
+{"level":"info","message":"📁 Switching to CLIENT database: tenant_sbi (Tenant: sbi)","timestamp":"2026-06-27 17:24:01"}
+{"level":"info","message":"Orchestrator: No domains found for tenant sbi (excluding those currently scanning).","timestamp":"2026-06-27 17:24:01"}
+{"level":"info","message":"Orchestrator: Master DB connection closed.","timestamp":"2026-06-27 17:24:01"}
+{"level":"info","message":"✅ Orchestrator: Finished. Total jobs enqueued: 0","timestamp":"2026-06-27 17:24:01"}
+{"level":"info","message":"Job repeat:c10eea93bf68cc56fd5c63b351df3d32:1782561240000 (Orchestrator) completed successfully.","timestamp":"2026-06-27 17:24:01"}
+{"level":"info","message":"[Job repeat:c10eea93bf68cc56fd5c63b351df3d32:1782561300000] 🚀 Executing scheduled global orchestration...","timestamp":"2026-06-27 17:25:00"}
+{"level":"info","message":"Orchestrator: Starting global scan orchestration... ","timestamp":"2026-06-27 17:25:00"}
+{"level":"info","message":"🔗 Connecting to MASTER database: master","timestamp":"2026-06-27 17:25:00"}
+{"level":"info","message":"Orchestrator: Found 2 tenants to process.","timestamp":"2026-06-27 17:25:00"}
+{"level":"info","message":"📁 Switching to CLIENT database: tenant_rbi (Tenant: rbi)","timestamp":"2026-06-27 17:25:00"}
+{"level":"info","message":"Orchestrator: No domains found for tenant rbi (excluding those currently scanning).","timestamp":"2026-06-27 17:25:00"}
+{"level":"info","message":"📁 Switching to CLIENT database: tenant_sbi (Tenant: sbi)","timestamp":"2026-06-27 17:25:00"}
+{"level":"info","message":"Orchestrator: No domains found for tenant sbi (excluding those currently scanning).","timestamp":"2026-06-27 17:25:00"}
+{"level":"info","message":"Orchestrator: Master DB connection closed.","timestamp":"2026-06-27 17:25:00"}
+{"level":"info","message":"✅ Orchestrator: Finished. Total jobs enqueued: 0","timestamp":"2026-06-27 17:25:00"}
+{"level":"info","message":"Job repeat:c10eea93bf68cc56fd5c63b351df3d32:1782561300000 (Orchestrator) completed successfully.","timestamp":"2026-06-27 17:25:00"}
+{"level":"info","message":"[Job repeat:c10eea93bf68cc56fd5c63b351df3d32:1782561360000] 🚀 Executing scheduled global orchestration...","timestamp":"2026-06-27 17:26:00"}
+{"level":"info","message":"Orchestrator: Starting global scan orchestration... ","timestamp":"2026-06-27 17:26:00"}
+{"level":"info","message":"🔗 Connecting to MASTER database: master","timestamp":"2026-06-27 17:26:00"}
+{"level":"info","message":"Orchestrator: Found 2 tenants to process.","timestamp":"2026-06-27 17:26:01"}
+{"level":"info","message":"📁 Switching to CLIENT database: tenant_rbi (Tenant: rbi)","timestamp":"2026-06-27 17:26:01"}
+{"level":"info","message":"Orchestrator: No domains found for tenant rbi (excluding those currently scanning).","timestamp":"2026-06-27 17:26:01"}
+{"level":"info","message":"📁 Switching to CLIENT database: tenant_sbi (Tenant: sbi)","timestamp":"2026-06-27 17:26:01"}
+{"level":"info","message":"Orchestrator: No domains found for tenant sbi (excluding those currently scanning).","timestamp":"2026-06-27 17:26:01"}
+{"level":"info","message":"Orchestrator: Master DB connection closed.","timestamp":"2026-06-27 17:26:01"}
+{"level":"info","message":"✅ Orchestrator: Finished. Total jobs enqueued: 0","timestamp":"2026-06-27 17:26:01"}
+{"level":"info","message":"Job repeat:c10eea93bf68cc56fd5c63b351df3d32:1782561360000 (Orchestrator) completed successfully.","timestamp":"2026-06-27 17:26:01"}
+{"level":"info","message":"[Job repeat:c10eea93bf68cc56fd5c63b351df3d32:1782561420000] 🚀 Executing scheduled global orchestration...","timestamp":"2026-06-27 17:27:00"}
+{"level":"info","message":"Orchestrator: Starting global scan orchestration... ","timestamp":"2026-06-27 17:27:00"}
+{"level":"info","message":"🔗 Connecting to MASTER database: master","timestamp":"2026-06-27 17:27:00"}
+{"level":"info","message":"Orchestrator: Found 2 tenants to process.","timestamp":"2026-06-27 17:27:01"}
+{"level":"info","message":"📁 Switching to CLIENT database: tenant_rbi (Tenant: rbi)","timestamp":"2026-06-27 17:27:01"}
+{"level":"info","message":"Orchestrator: No domains found for tenant rbi (excluding those currently scanning).","timestamp":"2026-06-27 17:27:01"}
+{"level":"info","message":"📁 Switching to CLIENT database: tenant_sbi (Tenant: sbi)","timestamp":"2026-06-27 17:27:01"}
+{"level":"info","message":"Orchestrator: No domains found for tenant sbi (excluding those currently scanning).","timestamp":"2026-06-27 17:27:01"}
+{"level":"info","message":"Orchestrator: Master DB connection closed.","timestamp":"2026-06-27 17:27:01"}
+{"level":"info","message":"✅ Orchestrator: Finished. Total jobs enqueued: 0","timestamp":"2026-06-27 17:27:01"}
+{"level":"info","message":"Job repeat:c10eea93bf68cc56fd5c63b351df3d32:1782561420000 (Orchestrator) completed successfully.","timestamp":"2026-06-27 17:27:01"}
+{"level":"info","message":"[Job repeat:c10eea93bf68cc56fd5c63b351df3d32:1782561480000] 🚀 Executing scheduled global orchestration...","timestamp":"2026-06-27 17:28:00"}
+{"level":"info","message":"Orchestrator: Starting global scan orchestration... ","timestamp":"2026-06-27 17:28:00"}
+{"level":"info","message":"🔗 Connecting to MASTER database: master","timestamp":"2026-06-27 17:28:00"}
+{"level":"info","message":"Orchestrator: Found 2 tenants to process.","timestamp":"2026-06-27 17:28:00"}
+{"level":"info","message":"📁 Switching to CLIENT database: tenant_rbi (Tenant: rbi)","timestamp":"2026-06-27 17:28:00"}
+{"level":"info","message":"Orchestrator: No domains found for tenant rbi (excluding those currently scanning).","timestamp":"2026-06-27 17:28:00"}
+{"level":"info","message":"📁 Switching to CLIENT database: tenant_sbi (Tenant: sbi)","timestamp":"2026-06-27 17:28:00"}
+{"level":"info","message":"Orchestrator: No domains found for tenant sbi (excluding those currently scanning).","timestamp":"2026-06-27 17:28:00"}
+{"level":"info","message":"Orchestrator: Master DB connection closed.","timestamp":"2026-06-27 17:28:00"}
+{"level":"info","message":"✅ Orchestrator: Finished. Total jobs enqueued: 0","timestamp":"2026-06-27 17:28:00"}
+{"level":"info","message":"Job repeat:c10eea93bf68cc56fd5c63b351df3d32:1782561480000 (Orchestrator) completed successfully.","timestamp":"2026-06-27 17:28:00"}
+{"level":"info","message":"[Job repeat:c10eea93bf68cc56fd5c63b351df3d32:1782561540000] 🚀 Executing scheduled global orchestration...","timestamp":"2026-06-27 17:29:00"}
+{"level":"info","message":"Orchestrator: Starting global scan orchestration... ","timestamp":"2026-06-27 17:29:00"}
+{"level":"info","message":"🔗 Connecting to MASTER database: master","timestamp":"2026-06-27 17:29:00"}
+{"level":"info","message":"Orchestrator: Found 2 tenants to process.","timestamp":"2026-06-27 17:29:01"}
+{"level":"info","message":"📁 Switching to CLIENT database: tenant_rbi (Tenant: rbi)","timestamp":"2026-06-27 17:29:01"}
+{"level":"info","message":"Orchestrator: No domains found for tenant rbi (excluding those currently scanning).","timestamp":"2026-06-27 17:29:01"}
+{"level":"info","message":"📁 Switching to CLIENT database: tenant_sbi (Tenant: sbi)","timestamp":"2026-06-27 17:29:01"}
+{"level":"info","message":"Orchestrator: No domains found for tenant sbi (excluding those currently scanning).","timestamp":"2026-06-27 17:29:01"}
+{"level":"info","message":"Orchestrator: Master DB connection closed.","timestamp":"2026-06-27 17:29:01"}
+{"level":"info","message":"✅ Orchestrator: Finished. Total jobs enqueued: 0","timestamp":"2026-06-27 17:29:01"}
+{"level":"info","message":"Job repeat:c10eea93bf68cc56fd5c63b351df3d32:1782561540000 (Orchestrator) completed successfully.","timestamp":"2026-06-27 17:29:01"}
+{"level":"info","message":"[Job repeat:c10eea93bf68cc56fd5c63b351df3d32:1782561600000] 🚀 Executing scheduled global orchestration...","timestamp":"2026-06-27 17:30:01"}
+{"level":"info","message":"Orchestrator: Starting global scan orchestration... ","timestamp":"2026-06-27 17:30:01"}
+{"level":"info","message":"🔗 Connecting to MASTER database: master","timestamp":"2026-06-27 17:30:01"}
+{"level":"info","message":"Orchestrator: Found 2 tenants to process.","timestamp":"2026-06-27 17:30:02"}
+{"level":"info","message":"📁 Switching to CLIENT database: tenant_rbi (Tenant: rbi)","timestamp":"2026-06-27 17:30:02"}
+{"level":"info","message":"Orchestrator: No domains found for tenant rbi (excluding those currently scanning).","timestamp":"2026-06-27 17:30:03"}
+{"level":"info","message":"📁 Switching to CLIENT database: tenant_sbi (Tenant: sbi)","timestamp":"2026-06-27 17:30:03"}
+{"level":"info","message":"Orchestrator: No domains found for tenant sbi (excluding those currently scanning).","timestamp":"2026-06-27 17:30:05"}
+{"level":"info","message":"Orchestrator: Master DB connection closed.","timestamp":"2026-06-27 17:30:05"}
+{"level":"info","message":"✅ Orchestrator: Finished. Total jobs enqueued: 0","timestamp":"2026-06-27 17:30:05"}
+{"level":"info","message":"Job repeat:c10eea93bf68cc56fd5c63b351df3d32:1782561600000 (Orchestrator) completed successfully.","timestamp":"2026-06-27 17:30:05"}
+{"level":"info","message":"[Job repeat:c10eea93bf68cc56fd5c63b351df3d32:1782561660000] 🚀 Executing scheduled global orchestration...","timestamp":"2026-06-27 17:31:00"}
+{"level":"info","message":"Orchestrator: Starting global scan orchestration... ","timestamp":"2026-06-27 17:31:00"}
+{"level":"info","message":"🔗 Connecting to MASTER database: master","timestamp":"2026-06-27 17:31:00"}
+{"level":"info","message":"Orchestrator: Found 2 tenants to process.","timestamp":"2026-06-27 17:31:01"}
+{"level":"info","message":"📁 Switching to CLIENT database: tenant_rbi (Tenant: rbi)","timestamp":"2026-06-27 17:31:01"}
+{"level":"info","message":"Orchestrator: No domains found for tenant rbi (excluding those currently scanning).","timestamp":"2026-06-27 17:31:01"}
+{"level":"info","message":"📁 Switching to CLIENT database: tenant_sbi (Tenant: sbi)","timestamp":"2026-06-27 17:31:01"}
+{"level":"info","message":"Orchestrator: No domains found for tenant sbi (excluding those currently scanning).","timestamp":"2026-06-27 17:31:01"}
+{"level":"info","message":"Orchestrator: Master DB connection closed.","timestamp":"2026-06-27 17:31:01"}
+{"level":"info","message":"✅ Orchestrator: Finished. Total jobs enqueued: 0","timestamp":"2026-06-27 17:31:01"}
+{"level":"info","message":"Job repeat:c10eea93bf68cc56fd5c63b351df3d32:1782561660000 (Orchestrator) completed successfully.","timestamp":"2026-06-27 17:31:01"}
+{"level":"info","message":"[Job repeat:c10eea93bf68cc56fd5c63b351df3d32:1782561720000] 🚀 Executing scheduled global orchestration...","timestamp":"2026-06-27 17:32:00"}
+{"level":"info","message":"Orchestrator: Starting global scan orchestration... ","timestamp":"2026-06-27 17:32:00"}
+{"level":"info","message":"🔗 Connecting to MASTER database: master","timestamp":"2026-06-27 17:32:00"}
+{"level":"info","message":"Orchestrator: Found 2 tenants to process.","timestamp":"2026-06-27 17:32:01"}
+{"level":"info","message":"📁 Switching to CLIENT database: tenant_rbi (Tenant: rbi)","timestamp":"2026-06-27 17:32:01"}
+{"level":"info","message":"Orchestrator: No domains found for tenant rbi (excluding those currently scanning).","timestamp":"2026-06-27 17:32:01"}
+{"level":"info","message":"📁 Switching to CLIENT database: tenant_sbi (Tenant: sbi)","timestamp":"2026-06-27 17:32:01"}
+{"level":"info","message":"Orchestrator: No domains found for tenant sbi (excluding those currently scanning).","timestamp":"2026-06-27 17:32:01"}
+{"level":"info","message":"Orchestrator: Master DB connection closed.","timestamp":"2026-06-27 17:32:01"}
+{"level":"info","message":"✅ Orchestrator: Finished. Total jobs enqueued: 0","timestamp":"2026-06-27 17:32:01"}
+{"level":"info","message":"Job repeat:c10eea93bf68cc56fd5c63b351df3d32:1782561720000 (Orchestrator) completed successfully.","timestamp":"2026-06-27 17:32:01"}
+{"level":"info","message":"[Job repeat:c10eea93bf68cc56fd5c63b351df3d32:1782561780000] 🚀 Executing scheduled global orchestration...","timestamp":"2026-06-27 17:33:00"}
+{"level":"info","message":"Orchestrator: Starting global scan orchestration... ","timestamp":"2026-06-27 17:33:00"}
+{"level":"info","message":"🔗 Connecting to MASTER database: master","timestamp":"2026-06-27 17:33:00"}
+{"level":"info","message":"Orchestrator: Found 2 tenants to process.","timestamp":"2026-06-27 17:33:01"}
+{"level":"info","message":"📁 Switching to CLIENT database: tenant_rbi (Tenant: rbi)","timestamp":"2026-06-27 17:33:01"}
+{"level":"info","message":"Orchestrator: No domains found for tenant rbi (excluding those currently scanning).","timestamp":"2026-06-27 17:33:01"}
+{"level":"info","message":"📁 Switching to CLIENT database: tenant_sbi (Tenant: sbi)","timestamp":"2026-06-27 17:33:01"}
+{"level":"info","message":"Orchestrator: No domains found for tenant sbi (excluding those currently scanning).","timestamp":"2026-06-27 17:33:01"}
+{"level":"info","message":"Orchestrator: Master DB connection closed.","timestamp":"2026-06-27 17:33:01"}
+{"level":"info","message":"✅ Orchestrator: Finished. Total jobs enqueued: 0","timestamp":"2026-06-27 17:33:01"}
+{"level":"info","message":"Job repeat:c10eea93bf68cc56fd5c63b351df3d32:1782561780000 (Orchestrator) completed successfully.","timestamp":"2026-06-27 17:33:01"}
+{"level":"info","message":"[Job repeat:c10eea93bf68cc56fd5c63b351df3d32:1782561840000] 🚀 Executing scheduled global orchestration...","timestamp":"2026-06-27 17:34:00"}
+{"level":"info","message":"Orchestrator: Starting global scan orchestration... ","timestamp":"2026-06-27 17:34:00"}
+{"level":"info","message":"🔗 Connecting to MASTER database: master","timestamp":"2026-06-27 17:34:00"}
+{"level":"info","message":"Orchestrator: Found 2 tenants to process.","timestamp":"2026-06-27 17:34:01"}
+{"level":"info","message":"📁 Switching to CLIENT database: tenant_rbi (Tenant: rbi)","timestamp":"2026-06-27 17:34:01"}
+{"level":"info","message":"Orchestrator: No domains found for tenant rbi (excluding those currently scanning).","timestamp":"2026-06-27 17:34:01"}
+{"level":"info","message":"📁 Switching to CLIENT database: tenant_sbi (Tenant: sbi)","timestamp":"2026-06-27 17:34:01"}
+{"level":"info","message":"Orchestrator: No domains found for tenant sbi (excluding those currently scanning).","timestamp":"2026-06-27 17:34:01"}
+{"level":"info","message":"Orchestrator: Master DB connection closed.","timestamp":"2026-06-27 17:34:01"}
+{"level":"info","message":"✅ Orchestrator: Finished. Total jobs enqueued: 0","timestamp":"2026-06-27 17:34:01"}
+{"level":"info","message":"Job repeat:c10eea93bf68cc56fd5c63b351df3d32:1782561840000 (Orchestrator) completed successfully.","timestamp":"2026-06-27 17:34:01"}
+{"level":"info","message":"[Job repeat:c10eea93bf68cc56fd5c63b351df3d32:1782561900000] 🚀 Executing scheduled global orchestration...","timestamp":"2026-06-27 17:35:00"}
+{"level":"info","message":"Orchestrator: Starting global scan orchestration... ","timestamp":"2026-06-27 17:35:00"}
+{"level":"info","message":"🔗 Connecting to MASTER database: master","timestamp":"2026-06-27 17:35:00"}
+{"level":"info","message":"Orchestrator: Found 2 tenants to process.","timestamp":"2026-06-27 17:35:01"}
+{"level":"info","message":"📁 Switching to CLIENT database: tenant_rbi (Tenant: rbi)","timestamp":"2026-06-27 17:35:01"}
+{"level":"info","message":"Orchestrator: No domains found for tenant rbi (excluding those currently scanning).","timestamp":"2026-06-27 17:35:01"}
+{"level":"info","message":"📁 Switching to CLIENT database: tenant_sbi (Tenant: sbi)","timestamp":"2026-06-27 17:35:01"}
+{"level":"info","message":"Orchestrator: No domains found for tenant sbi (excluding those currently scanning).","timestamp":"2026-06-27 17:35:01"}
+{"level":"info","message":"Orchestrator: Master DB connection closed.","timestamp":"2026-06-27 17:35:01"}
+{"level":"info","message":"✅ Orchestrator: Finished. Total jobs enqueued: 0","timestamp":"2026-06-27 17:35:01"}
+{"level":"info","message":"Job repeat:c10eea93bf68cc56fd5c63b351df3d32:1782561900000 (Orchestrator) completed successfully.","timestamp":"2026-06-27 17:35:01"}
+{"level":"info","message":"[Job repeat:c10eea93bf68cc56fd5c63b351df3d32:1782561960000] 🚀 Executing scheduled global orchestration...","timestamp":"2026-06-27 17:36:00"}
+{"level":"info","message":"Orchestrator: Starting global scan orchestration... ","timestamp":"2026-06-27 17:36:00"}
+{"level":"info","message":"🔗 Connecting to MASTER database: master","timestamp":"2026-06-27 17:36:00"}
+{"level":"info","message":"Orchestrator: Found 2 tenants to process.","timestamp":"2026-06-27 17:36:02"}
+{"level":"info","message":"📁 Switching to CLIENT database: tenant_rbi (Tenant: rbi)","timestamp":"2026-06-27 17:36:02"}
+{"level":"info","message":"Orchestrator: No domains found for tenant rbi (excluding those currently scanning).","timestamp":"2026-06-27 17:36:02"}
+{"level":"info","message":"📁 Switching to CLIENT database: tenant_sbi (Tenant: sbi)","timestamp":"2026-06-27 17:36:02"}
+{"level":"info","message":"Orchestrator: No domains found for tenant sbi (excluding those currently scanning).","timestamp":"2026-06-27 17:36:02"}
+{"level":"info","message":"Orchestrator: Master DB connection closed.","timestamp":"2026-06-27 17:36:02"}
+{"level":"info","message":"✅ Orchestrator: Finished. Total jobs enqueued: 0","timestamp":"2026-06-27 17:36:02"}
+{"level":"info","message":"Job repeat:c10eea93bf68cc56fd5c63b351df3d32:1782561960000 (Orchestrator) completed successfully.","timestamp":"2026-06-27 17:36:02"}
+{"level":"info","message":"[Job repeat:c10eea93bf68cc56fd5c63b351df3d32:1782562020000] 🚀 Executing scheduled global orchestration...","timestamp":"2026-06-27 17:37:00"}
+{"level":"info","message":"Orchestrator: Starting global scan orchestration... ","timestamp":"2026-06-27 17:37:00"}
+{"level":"info","message":"🔗 Connecting to MASTER database: master","timestamp":"2026-06-27 17:37:00"}
+{"level":"info","message":"Orchestrator: Found 2 tenants to process.","timestamp":"2026-06-27 17:37:01"}
+{"level":"info","message":"📁 Switching to CLIENT database: tenant_rbi (Tenant: rbi)","timestamp":"2026-06-27 17:37:01"}
+{"level":"info","message":"Orchestrator: No domains found for tenant rbi (excluding those currently scanning).","timestamp":"2026-06-27 17:37:01"}
+{"level":"info","message":"📁 Switching to CLIENT database: tenant_sbi (Tenant: sbi)","timestamp":"2026-06-27 17:37:01"}
+{"level":"info","message":"Orchestrator: No domains found for tenant sbi (excluding those currently scanning).","timestamp":"2026-06-27 17:37:01"}
+{"level":"info","message":"Orchestrator: Master DB connection closed.","timestamp":"2026-06-27 17:37:01"}
+{"level":"info","message":"✅ Orchestrator: Finished. Total jobs enqueued: 0","timestamp":"2026-06-27 17:37:01"}
+{"level":"info","message":"Job repeat:c10eea93bf68cc56fd5c63b351df3d32:1782562020000 (Orchestrator) completed successfully.","timestamp":"2026-06-27 17:37:01"}
+{"level":"info","message":"[Job repeat:c10eea93bf68cc56fd5c63b351df3d32:1782562080000] 🚀 Executing scheduled global orchestration...","timestamp":"2026-06-27 17:38:00"}
+{"level":"info","message":"Orchestrator: Starting global scan orchestration... ","timestamp":"2026-06-27 17:38:00"}
+{"level":"info","message":"🔗 Connecting to MASTER database: master","timestamp":"2026-06-27 17:38:00"}
+{"level":"info","message":"Orchestrator: Found 2 tenants to process.","timestamp":"2026-06-27 17:38:00"}
+{"level":"info","message":"📁 Switching to CLIENT database: tenant_rbi (Tenant: rbi)","timestamp":"2026-06-27 17:38:00"}
+{"level":"info","message":"Orchestrator: No domains found for tenant rbi (excluding those currently scanning).","timestamp":"2026-06-27 17:38:00"}
+{"level":"info","message":"📁 Switching to CLIENT database: tenant_sbi (Tenant: sbi)","timestamp":"2026-06-27 17:38:00"}
+{"level":"info","message":"Orchestrator: No domains found for tenant sbi (excluding those currently scanning).","timestamp":"2026-06-27 17:38:00"}
+{"level":"info","message":"Orchestrator: Master DB connection closed.","timestamp":"2026-06-27 17:38:00"}
+{"level":"info","message":"✅ Orchestrator: Finished. Total jobs enqueued: 0","timestamp":"2026-06-27 17:38:00"}
+{"level":"info","message":"Job repeat:c10eea93bf68cc56fd5c63b351df3d32:1782562080000 (Orchestrator) completed successfully.","timestamp":"2026-06-27 17:38:01"}
+{"level":"info","message":"[Job repeat:c10eea93bf68cc56fd5c63b351df3d32:1782562140000] 🚀 Executing scheduled global orchestration...","timestamp":"2026-06-27 17:39:00"}
+{"level":"info","message":"Orchestrator: Starting global scan orchestration... ","timestamp":"2026-06-27 17:39:00"}
+{"level":"info","message":"🔗 Connecting to MASTER database: master","timestamp":"2026-06-27 17:39:00"}
+{"level":"info","message":"Orchestrator: Found 2 tenants to process.","timestamp":"2026-06-27 17:39:01"}
+{"level":"info","message":"📁 Switching to CLIENT database: tenant_rbi (Tenant: rbi)","timestamp":"2026-06-27 17:39:01"}
+{"level":"info","message":"Orchestrator: No domains found for tenant rbi (excluding those currently scanning).","timestamp":"2026-06-27 17:39:01"}
+{"level":"info","message":"📁 Switching to CLIENT database: tenant_sbi (Tenant: sbi)","timestamp":"2026-06-27 17:39:01"}
+{"level":"info","message":"Orchestrator: No domains found for tenant sbi (excluding those currently scanning).","timestamp":"2026-06-27 17:39:01"}
+{"level":"info","message":"Orchestrator: Master DB connection closed.","timestamp":"2026-06-27 17:39:01"}
+{"level":"info","message":"✅ Orchestrator: Finished. Total jobs enqueued: 0","timestamp":"2026-06-27 17:39:01"}
+{"level":"info","message":"Job repeat:c10eea93bf68cc56fd5c63b351df3d32:1782562140000 (Orchestrator) completed successfully.","timestamp":"2026-06-27 17:39:01"}
+{"level":"info","message":"[Job repeat:c10eea93bf68cc56fd5c63b351df3d32:1782562200000] 🚀 Executing scheduled global orchestration...","timestamp":"2026-06-27 17:40:00"}
+{"level":"info","message":"Orchestrator: Starting global scan orchestration... ","timestamp":"2026-06-27 17:40:00"}
+{"level":"info","message":"🔗 Connecting to MASTER database: master","timestamp":"2026-06-27 17:40:00"}
+{"level":"info","message":"Orchestrator: Found 2 tenants to process.","timestamp":"2026-06-27 17:40:01"}
+{"level":"info","message":"📁 Switching to CLIENT database: tenant_rbi (Tenant: rbi)","timestamp":"2026-06-27 17:40:01"}
+{"level":"info","message":"Orchestrator: No domains found for tenant rbi (excluding those currently scanning).","timestamp":"2026-06-27 17:40:01"}
+{"level":"info","message":"📁 Switching to CLIENT database: tenant_sbi (Tenant: sbi)","timestamp":"2026-06-27 17:40:01"}
+{"level":"info","message":"Orchestrator: No domains found for tenant sbi (excluding those currently scanning).","timestamp":"2026-06-27 17:40:01"}
+{"level":"info","message":"Orchestrator: Master DB connection closed.","timestamp":"2026-06-27 17:40:01"}
+{"level":"info","message":"✅ Orchestrator: Finished. Total jobs enqueued: 0","timestamp":"2026-06-27 17:40:01"}
+{"level":"info","message":"Job repeat:c10eea93bf68cc56fd5c63b351df3d32:1782562200000 (Orchestrator) completed successfully.","timestamp":"2026-06-27 17:40:01"}
+{"level":"info","message":"[Job repeat:c10eea93bf68cc56fd5c63b351df3d32:1782562260000] 🚀 Executing scheduled global orchestration...","timestamp":"2026-06-27 17:41:00"}
+{"level":"info","message":"Orchestrator: Starting global scan orchestration... ","timestamp":"2026-06-27 17:41:00"}
+{"level":"info","message":"🔗 Connecting to MASTER database: master","timestamp":"2026-06-27 17:41:00"}
+{"level":"info","message":"Orchestrator: Found 2 tenants to process.","timestamp":"2026-06-27 17:41:00"}
+{"level":"info","message":"📁 Switching to CLIENT database: tenant_rbi (Tenant: rbi)","timestamp":"2026-06-27 17:41:00"}
+{"level":"info","message":"Orchestrator: No domains found for tenant rbi (excluding those currently scanning).","timestamp":"2026-06-27 17:41:00"}
+{"level":"info","message":"📁 Switching to CLIENT database: tenant_sbi (Tenant: sbi)","timestamp":"2026-06-27 17:41:00"}
+{"level":"info","message":"Orchestrator: No domains found for tenant sbi (excluding those currently scanning).","timestamp":"2026-06-27 17:41:00"}
+{"level":"info","message":"Orchestrator: Master DB connection closed.","timestamp":"2026-06-27 17:41:00"}
+{"level":"info","message":"✅ Orchestrator: Finished. Total jobs enqueued: 0","timestamp":"2026-06-27 17:41:00"}
+{"level":"info","message":"Job repeat:c10eea93bf68cc56fd5c63b351df3d32:1782562260000 (Orchestrator) completed successfully.","timestamp":"2026-06-27 17:41:00"}
+{"level":"info","message":"[Job repeat:c10eea93bf68cc56fd5c63b351df3d32:1782562320000] 🚀 Executing scheduled global orchestration...","timestamp":"2026-06-27 17:42:00"}
+{"level":"info","message":"Orchestrator: Starting global scan orchestration... ","timestamp":"2026-06-27 17:42:00"}
+{"level":"info","message":"🔗 Connecting to MASTER database: master","timestamp":"2026-06-27 17:42:00"}
+{"level":"info","message":"Orchestrator: Found 2 tenants to process.","timestamp":"2026-06-27 17:42:00"}
+{"level":"info","message":"📁 Switching to CLIENT database: tenant_rbi (Tenant: rbi)","timestamp":"2026-06-27 17:42:00"}
+{"level":"info","message":"Orchestrator: No domains found for tenant rbi (excluding those currently scanning).","timestamp":"2026-06-27 17:42:01"}
+{"level":"info","message":"📁 Switching to CLIENT database: tenant_sbi (Tenant: sbi)","timestamp":"2026-06-27 17:42:01"}
+{"level":"info","message":"Orchestrator: No domains found for tenant sbi (excluding those currently scanning).","timestamp":"2026-06-27 17:42:01"}
+{"level":"info","message":"Orchestrator: Master DB connection closed.","timestamp":"2026-06-27 17:42:01"}
+{"level":"info","message":"✅ Orchestrator: Finished. Total jobs enqueued: 0","timestamp":"2026-06-27 17:42:01"}
+{"level":"info","message":"Job repeat:c10eea93bf68cc56fd5c63b351df3d32:1782562320000 (Orchestrator) completed successfully.","timestamp":"2026-06-27 17:42:01"}
+{"level":"info","message":"[Job repeat:c10eea93bf68cc56fd5c63b351df3d32:1782562380000] 🚀 Executing scheduled global orchestration...","timestamp":"2026-06-27 17:43:00"}
+{"level":"info","message":"Orchestrator: Starting global scan orchestration... ","timestamp":"2026-06-27 17:43:00"}
+{"level":"info","message":"🔗 Connecting to MASTER database: master","timestamp":"2026-06-27 17:43:00"}
+{"level":"info","message":"Orchestrator: Found 2 tenants to process.","timestamp":"2026-06-27 17:43:01"}
+{"level":"info","message":"📁 Switching to CLIENT database: tenant_rbi (Tenant: rbi)","timestamp":"2026-06-27 17:43:01"}
+{"level":"info","message":"Orchestrator: No domains found for tenant rbi (excluding those currently scanning).","timestamp":"2026-06-27 17:43:01"}
+{"level":"info","message":"📁 Switching to CLIENT database: tenant_sbi (Tenant: sbi)","timestamp":"2026-06-27 17:43:01"}
+{"level":"info","message":"Orchestrator: No domains found for tenant sbi (excluding those currently scanning).","timestamp":"2026-06-27 17:43:01"}
+{"level":"info","message":"Orchestrator: Master DB connection closed.","timestamp":"2026-06-27 17:43:01"}
+{"level":"info","message":"✅ Orchestrator: Finished. Total jobs enqueued: 0","timestamp":"2026-06-27 17:43:01"}
+{"level":"info","message":"Job repeat:c10eea93bf68cc56fd5c63b351df3d32:1782562380000 (Orchestrator) completed successfully.","timestamp":"2026-06-27 17:43:01"}
+{"level":"info","message":"[Job repeat:c10eea93bf68cc56fd5c63b351df3d32:1782562440000] 🚀 Executing scheduled global orchestration...","timestamp":"2026-06-27 17:44:01"}
+{"level":"info","message":"Orchestrator: Starting global scan orchestration... ","timestamp":"2026-06-27 17:44:01"}
+{"level":"info","message":"🔗 Connecting to MASTER database: master","timestamp":"2026-06-27 17:44:01"}
+{"level":"info","message":"Orchestrator: Found 2 tenants to process.","timestamp":"2026-06-27 17:44:01"}
+{"level":"info","message":"📁 Switching to CLIENT database: tenant_rbi (Tenant: rbi)","timestamp":"2026-06-27 17:44:01"}
+{"level":"info","message":"Orchestrator: No domains found for tenant rbi (excluding those currently scanning).","timestamp":"2026-06-27 17:44:01"}
+{"level":"info","message":"📁 Switching to CLIENT database: tenant_sbi (Tenant: sbi)","timestamp":"2026-06-27 17:44:01"}
+{"level":"info","message":"Orchestrator: No domains found for tenant sbi (excluding those currently scanning).","timestamp":"2026-06-27 17:44:01"}
+{"level":"info","message":"Orchestrator: Master DB connection closed.","timestamp":"2026-06-27 17:44:01"}
+{"level":"info","message":"✅ Orchestrator: Finished. Total jobs enqueued: 0","timestamp":"2026-06-27 17:44:01"}
+{"level":"info","message":"Job repeat:c10eea93bf68cc56fd5c63b351df3d32:1782562440000 (Orchestrator) completed successfully.","timestamp":"2026-06-27 17:44:01"}
+{"level":"info","message":"[Job repeat:c10eea93bf68cc56fd5c63b351df3d32:1782562500000] 🚀 Executing scheduled global orchestration...","timestamp":"2026-06-27 17:45:00"}
+{"level":"info","message":"Orchestrator: Starting global scan orchestration... ","timestamp":"2026-06-27 17:45:00"}
+{"level":"info","message":"🔗 Connecting to MASTER database: master","timestamp":"2026-06-27 17:45:00"}
+{"level":"info","message":"Orchestrator: Found 2 tenants to process.","timestamp":"2026-06-27 17:45:00"}
+{"level":"info","message":"📁 Switching to CLIENT database: tenant_rbi (Tenant: rbi)","timestamp":"2026-06-27 17:45:00"}
+{"level":"info","message":"Orchestrator: No domains found for tenant rbi (excluding those currently scanning).","timestamp":"2026-06-27 17:45:00"}
+{"level":"info","message":"📁 Switching to CLIENT database: tenant_sbi (Tenant: sbi)","timestamp":"2026-06-27 17:45:00"}
+{"level":"info","message":"Orchestrator: No domains found for tenant sbi (excluding those currently scanning).","timestamp":"2026-06-27 17:45:01"}
+{"level":"info","message":"Orchestrator: Master DB connection closed.","timestamp":"2026-06-27 17:45:01"}
+{"level":"info","message":"✅ Orchestrator: Finished. Total jobs enqueued: 0","timestamp":"2026-06-27 17:45:01"}
+{"level":"info","message":"Job repeat:c10eea93bf68cc56fd5c63b351df3d32:1782562500000 (Orchestrator) completed successfully.","timestamp":"2026-06-27 17:45:01"}
+{"level":"info","message":"[Job repeat:c10eea93bf68cc56fd5c63b351df3d32:1782562560000] 🚀 Executing scheduled global orchestration...","timestamp":"2026-06-27 17:46:00"}
+{"level":"info","message":"Orchestrator: Starting global scan orchestration... ","timestamp":"2026-06-27 17:46:00"}
+{"level":"info","message":"🔗 Connecting to MASTER database: master","timestamp":"2026-06-27 17:46:00"}
+{"level":"info","message":"Orchestrator: Found 2 tenants to process.","timestamp":"2026-06-27 17:46:01"}
+{"level":"info","message":"📁 Switching to CLIENT database: tenant_rbi (Tenant: rbi)","timestamp":"2026-06-27 17:46:01"}
+{"level":"info","message":"Orchestrator: No domains found for tenant rbi (excluding those currently scanning).","timestamp":"2026-06-27 17:46:01"}
+{"level":"info","message":"📁 Switching to CLIENT database: tenant_sbi (Tenant: sbi)","timestamp":"2026-06-27 17:46:01"}
+{"level":"info","message":"Orchestrator: No domains found for tenant sbi (excluding those currently scanning).","timestamp":"2026-06-27 17:46:01"}
+{"level":"info","message":"Orchestrator: Master DB connection closed.","timestamp":"2026-06-27 17:46:01"}
+{"level":"info","message":"✅ Orchestrator: Finished. Total jobs enqueued: 0","timestamp":"2026-06-27 17:46:01"}
+{"level":"info","message":"Job repeat:c10eea93bf68cc56fd5c63b351df3d32:1782562560000 (Orchestrator) completed successfully.","timestamp":"2026-06-27 17:46:01"}
+{"level":"info","message":"[Job repeat:c10eea93bf68cc56fd5c63b351df3d32:1782562620000] 🚀 Executing scheduled global orchestration...","timestamp":"2026-06-27 17:47:00"}
+{"level":"info","message":"Orchestrator: Starting global scan orchestration... ","timestamp":"2026-06-27 17:47:00"}
+{"level":"info","message":"🔗 Connecting to MASTER database: master","timestamp":"2026-06-27 17:47:00"}
+{"level":"info","message":"Orchestrator: Found 2 tenants to process.","timestamp":"2026-06-27 17:47:01"}
+{"level":"info","message":"📁 Switching to CLIENT database: tenant_rbi (Tenant: rbi)","timestamp":"2026-06-27 17:47:01"}
+{"level":"info","message":"Orchestrator: No domains found for tenant rbi (excluding those currently scanning).","timestamp":"2026-06-27 17:47:01"}
+{"level":"info","message":"📁 Switching to CLIENT database: tenant_sbi (Tenant: sbi)","timestamp":"2026-06-27 17:47:01"}
+{"level":"info","message":"Orchestrator: No domains found for tenant sbi (excluding those currently scanning).","timestamp":"2026-06-27 17:47:01"}
+{"level":"info","message":"Orchestrator: Master DB connection closed.","timestamp":"2026-06-27 17:47:01"}
+{"level":"info","message":"✅ Orchestrator: Finished. Total jobs enqueued: 0","timestamp":"2026-06-27 17:47:01"}
+{"level":"info","message":"Job repeat:c10eea93bf68cc56fd5c63b351df3d32:1782562620000 (Orchestrator) completed successfully.","timestamp":"2026-06-27 17:47:01"}
+{"level":"info","message":"[Job repeat:c10eea93bf68cc56fd5c63b351df3d32:1782562680000] 🚀 Executing scheduled global orchestration...","timestamp":"2026-06-27 17:48:00"}
+{"level":"info","message":"Orchestrator: Starting global scan orchestration... ","timestamp":"2026-06-27 17:48:00"}
+{"level":"info","message":"🔗 Connecting to MASTER database: master","timestamp":"2026-06-27 17:48:00"}
+{"level":"info","message":"Orchestrator: Found 2 tenants to process.","timestamp":"2026-06-27 17:48:00"}
+{"level":"info","message":"📁 Switching to CLIENT database: tenant_rbi (Tenant: rbi)","timestamp":"2026-06-27 17:48:00"}
+{"level":"info","message":"Orchestrator: No domains found for tenant rbi (excluding those currently scanning).","timestamp":"2026-06-27 17:48:00"}
+{"level":"info","message":"📁 Switching to CLIENT database: tenant_sbi (Tenant: sbi)","timestamp":"2026-06-27 17:48:00"}
+{"level":"info","message":"Orchestrator: No domains found for tenant sbi (excluding those currently scanning).","timestamp":"2026-06-27 17:48:00"}
+{"level":"info","message":"Orchestrator: Master DB connection closed.","timestamp":"2026-06-27 17:48:00"}
+{"level":"info","message":"✅ Orchestrator: Finished. Total jobs enqueued: 0","timestamp":"2026-06-27 17:48:00"}
+{"level":"info","message":"Job repeat:c10eea93bf68cc56fd5c63b351df3d32:1782562680000 (Orchestrator) completed successfully.","timestamp":"2026-06-27 17:48:00"}
+{"level":"info","message":"[Job repeat:c10eea93bf68cc56fd5c63b351df3d32:1782562740000] 🚀 Executing scheduled global orchestration...","timestamp":"2026-06-27 17:49:00"}
+{"level":"info","message":"Orchestrator: Starting global scan orchestration... ","timestamp":"2026-06-27 17:49:00"}
+{"level":"info","message":"🔗 Connecting to MASTER database: master","timestamp":"2026-06-27 17:49:00"}
+{"level":"info","message":"Orchestrator: Found 2 tenants to process.","timestamp":"2026-06-27 17:49:01"}
+{"level":"info","message":"📁 Switching to CLIENT database: tenant_rbi (Tenant: rbi)","timestamp":"2026-06-27 17:49:01"}
+{"level":"info","message":"Orchestrator: No domains found for tenant rbi (excluding those currently scanning).","timestamp":"2026-06-27 17:49:01"}
+{"level":"info","message":"📁 Switching to CLIENT database: tenant_sbi (Tenant: sbi)","timestamp":"2026-06-27 17:49:01"}
+{"level":"info","message":"Orchestrator: No domains found for tenant sbi (excluding those currently scanning).","timestamp":"2026-06-27 17:49:01"}
+{"level":"info","message":"Orchestrator: Master DB connection closed.","timestamp":"2026-06-27 17:49:01"}
+{"level":"info","message":"✅ Orchestrator: Finished. Total jobs enqueued: 0","timestamp":"2026-06-27 17:49:01"}
+{"level":"info","message":"Job repeat:c10eea93bf68cc56fd5c63b351df3d32:1782562740000 (Orchestrator) completed successfully.","timestamp":"2026-06-27 17:49:01"}
+{"level":"info","message":"[Job repeat:c10eea93bf68cc56fd5c63b351df3d32:1782562800000] 🚀 Executing scheduled global orchestration...","timestamp":"2026-06-27 17:50:00"}
+{"level":"info","message":"Orchestrator: Starting global scan orchestration... ","timestamp":"2026-06-27 17:50:00"}
+{"level":"info","message":"🔗 Connecting to MASTER database: master","timestamp":"2026-06-27 17:50:00"}
+{"level":"info","message":"Orchestrator: Found 2 tenants to process.","timestamp":"2026-06-27 17:50:01"}
+{"level":"info","message":"📁 Switching to CLIENT database: tenant_rbi (Tenant: rbi)","timestamp":"2026-06-27 17:50:01"}
+{"level":"info","message":"Orchestrator: No domains found for tenant rbi (excluding those currently scanning).","timestamp":"2026-06-27 17:50:01"}
+{"level":"info","message":"📁 Switching to CLIENT database: tenant_sbi (Tenant: sbi)","timestamp":"2026-06-27 17:50:01"}
+{"level":"info","message":"Orchestrator: No domains found for tenant sbi (excluding those currently scanning).","timestamp":"2026-06-27 17:50:01"}
+{"level":"info","message":"Orchestrator: Master DB connection closed.","timestamp":"2026-06-27 17:50:01"}
+{"level":"info","message":"✅ Orchestrator: Finished. Total jobs enqueued: 0","timestamp":"2026-06-27 17:50:01"}
+{"level":"info","message":"Job repeat:c10eea93bf68cc56fd5c63b351df3d32:1782562800000 (Orchestrator) completed successfully.","timestamp":"2026-06-27 17:50:01"}
+{"level":"info","message":"[Job repeat:c10eea93bf68cc56fd5c63b351df3d32:1782562860000] 🚀 Executing scheduled global orchestration...","timestamp":"2026-06-27 20:13:45"}
+{"level":"info","message":"Orchestrator: Starting global scan orchestration... ","timestamp":"2026-06-27 20:13:45"}
+{"level":"info","message":"🔗 Connecting to MASTER database: master","timestamp":"2026-06-27 20:13:45"}
+{"level":"error","message":"Orchestrator: Critical error in global scan: querySrv ECONNREFUSED _mongodb._tcp.cluster0.ev4p3qf.mongodb.net","timestamp":"2026-06-27 20:13:45"}
+{"level":"error","message":"Job repeat:c10eea93bf68cc56fd5c63b351df3d32:1782562860000 (Orchestrator) failed: querySrv ECONNREFUSED _mongodb._tcp.cluster0.ev4p3qf.mongodb.net","timestamp":"2026-06-27 20:13:46"}
+{"level":"info","message":"[Job repeat:c10eea93bf68cc56fd5c63b351df3d32:1782562860000] 🚀 Executing scheduled global orchestration...","timestamp":"2026-06-27 20:13:47"}
+{"level":"info","message":"Orchestrator: Starting global scan orchestration... ","timestamp":"2026-06-27 20:13:47"}
+{"level":"info","message":"🔗 Connecting to MASTER database: master","timestamp":"2026-06-27 20:13:47"}
+{"level":"error","message":"Orchestrator: Critical error in global scan: querySrv ECONNREFUSED _mongodb._tcp.cluster0.ev4p3qf.mongodb.net","timestamp":"2026-06-27 20:13:47"}
+{"level":"error","message":"Job repeat:c10eea93bf68cc56fd5c63b351df3d32:1782562860000 (Orchestrator) failed: querySrv ECONNREFUSED _mongodb._tcp.cluster0.ev4p3qf.mongodb.net","timestamp":"2026-06-27 20:13:47"}
+{"level":"info","message":"[Job repeat:c10eea93bf68cc56fd5c63b351df3d32:1782562860000] 🚀 Executing scheduled global orchestration...","timestamp":"2026-06-27 20:34:03"}
+{"level":"info","message":"Orchestrator: Starting global scan orchestration... ","timestamp":"2026-06-27 20:34:03"}
+{"level":"info","message":"🔗 Connecting to MASTER database: master","timestamp":"2026-06-27 20:34:03"}
+{"level":"info","message":"[Job repeat:c10eea93bf68cc56fd5c63b351df3d32:1782571440000] 🚀 Executing scheduled global orchestration...","timestamp":"2026-06-27 20:34:03"}
+{"level":"info","message":"Orchestrator: Starting global scan orchestration... ","timestamp":"2026-06-27 20:34:03"}
+{"level":"info","message":"🔗 Connecting to MASTER database: master","timestamp":"2026-06-27 20:34:03"}
+{"level":"error","message":"Orchestrator: Critical error in global scan: querySrv ECONNREFUSED _mongodb._tcp.cluster0.ev4p3qf.mongodb.net","timestamp":"2026-06-27 20:34:03"}
+{"level":"error","message":"Orchestrator: Critical error in global scan: querySrv ECONNREFUSED _mongodb._tcp.cluster0.ev4p3qf.mongodb.net","timestamp":"2026-06-27 20:34:03"}
+{"level":"error","message":"Job repeat:c10eea93bf68cc56fd5c63b351df3d32:1782562860000 (Orchestrator) failed: querySrv ECONNREFUSED _mongodb._tcp.cluster0.ev4p3qf.mongodb.net","timestamp":"2026-06-27 20:34:03"}
+{"level":"error","message":"Job repeat:c10eea93bf68cc56fd5c63b351df3d32:1782571440000 (Orchestrator) failed: querySrv ECONNREFUSED _mongodb._tcp.cluster0.ev4p3qf.mongodb.net","timestamp":"2026-06-27 20:34:03"}
+{"level":"info","message":"[Job repeat:c10eea93bf68cc56fd5c63b351df3d32:1782571440000] 🚀 Executing scheduled global orchestration...","timestamp":"2026-06-27 20:34:04"}
+{"level":"info","message":"Orchestrator: Starting global scan orchestration... ","timestamp":"2026-06-27 20:34:04"}
+{"level":"info","message":"🔗 Connecting to MASTER database: master","timestamp":"2026-06-27 20:34:04"}
+{"level":"error","message":"Orchestrator: Critical error in global scan: querySrv ECONNREFUSED _mongodb._tcp.cluster0.ev4p3qf.mongodb.net","timestamp":"2026-06-27 20:34:05"}
+{"level":"error","message":"Job repeat:c10eea93bf68cc56fd5c63b351df3d32:1782571440000 (Orchestrator) failed: querySrv ECONNREFUSED _mongodb._tcp.cluster0.ev4p3qf.mongodb.net","timestamp":"2026-06-27 20:34:05"}
+{"level":"info","message":"[Job repeat:c10eea93bf68cc56fd5c63b351df3d32:1782571440000] 🚀 Executing scheduled global orchestration...","timestamp":"2026-06-27 20:34:07"}
+{"level":"info","message":"Orchestrator: Starting global scan orchestration... ","timestamp":"2026-06-27 20:34:07"}
+{"level":"info","message":"🔗 Connecting to MASTER database: master","timestamp":"2026-06-27 20:34:07"}
+{"level":"error","message":"Orchestrator: Critical error in global scan: querySrv ECONNREFUSED _mongodb._tcp.cluster0.ev4p3qf.mongodb.net","timestamp":"2026-06-27 20:34:07"}
+{"level":"error","message":"Job repeat:c10eea93bf68cc56fd5c63b351df3d32:1782571440000 (Orchestrator) failed: querySrv ECONNREFUSED _mongodb._tcp.cluster0.ev4p3qf.mongodb.net","timestamp":"2026-06-27 20:34:07"}
+{"level":"info","message":"[Job repeat:c10eea93bf68cc56fd5c63b351df3d32:1782572700000] 🚀 Executing scheduled global orchestration...","timestamp":"2026-06-27 20:35:00"}
+{"level":"info","message":"Orchestrator: Starting global scan orchestration... ","timestamp":"2026-06-27 20:35:00"}
+{"level":"info","message":"🔗 Connecting to MASTER database: master","timestamp":"2026-06-27 20:35:00"}
+{"level":"info","message":"Orchestrator: Found 2 tenants to process.","timestamp":"2026-06-27 20:35:02"}
+{"level":"info","message":"📁 Switching to CLIENT database: tenant_rbi (Tenant: rbi)","timestamp":"2026-06-27 20:35:02"}
+{"level":"info","message":"Orchestrator: No domains found for tenant rbi (excluding those currently scanning).","timestamp":"2026-06-27 20:35:02"}
+{"level":"info","message":"📁 Switching to CLIENT database: tenant_sbi (Tenant: sbi)","timestamp":"2026-06-27 20:35:02"}
+{"level":"info","message":"Orchestrator: No domains found for tenant sbi (excluding those currently scanning).","timestamp":"2026-06-27 20:35:02"}
+{"level":"info","message":"Orchestrator: Master DB connection closed.","timestamp":"2026-06-27 20:35:02"}
+{"level":"info","message":"✅ Orchestrator: Finished. Total jobs enqueued: 0","timestamp":"2026-06-27 20:35:02"}
+{"level":"info","message":"Job repeat:c10eea93bf68cc56fd5c63b351df3d32:1782572700000 (Orchestrator) completed successfully.","timestamp":"2026-06-27 20:35:02"}
+{"level":"info","message":"[Job repeat:c10eea93bf68cc56fd5c63b351df3d32:1782572760000] 🚀 Executing scheduled global orchestration...","timestamp":"2026-06-27 20:36:00"}
+{"level":"info","message":"Orchestrator: Starting global scan orchestration... ","timestamp":"2026-06-27 20:36:00"}
+{"level":"info","message":"🔗 Connecting to MASTER database: master","timestamp":"2026-06-27 20:36:00"}
+{"level":"info","message":"Orchestrator: Found 2 tenants to process.","timestamp":"2026-06-27 20:36:01"}
+{"level":"info","message":"📁 Switching to CLIENT database: tenant_rbi (Tenant: rbi)","timestamp":"2026-06-27 20:36:01"}
+{"level":"info","message":"Orchestrator: No domains found for tenant rbi (excluding those currently scanning).","timestamp":"2026-06-27 20:36:01"}
+{"level":"info","message":"📁 Switching to CLIENT database: tenant_sbi (Tenant: sbi)","timestamp":"2026-06-27 20:36:01"}
+{"level":"info","message":"Orchestrator: No domains found for tenant sbi (excluding those currently scanning).","timestamp":"2026-06-27 20:36:01"}
+{"level":"info","message":"Orchestrator: Master DB connection closed.","timestamp":"2026-06-27 20:36:01"}
+{"level":"info","message":"✅ Orchestrator: Finished. Total jobs enqueued: 0","timestamp":"2026-06-27 20:36:01"}
+{"level":"info","message":"Job repeat:c10eea93bf68cc56fd5c63b351df3d32:1782572760000 (Orchestrator) completed successfully.","timestamp":"2026-06-27 20:36:01"}
+{"level":"info","message":"BullBoard dashboard available at http://localhost:4100/admin/queues","timestamp":"2026-06-27 20:36:22"}
+{"level":"info","message":"SEO Scan Worker initialized.","timestamp":"2026-06-27 20:36:22"}
+{"level":"info","message":"🧹 Queue \"seo-scan-queue\" cleared recursively.","timestamp":"2026-06-27 20:36:22"}
+{"level":"info","message":"⏰ Scheduled global orchestration every 1 minutes.","timestamp":"2026-06-27 20:36:22"}
+{"level":"info","message":"SEO Scanner Service running on port 4100","timestamp":"2026-06-27 20:36:22"}
+{"level":"info","message":"🚀 SCAN_ON_STARTUP is enabled. Triggering global orchestration...","timestamp":"2026-06-27 20:36:22"}
+{"level":"info","message":"Orchestrator: Starting global scan orchestration... [STARTUP MODE]","timestamp":"2026-06-27 20:36:22"}
+{"level":"info","message":"🔗 Connecting to MASTER database: master","timestamp":"2026-06-27 20:36:22"}
+{"level":"info","message":"Orchestrator: Found 2 tenants to process.","timestamp":"2026-06-27 20:36:22"}
+{"level":"info","message":"📁 Switching to CLIENT database: tenant_rbi (Tenant: rbi)","timestamp":"2026-06-27 20:36:22"}
+{"level":"info","message":"✅ Successfully connected to database: tenant_rbi","timestamp":"2026-06-27 20:36:23"}
+{"level":"info","message":"Orchestrator: No domains found for tenant rbi (excluding those currently scanning).","timestamp":"2026-06-27 20:36:23"}
+{"level":"info","message":"📁 Switching to CLIENT database: tenant_sbi (Tenant: sbi)","timestamp":"2026-06-27 20:36:23"}

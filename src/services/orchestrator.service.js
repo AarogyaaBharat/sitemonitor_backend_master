@@ -100,7 +100,8 @@ export const runGlobalScan = async (options = {}) => {
                         fullResourceReport: domain.dm_store_all_resources ?? true,
                         sourceDb: clientDbName,
                         sourceUri: dbUrl,
-                        sourceDomainDocId: domain._id
+                        sourceDomainDocId: domain._id,
+                        dm_custom_urls: domain.dm_custom_urls
                     });
 
                     // Immediately mark as scanning to avoid duplicate enqueuing in the next orchestrator tick

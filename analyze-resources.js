@@ -16,6 +16,7 @@ async function analyze(targetUrl) {
     try {
         const browser = await puppeteer.launch({ 
             headless: true, 
+            ignoreHTTPSErrors: true,
             args: ['--no-sandbox', '--disable-setuid-sandbox'] 
         });
 

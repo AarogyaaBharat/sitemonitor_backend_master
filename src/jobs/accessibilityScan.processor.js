@@ -41,6 +41,10 @@ export const processAccessibilityScan = async (job) => {
       });
     }
 
+    const domainDoc = sourceDomainDocId
+      ? await DomainModel.findById(sourceDomainDocId).lean()
+      : null;
+
     logger.info(`[${domainName}] Starting standalone Accessibility crawl (job ${scanJobId})...`);
     
     // Perform initial crawl to get pages to scan
@@ -49,6 +53,7 @@ export const processAccessibilityScan = async (job) => {
       scanSubdomains: scanSubdomains ?? true,
       executeJs: executeJs ?? false,
       fullResourceReport: fullResourceReport ?? true,
+      customUrls: domainDoc?.dm_custom_urls || job.data.dm_custom_urls,
     });
 
     reports.forEach((report) => {

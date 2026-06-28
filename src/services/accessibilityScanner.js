@@ -107,6 +107,7 @@ export async function runAccessibilityScan(domainName, reports, scanJobId, conn,
   try {
     browser = await puppeteer.launch({
       headless: 'new',
+      ignoreHTTPSErrors: true,
       args: ['--no-sandbox', '--disable-setuid-sandbox', '--disable-dev-shm-usage']
     });
 

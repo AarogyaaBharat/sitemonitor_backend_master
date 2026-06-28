@@ -41,8 +41,9 @@ export const processScanDomain = async (job) => {
     const DomainSummaryModel = conn.model('DomainSummary', DomainSummarySchema);
 
     // 2. Pre-scan check: Is domain still valid?
+    let currentDomain = null;
     if (sourceDomainDocId) {
-      const currentDomain = await DomainModel.findById(sourceDomainDocId);
+      currentDomain = await DomainModel.findById(sourceDomainDocId);
       logger.info(`[${domainName}] Checking domain status for ID: ${sourceDomainDocId}. Found: ${!!currentDomain}, Deleted: ${currentDomain?.dm_is_deleted}, Archived: ${currentDomain?.dm_is_archived}, Status: ${currentDomain?.dm_status}`);
       
       if (!currentDomain || currentDomain.dm_is_deleted || currentDomain.dm_is_archived || currentDomain.dm_status !== 'active') {
@@ -72,7 +73,8 @@ export const processScanDomain = async (job) => {
         pageLimit: pageLimit || 500,
         scanSubdomains: scanSubdomains ?? true,
         executeJs: executeJs ?? false,
-        fullResourceReport: fullResourceReport ?? true
+        fullResourceReport: fullResourceReport ?? true,
+        customUrls: currentDomain?.dm_custom_urls || job.data.dm_custom_urls
     });
     const durationMs = Date.now() - startTime;
 
@@ -257,6 +259,7 @@ export const processScanDomain = async (job) => {
           topIssues,
           securitySummary: {
             sslValid: lastReport.security?.sslValid ?? false,
+            sslExpiryDate: lastReport.security?.sslExpiryDate ?? null,
             hasCustom404: lastReport.additionalChecks?.hasCustom404 ?? false
           },
           performanceMetrics: {
@@ -356,6 +359,30 @@ export const processScanDomain = async (job) => {
         } catch (accErr) {
           logger.error(`Error executing Accessibility scan for ${domainName}: ${accErr.message}`);
         }
+
+        // Inventory scan
+        try {
+          const { DomainScanMasterSchema } = await import('../models/DomainScanMaster.js');
+          const DomainScanMaster = conn.model('DomainScanMaster', DomainScanMasterSchema);
+          
+          const scanMaster = await DomainScanMaster.create({
+            domain_id: sourceDomainDocId,
+            domain_url: domainName,
+            status: "pending",
+          });
+
+          const { addInventoryScanJob } = await import('../services/queue.js');
+          await addInventoryScanJob({
+            domainId: sourceDomainDocId,
+            domainUrl: domainName,
+            scanId: scanMaster._id,
+            sourceDb,
+            sourceUri
+          });
+          logger.info(`📦 [${domainName}] Enqueued Inventory scan for scanId: ${scanMaster._id}`);
+        } catch (invErr) {
+          logger.error(`Error triggering Inventory scan for ${domainName}: ${invErr.message}`);
+        }
       } catch (sumErr) {
         logger.error(`Error calculating summary for ${domainName}: ${sumErr.message}`);
       }
@@ -376,7 +403,8 @@ export const processScanDomain = async (job) => {
             dm_seo_status: 'completed', 
             dm_last_scan_at: new Date(),
             dm_next_scan_at: nextScanAt,
-            dm_updated_at: new Date() 
+            dm_updated_at: new Date(),
+            dm_last_scan_error: ""
         });
 
         // Log activity
@@ -411,7 +439,8 @@ export const processScanDomain = async (job) => {
         await DomainModel.findByIdAndUpdate(sourceDomainDocId, { 
             dm_seo_status: 'failed',
             dm_last_scan_at: new Date(),
-            dm_updated_at: new Date()
+            dm_updated_at: new Date(),
+            dm_last_scan_error: error.message || "Unknown error occurred"
         });
 
         // Log activity

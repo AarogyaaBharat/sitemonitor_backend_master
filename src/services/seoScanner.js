@@ -77,10 +77,11 @@ class SeoScanner {
       const sock = tls.connect(443, { host: hostname, servername: hostname, rejectUnauthorized: false }, () => {
         try {
           const cert = sock.getPeerCertificate(true);
+          const authorized = sock.authorized;
           sock.end();
           if (!cert || !cert.valid_to) return resolve({ sslValid: false, sslExpiryDate: null });
           const expiry = new Date(cert.valid_to).toISOString();
-          const valid = cert.valid_from && cert.valid_to && new Date(cert.valid_to) > Date.now();
+          const valid = authorized && cert.valid_from && cert.valid_to && new Date(cert.valid_to) > Date.now();
           resolve({ sslValid: !!valid, sslExpiryDate: expiry });
         } catch { sock.end(); resolve({ sslValid: false, sslExpiryDate: null }); }
       });
@@ -1016,23 +1017,40 @@ class SeoScanner {
   }
 
   async scanDomain(domainName, options = {}) {
-    const { pageLimit = 500, scanSubdomains = true, executeJs = false } = options;
+    const { pageLimit = 500, scanSubdomains = true, executeJs = false, customUrls } = options;
     await this.init();
     const host = this.normalizeHost(domainName);
     if (!host || host.includes(':') || host.includes(' ') || host.length < 3) {
       throw new Error(`Invalid domain name provided: ${domainName}`);
     }
     const origin = `https://${host}`;
-    const [sslMeta, domainFlags, robotsSitemap] = await Promise.all([this.getSslMeta(host.replace(/^www\./, '')), this.fetchDomainFlags(origin), this.fetchRobotsSitemapPresent(origin)]);
+    const [sslMeta, domainFlags, robotsSitemap] = await Promise.all([this.getSslMeta(host), this.fetchDomainFlags(origin), this.fetchRobotsSitemapPresent(origin)]);
     const browser = await puppeteer.launch({
       headless: true,
       protocolTimeout: 240000, // Increase protocol timeout to 4 minutes
+      ignoreHTTPSErrors: true,
       args: ['--no-sandbox', '--disable-setuid-sandbox', '--disable-dev-shm-usage', '--disable-gpu', '--window-size=1366,768']
     });
     try {
-      const visited = new Set(), queue = [this.canonicalPageUrl(origin + '/')], reports = [];
-      const hostNorm = host.replace(/^www\./, '');
+      const hasCustomUrls = Array.isArray(customUrls) && customUrls.length > 0;
+      let queue = [];
+      if (hasCustomUrls) {
+        queue = customUrls.map(u => {
+          let targetUrl = u.trim();
+          if (targetUrl.startsWith('/')) {
+            targetUrl = origin + targetUrl;
+          } else if (!targetUrl.startsWith('http://') && !targetUrl.startsWith('https://')) {
+            targetUrl = origin + '/' + targetUrl;
+          }
+          return this.canonicalPageUrl(targetUrl);
+        }).filter(Boolean);
+      } else {
+        queue = [this.canonicalPageUrl(origin + '/')];
+      }
 
+      const visited = new Set(), reports = [];
+      const hostNorm = host.replace(/^www\./, '');
+ 
       while (queue.length && reports.length < pageLimit) {
         const next = queue.shift();
         if (!next || visited.has(next)) continue;
@@ -1045,35 +1063,37 @@ class SeoScanner {
           reports.push({ ...report, html, bodyText });
           logger.info(`🔍 [Domain: ${host}] [Page ${reports.length}/${pageLimit}] Found ${internalUrls.length} internal links on ${next}`);
           
-          for (const u of internalUrls) {
-            const c = this.canonicalPageUrl(u);
-            if (!c || visited.has(c) || queue.includes(c)) continue;
-            try {
-              const uObj = new URL(c);
-              const targetHost = uObj.hostname.replace(/^www\./, '').toLowerCase();
-
-              if (scanSubdomains) {
-                if (targetHost === hostNorm || targetHost.endsWith('.' + hostNorm)) {
-                  logger.info(`➕ [Queue] Adding: ${c} (targetHost: ${targetHost}, hostNorm: ${hostNorm})`);
-                  queue.push(c);
+          if (!hasCustomUrls) {
+            for (const u of internalUrls) {
+              const c = this.canonicalPageUrl(u);
+              if (!c || visited.has(c) || queue.includes(c)) continue;
+              try {
+                const uObj = new URL(c);
+                const targetHost = uObj.hostname.replace(/^www\./, '').toLowerCase();
+  
+                if (scanSubdomains) {
+                  if (targetHost === hostNorm || targetHost.endsWith('.' + hostNorm)) {
+                    logger.info(`➕ [Queue] Adding: ${c} (targetHost: ${targetHost}, hostNorm: ${hostNorm})`);
+                    queue.push(c);
+                  } else {
+                    logger.debug(`⏩ [Queue] Skipping external/subdomain: ${c} (targetHost: ${targetHost}, hostNorm: ${hostNorm})`);
+                  }
                 } else {
-                  logger.debug(`⏩ [Queue] Skipping external/subdomain: ${c} (targetHost: ${targetHost}, hostNorm: ${hostNorm})`);
+                  if (targetHost === hostNorm) {
+                    logger.info(`➕ [Queue] Adding: ${c} (targetHost: ${targetHost}, hostNorm: ${hostNorm})`);
+                    queue.push(c);
+                  } else {
+                    logger.debug(`⏩ [Queue] Skipping external: ${c} (targetHost: ${targetHost}, hostNorm: ${hostNorm})`);
+                  }
                 }
-              } else {
-                if (targetHost === hostNorm) {
-                  logger.info(`➕ [Queue] Adding: ${c} (targetHost: ${targetHost}, hostNorm: ${hostNorm})`);
-                  queue.push(c);
-                } else {
-                  logger.debug(`⏩ [Queue] Skipping external: ${c} (targetHost: ${targetHost}, hostNorm: ${hostNorm})`);
-                }
+              } catch (urlErr) { 
+                logger.warn(`❌ [Queue] Invalid URL: ${c} | Error: ${urlErr.message}`);
               }
-            } catch (urlErr) { 
-              logger.warn(`❌ [Queue] Invalid URL: ${c} | Error: ${urlErr.message}`);
             }
           }
         } catch (e) { 
           logger.error(`Error scanning page ${next}: ${e.message}`); 
-          if (visited.size === 1) {
+          if (!hasCustomUrls && visited.size === 1) {
             throw new Error(`Root page failed: ${e.message}`);
           }
         }
