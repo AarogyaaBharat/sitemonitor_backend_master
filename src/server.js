@@ -12,6 +12,7 @@ import { logger } from './utils/logger.js';
 
 import scanRoutes from './routes/scan.routes.js';
 import { mongoMultiConnector } from './services/mongoMultiConnector.js';
+import { encryptionMiddleware } from './middlewares/encryption.middleware.js';
 import { seoScanQueue, initWorker, setupScheduledScans } from './services/queue.js';
 import { runGlobalScan } from './services/orchestrator.service.js';
 
@@ -30,6 +31,7 @@ if (missing.length > 0) {
 app.use(helmet({ contentSecurityPolicy: false }));
 app.use(cors());
 app.use(express.json());
+app.use(encryptionMiddleware);
 
 
 
