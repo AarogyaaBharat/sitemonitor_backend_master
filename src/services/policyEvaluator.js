@@ -52,20 +52,20 @@ export class PolicyEvaluator {
     const c = (content || '').toLowerCase();
     const s = (searchVal || '').toLowerCase();
     switch (type) {
-      case 'contains': 
+      case 'contains':
         return c.includes(s);
-      case 'equals': 
+      case 'equals':
         return c.trim() === s.trim();
-      case 'starts-with': 
+      case 'starts-with':
         return c.trim().startsWith(s.trim());
-      case 'ends-with': 
+      case 'ends-with':
         return c.trim().endsWith(s.trim());
       case 'regex':
         try {
           const regex = new RegExp(searchVal, 'gi');
           return regex.test(content);
         } catch { return false; }
-      default: 
+      default:
         return c.includes(s);
     }
   }
@@ -77,7 +77,7 @@ export class PolicyEvaluator {
     if (!content || !searchVal) return 0;
     const c = content.toLowerCase();
     const s = searchVal.toLowerCase();
-    
+
     switch (type) {
       case 'contains':
         return c.split(s).length - 1;
@@ -221,14 +221,14 @@ export class PolicyEvaluator {
         const metaTarget = (rule.metaName || '').toLowerCase();
         const metaSearchType = this.normalizeSearchType(rule.exprType || searchType);
         const metaSearchVal = (rule.exprValue || searchValue || '').toLowerCase();
-        
+
         const relevantMeta = (pageData.meta?.allMeta || []).filter(m => (m.name || '').toLowerCase() === metaTarget);
         result = evaluateArray(relevantMeta, m => m.content, false);
         // Map back to expected properties if needed
         if (relevantMeta.length === 0 && !metaTarget) {
-            // Fallback to description if no specific meta name provided
-            result.isMatch = this.textMatch(pageData.meta?.description, metaSearchVal, metaSearchType);
-            result.matchCount = result.isMatch ? 1 : 0;
+          // Fallback to description if no specific meta name provided
+          result.isMatch = this.textMatch(pageData.meta?.description, metaSearchVal, metaSearchType);
+          result.matchCount = result.isMatch ? 1 : 0;
         }
         break;
 
@@ -288,10 +288,10 @@ export class PolicyEvaluator {
 
     // --- 2. Post-Process (Containing/Not Containing) ---
     if (containing === 'not-containing') {
-      result = { 
-        isMatch: !result.isMatch, 
-        matchCount: result.isMatch ? 0 : 1, 
-        totalCount: result.totalCount 
+      result = {
+        isMatch: !result.isMatch,
+        matchCount: result.isMatch ? 0 : 1,
+        totalCount: result.totalCount
       };
     }
 
@@ -317,8 +317,8 @@ export class PolicyEvaluator {
     const operatorLog = searchToLog || comparison || '';
     const unitLog = containing || effectiveUnit || unit ? ` (${containing || effectiveUnit || unit})` : '';
 
-    logger.info(`   -> 🔍 Scan [${type}] | Target: "${searchVal || expectedValue || ''}"${unitLog} | Operator: "${operatorLog}" | Actual: ${actualValForLog} | Result: ${icon}`);
-    
+    // logger.info(`   -> 🔍 Scan [${type}] | Target: "${searchVal || expectedValue || ''}"${unitLog} | Operator: "${operatorLog}" | Actual: ${actualValForLog} | Result: ${icon}`);
+
     return result;
   }
 
@@ -340,7 +340,7 @@ export class PolicyEvaluator {
         matchedText
       };
     });
-    
+
     const matchedRules = evaluationResults.filter(r => r.isMatch);
     const totalMatchCount = matchedRules.reduce((sum, r) => sum + (r.matchCount || 0), 0);
     const totalItemsCount = evaluationResults.reduce((sum, r) => sum + (r.totalCount || 0), 0);
@@ -361,7 +361,7 @@ export class PolicyEvaluator {
   static processPolicies(policies, pageData) {
     return policies.map(policy => {
       const { isMatch, matchedRules, evaluationResults, totalMatchCount, totalItemsCount } = this.evaluatePolicy(policy, pageData);
-      
+
       let isHit = false;
       if (policy.category === 'unwanted') {
         isHit = isMatch;

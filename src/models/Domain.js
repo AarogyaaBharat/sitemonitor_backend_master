@@ -2,7 +2,9 @@ import mongoose from 'mongoose';
 
 export const DomainSchema = new mongoose.Schema({
   dm_id: { type: Number, index: true },
+  dm_user_id: { type: mongoose.Schema.Types.ObjectId, ref: 'users' },
   dm_url: { type: String, required: true },
+  dm_gsc_email: { type: String, default: null },
   dm_title: { type: String },
   dm_status: {
     type: String,

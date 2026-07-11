@@ -218,7 +218,7 @@ export const processInventoryScan = async (job) => {
 
       if (batch.length === 0) continue;
 
-      logger.info(`[Inventory Scan] Scanning batch of size ${batch.length}. Visited total: ${visited.size}`);
+      // logger.info(`[Inventory Scan] Scanning batch of size ${batch.length}. Visited total: ${visited.size}`);
 
       // Process batch in parallel
       await Promise.all(batch.map(async (url) => {
@@ -574,8 +574,8 @@ export const processInventoryScan = async (job) => {
           progress_percent: progress
         });
 
-        logger.info(`[Inventory Scan Progress] 📈 Scanned Page: ${url} | Progress: ${progress}%`);
-        logger.info(`   └── 📦 Assets Discovered -> Pages: ${pagesCrawledCount} | Images: ${totalImagesCount} | CSS: ${totalCssCount} | JS: ${totalJsCount} | Docs: ${totalDocsCount} | Emails: ${totalEmailsCount} | Headlinks: ${totalHeadlinksCount}`);
+        // logger.info(`[Inventory Scan Progress] 📈 Scanned Page: ${url} | Progress: ${progress}%`);
+        // logger.info(`   └── 📦 Assets Discovered -> Pages: ${pagesCrawledCount} | Images: ${totalImagesCount} | CSS: ${totalCssCount} | JS: ${totalJsCount} | Docs: ${totalDocsCount} | Emails: ${totalEmailsCount} | Headlinks: ${totalHeadlinksCount}`);
       }));
     }
 

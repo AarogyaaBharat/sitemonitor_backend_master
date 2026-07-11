@@ -14,6 +14,9 @@ import mongoose from 'mongoose';
 import { AuditSchema } from '../models/Audit.js';
 import { runAuditScan } from '../services/auditScan.js';
 import { runQaScan } from '../services/qaScanner.js';
+import { fetchGscData } from '../services/gsc.service.js';
+import { decrypt } from '../utils/crypto.js';
+import { SearchPerformanceSchema } from '../models/SearchPerformance.js';
 
 
 export const processScanDomain = async (job) => {
@@ -382,6 +385,55 @@ export const processScanDomain = async (job) => {
           logger.info(`📦 [${domainName}] Enqueued Inventory scan for scanId: ${scanMaster._id}`);
         } catch (invErr) {
           logger.error(`Error triggering Inventory scan for ${domainName}: ${invErr.message}`);
+        }
+
+        // Trigger Google Search Console fetch
+        try {
+          logger.info(`🔍 [${domainName}] Fetching Google Search Console data...`);
+          
+          const userId = currentDomain?.dm_user_id ? currentDomain.dm_user_id.toString() : null;
+          logger.info(`🔍 [${domainName}] Looking for GoogleConnection for user_id: ${userId}`);
+          
+          const mongoose = await import('mongoose');
+          const GoogleConnectionSchema = new mongoose.Schema({
+            user_id: { type: mongoose.Schema.Types.ObjectId, required: true },
+            access_token: { type: String },
+            refresh_token: { type: String }
+          }, { strict: false });
+          const GoogleConnection = conn.model('GoogleConnection', GoogleConnectionSchema, 'google_connections');
+          const query = { user_id: new mongoose.Types.ObjectId(userId) };
+          if (currentDomain?.dm_gsc_email) {
+            query.google_email = currentDomain.dm_gsc_email;
+            logger.info(`🔍 [${domainName}] Domain GSC email specified: ${currentDomain.dm_gsc_email}. Looking for match...`);
+          } else {
+            logger.info(`🔍 [${domainName}] Domain GSC email not specified. Looking for default connection...`);
+          }
+          const userConnection = userId ? await GoogleConnection.findOne(query).lean() : null;
+          
+          let tokens = null;
+          if (userConnection && (userConnection.access_token || userConnection.refresh_token)) {
+            logger.info(`🔑 [${domainName}] Found valid GoogleConnection (${userConnection.google_email || "default"}) for user_id: ${userId}`);
+            tokens = {
+              access_token: userConnection.access_token,
+              refresh_token: userConnection.refresh_token ? decrypt(userConnection.refresh_token) : null
+            };
+          } else {
+            logger.warn(`⚠️ [${domainName}] No GoogleConnection found or missing access_token/refresh_token for user_id: ${userId} (${currentDomain?.dm_gsc_email || "default"})`);
+          }
+
+          const gscData = await fetchGscData(domainName, tokens);
+          const SearchPerformanceModel = conn.model('SearchPerformance', SearchPerformanceSchema, 'search_performances');
+          
+          logger.info(`📝 [${domainName}] Attempting to save GSC data to tenant ${sourceDb}...`);
+          await SearchPerformanceModel.create({
+            domainId: new (await import('mongoose')).Types.ObjectId(sourceDomainDocId),
+            tenantId: sourceDb.replace(/^tenant_|^sitemonitor_/, ''),
+            scanDate: new Date(),
+            ...gscData
+          });
+          logger.info(`✅ [${domainName}] Successfully saved Google Search Console data.`);
+        } catch (gscErr) {
+          logger.error(`❌ [${domainName}] Error fetching GSC data: ${gscErr.message}`);
         }
       } catch (sumErr) {
         logger.error(`Error calculating summary for ${domainName}: ${sumErr.message}`);
