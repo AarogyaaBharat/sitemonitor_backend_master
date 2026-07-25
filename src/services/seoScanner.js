@@ -835,7 +835,8 @@ class SeoScanner {
     let lighthouseSeoScore = 0;
     let lighthouseAccessibilityScore = 0;
     let lighthousePerformanceScore = 0;
-    if (status > 0 && status < 400) {
+    
+    if (status > 0 && status < 400 && !options.skipLighthouse) {
       try {
         // Allow the page to "settle" briefly before handing over to Lighthouse
         // This helps prevent "performance mark not set" errors
@@ -1017,7 +1018,7 @@ class SeoScanner {
   }
 
   async scanDomain(domainName, options = {}) {
-    const { pageLimit = 500, scanSubdomains = true, executeJs = false, customUrls } = options;
+    const { pageLimit = 500, scanSubdomains = true, executeJs = false, skipLighthouse = false, customUrls } = options;
     await this.init();
     const host = this.normalizeHost(domainName);
     if (!host || host.includes(':') || host.includes(' ') || host.length < 3) {
@@ -1059,7 +1060,7 @@ class SeoScanner {
         logger.info(`🔍 [Crawl] Queue: ${queue.length} | Visited: ${visited.size} | Scanning: ${next}`);
         try {
           logger.info(`🔍 [Domain: ${host}] [Page ${reports.length + 1}/${pageLimit}] Scanning: ${next}`);
-          const { report, internalUrls, html, bodyText } = await this.scanPage(browser, next, host, origin, sslMeta, domainFlags, robotsSitemap, { executeJs });
+          const { report, internalUrls, html, bodyText } = await this.scanPage(browser, next, host, origin, sslMeta, domainFlags, robotsSitemap, { executeJs, skipLighthouse });
           reports.push({ ...report, html, bodyText });
           logger.info(`🔍 [Domain: ${host}] [Page ${reports.length}/${pageLimit}] Found ${internalUrls.length} internal links on ${next}`);
           

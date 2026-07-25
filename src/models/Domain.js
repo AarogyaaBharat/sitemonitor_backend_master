@@ -34,6 +34,19 @@ export const DomainSchema = new mongoose.Schema({
     default: 'pending'
   },
   dm_policy_last_scan_at: { type: Date },
+  dm_dark_pattern_status: {
+    type: String,
+    enum: ['pending', 'scanning', 'completed', 'failed'],
+    default: 'pending'
+  },
+  dm_dark_pattern_last_scan_at: { type: Date },
+  dm_competitors: [{ type: String }],
+  dm_competitor_status: {
+    type: String,
+    enum: ['pending', 'scanning', 'completed', 'failed'],
+    default: 'pending'
+  },
+  dm_competitor_last_scan_at: { type: Date },
   dm_ignored_spellings: [{ type: String }],
   dm_custom_urls: [{ type: String }],
   dm_last_scan_error: { type: String, default: "" },

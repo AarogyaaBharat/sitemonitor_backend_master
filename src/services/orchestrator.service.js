@@ -15,6 +15,74 @@ import { logger } from '../utils/logger.js';
  * @param {boolean} options.isStartup - If true, resets and enqueues domains that were 'scanning'.
  * @param {number} options.staleThresholdMin - Minutes before a 'scanning' job is considered stuck.
  */
+
+/**
+ * Startup Recovery: Resets any domains stuck in a 'scanning' state back to 'pending'.
+ * This runs when the server boots to handle jobs interrupted by a crash or restart.
+ */
+export const resetStuckScans = async () => {
+    logger.info(`Orchestrator: Initiating startup recovery for stuck scans...`);
+    const dbUrl = process.env.DB_URL || 'mongodb://localhost:27017';
+    let masterConn;
+    let totalReset = 0;
+
+    try {
+        masterConn = await mongoose.createConnection(dbUrl, {
+            dbName: 'master',
+            maxPoolSize: 5,
+        }).asPromise();
+
+        const Tenant = masterConn.model('Tenant', TenantSchema);
+        const tenants = await Tenant.find({ tent_status: 'active', tent_is_deleted: false });
+
+        for (const tenant of tenants) {
+            const clientDbName = `tenant_${tenant.tent_name}`;
+            try {
+                const clientConn = await mongoMultiConnector.getClientConnection(dbUrl, clientDbName);
+                const Domain = clientConn.model('Domain', DomainSchema, 'domains');
+
+                const updateResult = await Domain.updateMany(
+                    {
+                        $or: [
+                            { dm_seo_status: 'scanning' },
+                            { dm_qa_status: 'scanning' },
+                            { dm_accessibility_status: 'scanning' },
+                            { dm_policy_status: 'scanning' },
+                            { dm_dark_pattern_status: 'scanning' },
+                            { dm_competitor_status: 'scanning' }
+                        ]
+                    },
+                    {
+                        $set: {
+                            dm_seo_status: 'pending',
+                            dm_qa_status: 'pending',
+                            dm_accessibility_status: 'pending',
+                            dm_policy_status: 'pending',
+                            dm_dark_pattern_status: 'pending',
+                            dm_competitor_status: 'pending',
+                            dm_updated_at: new Date()
+                        }
+                    }
+                );
+
+                if (updateResult.modifiedCount > 0) {
+                    logger.info(`Orchestrator: Recovered ${updateResult.modifiedCount} stuck domains for tenant ${tenant.tent_name}.`);
+                    totalReset += updateResult.modifiedCount;
+                }
+            } catch (err) {
+                logger.error(`Orchestrator: Failed to recover domains for tenant ${tenant.tent_name}: ${err.message}`);
+            }
+        }
+    } catch (error) {
+        logger.error(`Orchestrator: Critical error during startup recovery: ${error.message}`);
+    } finally {
+        if (masterConn) {
+            await masterConn.close();
+        }
+    }
+    logger.info(`✅ Orchestrator: Startup recovery complete. Reset ${totalReset} stuck domains.`);
+};
+
 export const runGlobalScan = async (options = {}) => {
     const { tenantName = null, isStartup = false, staleThresholdMin = 30 } = options;
     

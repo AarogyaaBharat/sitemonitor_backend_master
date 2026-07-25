@@ -11,10 +11,12 @@ import { ExpressAdapter } from '@bull-board/express';
 import { logger } from './utils/logger.js';
 
 import scanRoutes from './routes/scan.routes.js';
+import darkPatternRoutes from './routes/darkPattern.routes.js';
+import competitorRoutes from './routes/competitor.routes.js';
 import { mongoMultiConnector } from './services/mongoMultiConnector.js';
 import { encryptionMiddleware } from './middlewares/encryption.middleware.js';
 import { seoScanQueue, initWorker, setupScheduledScans } from './services/queue.js';
-import { runGlobalScan } from './services/orchestrator.service.js';
+import { runGlobalScan, resetStuckScans } from './services/orchestrator.service.js';
 
 const app = express();
 const PORT = process.env.PORT || 3000;
@@ -29,7 +31,24 @@ if (missing.length > 0) {
 
 // Middleware
 app.use(helmet({ contentSecurityPolicy: false }));
-app.use(cors());
+
+// Proper CORS setup matching User Backend
+app.use(
+  cors({
+    origin: function (origin, callback) {
+      if (!origin) return callback(null, true);
+      if (origin === "http://localhost:3000") return callback(null, true);
+      if (origin === "https://sitemonitor-backend.onrender.com") return callback(null, true);
+      const sitemonitorRegex = /^https:\/\/([a-zA-Z0-9.-]+)\.darksite\.in$/;
+      if (sitemonitorRegex.test(origin)) return callback(null, true);
+      const regex = /^http:\/\/([a-zA-Z0-9-]+)\.localhost:5000$/;
+      if (regex.test(origin)) return callback(null, true);
+      return callback(new Error("Not allowed by CORS"));
+    },
+    credentials: true,
+  })
+);
+
 app.use(express.json());
 app.use(encryptionMiddleware);
 
@@ -47,11 +66,15 @@ logger.info(`BullBoard dashboard available at http://localhost:${PORT}/admin/que
 
 // Routes
 app.use('/scan', scanRoutes);
+app.use('/api/dark-pattern', darkPatternRoutes);
+app.use('/api/competitor', competitorRoutes);
 
 // Database Connection & Server Start
 const startServer = async () => {
   try {
 
+    logger.info('Running startup recovery for stuck scans...');
+    await resetStuckScans();
 
     initWorker();
     logger.info('SEO Scan Worker initialized.');

@@ -6,6 +6,8 @@ import { processInventoryScan } from '../jobs/inventoryScan.processor.js';
 import { processQaScan } from '../jobs/qaScan.processor.js';
 import { processAccessibilityScan } from '../jobs/accessibilityScan.processor.js';
 import { processPolicyScan } from '../jobs/policyScan.processor.js';
+import { processDarkPatternScan } from '../jobs/darkPatternScan.processor.js';
+import { processCompetitorScan } from '../jobs/competitorScan.processor.js';
 import { runGlobalScan } from './orchestrator.service.js';
 
 const redisConnection = new IORedis(process.env.REDIS_URL || 'redis://127.0.0.1:6379', {
@@ -53,6 +55,14 @@ export const initWorker = () => {
       logger.info(`[Job ${job.id}] 🛡️ Starting Policy scan for: ${job.data.domainName}`);
       return await processPolicyScan(job);
     }
+    if (job.name === 'dark-pattern-scan') {
+      logger.info(`[Job ${job.id}] 🕵️ Starting Dark Pattern scan for: ${job.data.domainName}`);
+      return await processDarkPatternScan(job);
+    }
+    if (job.name === 'competitor-scan') {
+      logger.info(`[Job ${job.id}] ⚔️ Starting Competitor scan for: ${job.data.domainName}`);
+      return await processCompetitorScan(job);
+    }
     logger.info(`[Job ${job.id}] 🔍 Starting scan for: ${job.data.domainName}`);
     return await processScanDomain(job);
   }, {
@@ -96,6 +106,31 @@ export const addPolicyScanJob = async (domainData) => {
     return job;
   } catch (error) {
     logger.error(`Error adding policy scan job: ${error.message}`);
+    throw error;
+  }
+};
+
+/**
+ * Enqueue a Dark Pattern scan job.
+ */
+export const addDarkPatternScanJob = async (domainData) => {
+  try {
+    const job = await seoScanQueue.add('dark-pattern-scan', domainData);
+    logger.info(`Added Dark Pattern Scan Job for ${domainData.domainName} to queue, Job ID: ${job.id}`);
+    return job;
+  } catch (error) {
+    logger.error(`Error adding dark pattern scan job: ${error.message}`);
+    throw error;
+  }
+};
+
+export const addCompetitorScanJob = async (domainData) => {
+  try {
+    const job = await seoScanQueue.add('competitor-scan', domainData);
+    logger.info(`Added Competitor Scan Job for ${domainData.domainName} to queue, Job ID: ${job.id}`);
+    return job;
+  } catch (error) {
+    logger.error(`Error adding competitor scan job: ${error.message}`);
     throw error;
   }
 };
