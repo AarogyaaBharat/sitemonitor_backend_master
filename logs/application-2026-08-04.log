@@ -1,0 +1,718 @@
+{"level":"info","message":"BullBoard dashboard available at http://localhost:4100/admin/queues","timestamp":"2026-08-04 20:57:42"}
+{"level":"info","message":"Running startup recovery for stuck scans...","timestamp":"2026-08-04 20:57:42"}
+{"level":"info","message":"Orchestrator: Initiating startup recovery for stuck scans...","timestamp":"2026-08-04 20:57:42"}
+{"level":"info","message":"✅ Successfully connected to database: tenant_rbi","timestamp":"2026-08-04 20:57:43"}
+{"level":"info","message":"✅ Successfully connected to database: tenant_sbi","timestamp":"2026-08-04 20:57:44"}
+{"level":"info","message":"✅ Orchestrator: Startup recovery complete. Reset 0 stuck domains.","timestamp":"2026-08-04 20:57:44"}
+{"level":"info","message":"SEO Scan Worker initialized.","timestamp":"2026-08-04 20:57:44"}
+{"level":"info","message":"🧹 Queue \"seo-scan-queue\" cleared recursively.","timestamp":"2026-08-04 20:57:44"}
+{"level":"info","message":"⏰ Scheduled global orchestration every 1 minutes.","timestamp":"2026-08-04 20:57:44"}
+{"level":"info","message":"SEO Scanner Service running on port 4100","timestamp":"2026-08-04 20:57:44"}
+{"level":"info","message":"🚀 SCAN_ON_STARTUP is enabled. Triggering global orchestration...","timestamp":"2026-08-04 20:57:44"}
+{"level":"info","message":"Orchestrator: Starting global scan orchestration... [STARTUP MODE]","timestamp":"2026-08-04 20:57:44"}
+{"level":"info","message":"🔗 Connecting to MASTER database: master","timestamp":"2026-08-04 20:57:44"}
+{"level":"info","message":"Orchestrator: Found 2 tenants to process.","timestamp":"2026-08-04 20:57:44"}
+{"level":"info","message":"📁 Switching to CLIENT database: tenant_rbi (Tenant: rbi)","timestamp":"2026-08-04 20:57:44"}
+{"level":"info","message":"Orchestrator: No domains found for tenant rbi (excluding those currently scanning).","timestamp":"2026-08-04 20:57:44"}
+{"level":"info","message":"📁 Switching to CLIENT database: tenant_sbi (Tenant: sbi)","timestamp":"2026-08-04 20:57:44"}
+{"level":"info","message":"Orchestrator: No domains found for tenant sbi (excluding those currently scanning).","timestamp":"2026-08-04 20:57:44"}
+{"level":"info","message":"Orchestrator: Master DB connection closed.","timestamp":"2026-08-04 20:57:44"}
+{"level":"info","message":"✅ Orchestrator: Finished. Total jobs enqueued: 0","timestamp":"2026-08-04 20:57:44"}
+{"level":"info","message":"✅ Initial global scan orchestration completed.","timestamp":"2026-08-04 20:57:44"}
+{"level":"info","message":"[Job repeat:c10eea93bf68cc56fd5c63b351df3d32:1785857280000] 🚀 Executing scheduled global orchestration...","timestamp":"2026-08-04 20:58:00"}
+{"level":"info","message":"Orchestrator: Starting global scan orchestration... ","timestamp":"2026-08-04 20:58:00"}
+{"level":"info","message":"🔗 Connecting to MASTER database: master","timestamp":"2026-08-04 20:58:00"}
+{"level":"info","message":"Orchestrator: Found 2 tenants to process.","timestamp":"2026-08-04 20:58:01"}
+{"level":"info","message":"📁 Switching to CLIENT database: tenant_rbi (Tenant: rbi)","timestamp":"2026-08-04 20:58:01"}
+{"level":"info","message":"Orchestrator: No domains found for tenant rbi (excluding those currently scanning).","timestamp":"2026-08-04 20:58:01"}
+{"level":"info","message":"📁 Switching to CLIENT database: tenant_sbi (Tenant: sbi)","timestamp":"2026-08-04 20:58:01"}
+{"level":"info","message":"Orchestrator: No domains found for tenant sbi (excluding those currently scanning).","timestamp":"2026-08-04 20:58:01"}
+{"level":"info","message":"Orchestrator: Master DB connection closed.","timestamp":"2026-08-04 20:58:01"}
+{"level":"info","message":"✅ Orchestrator: Finished. Total jobs enqueued: 0","timestamp":"2026-08-04 20:58:01"}
+{"level":"info","message":"Job repeat:c10eea93bf68cc56fd5c63b351df3d32:1785857280000 (Orchestrator) completed successfully.","timestamp":"2026-08-04 20:58:01"}
+{"level":"info","message":"[Job repeat:c10eea93bf68cc56fd5c63b351df3d32:1785857340000] 🚀 Executing scheduled global orchestration...","timestamp":"2026-08-04 20:59:00"}
+{"level":"info","message":"Orchestrator: Starting global scan orchestration... ","timestamp":"2026-08-04 20:59:00"}
+{"level":"info","message":"🔗 Connecting to MASTER database: master","timestamp":"2026-08-04 20:59:00"}
+{"level":"info","message":"Orchestrator: Found 2 tenants to process.","timestamp":"2026-08-04 20:59:01"}
+{"level":"info","message":"📁 Switching to CLIENT database: tenant_rbi (Tenant: rbi)","timestamp":"2026-08-04 20:59:01"}
+{"level":"info","message":"Orchestrator: No domains found for tenant rbi (excluding those currently scanning).","timestamp":"2026-08-04 20:59:01"}
+{"level":"info","message":"📁 Switching to CLIENT database: tenant_sbi (Tenant: sbi)","timestamp":"2026-08-04 20:59:01"}
+{"level":"info","message":"Orchestrator: No domains found for tenant sbi (excluding those currently scanning).","timestamp":"2026-08-04 20:59:01"}
+{"level":"info","message":"Orchestrator: Master DB connection closed.","timestamp":"2026-08-04 20:59:01"}
+{"level":"info","message":"✅ Orchestrator: Finished. Total jobs enqueued: 0","timestamp":"2026-08-04 20:59:01"}
+{"level":"info","message":"Job repeat:c10eea93bf68cc56fd5c63b351df3d32:1785857340000 (Orchestrator) completed successfully.","timestamp":"2026-08-04 20:59:01"}
+{"level":"info","message":"Added Competitor Scan Job for https://sitemonitor.in to queue, Job ID: 4","timestamp":"2026-08-04 20:59:36"}
+{"level":"info","message":"[Job 4] ⚔️ Starting Competitor scan for: https://sitemonitor.in","timestamp":"2026-08-04 20:59:36"}
+{"level":"info","message":"[CompetitorScan] Starting for https://sitemonitor.in. Found 1 competitors.","timestamp":"2026-08-04 20:59:36"}
+{"level":"info","message":"[CompetitorScan] Crawling competitor: https://omunim.com/","timestamp":"2026-08-04 20:59:36"}
+{"level":"info","message":"🔍 [Crawl] Queue: 0 | Visited: 1 | Scanning: https://omunim.com/","timestamp":"2026-08-04 20:59:39"}
+{"level":"info","message":"🔍 [Domain: omunim.com] [Page 1/5] Scanning: https://omunim.com/","timestamp":"2026-08-04 20:59:39"}
+{"level":"info","message":"🔍 [Scraper] HTML length: 77489 | Body length: 20116 | Total <a> tags: 67","timestamp":"2026-08-04 20:59:45"}
+{"level":"info","message":"🔗 [Link Extraction] Page: https://omunim.com/ | hostNorm: omunim.com | Found 67 total links (21 internal)","timestamp":"2026-08-04 20:59:45"}
+{"level":"info","message":"🚀 [PageSpeed API] Fetching metrics for https://omunim.com/...","timestamp":"2026-08-04 20:59:57"}
+{"level":"info","message":"[Job repeat:c10eea93bf68cc56fd5c63b351df3d32:1785857400000] 🚀 Executing scheduled global orchestration...","timestamp":"2026-08-04 21:00:00"}
+{"level":"info","message":"Orchestrator: Starting global scan orchestration... ","timestamp":"2026-08-04 21:00:00"}
+{"level":"info","message":"🔗 Connecting to MASTER database: master","timestamp":"2026-08-04 21:00:00"}
+{"level":"info","message":"Orchestrator: Found 2 tenants to process.","timestamp":"2026-08-04 21:00:01"}
+{"level":"info","message":"📁 Switching to CLIENT database: tenant_rbi (Tenant: rbi)","timestamp":"2026-08-04 21:00:01"}
+{"level":"info","message":"Orchestrator: No domains found for tenant rbi (excluding those currently scanning).","timestamp":"2026-08-04 21:00:01"}
+{"level":"info","message":"📁 Switching to CLIENT database: tenant_sbi (Tenant: sbi)","timestamp":"2026-08-04 21:00:01"}
+{"level":"info","message":"Orchestrator: No domains found for tenant sbi (excluding those currently scanning).","timestamp":"2026-08-04 21:00:01"}
+{"level":"info","message":"Orchestrator: Master DB connection closed.","timestamp":"2026-08-04 21:00:01"}
+{"level":"info","message":"✅ Orchestrator: Finished. Total jobs enqueued: 0","timestamp":"2026-08-04 21:00:01"}
+{"level":"info","message":"Job repeat:c10eea93bf68cc56fd5c63b351df3d32:1785857400000 (Orchestrator) completed successfully.","timestamp":"2026-08-04 21:00:01"}
+{"level":"info","message":"✅ [PageSpeed API] Score for https://omunim.com/: 53","timestamp":"2026-08-04 21:00:22"}
+{"level":"info","message":"📊 [Lighthouse] Results for https://omunim.com/: Performance: 53, SEO: 92, Accessibility: 75","timestamp":"2026-08-04 21:00:22"}
+{"level":"info","message":"🔍 [Domain: omunim.com] [Page 1/5] Found 21 internal links on https://omunim.com/","timestamp":"2026-08-04 21:00:23"}
+{"level":"info","message":"➕ [Queue] Adding: https://omunim.com/jewellery-software (targetHost: omunim.com, hostNorm: omunim.com)","timestamp":"2026-08-04 21:00:23"}
+{"level":"info","message":"➕ [Queue] Adding: https://omunim.com/signin (targetHost: omunim.com, hostNorm: omunim.com)","timestamp":"2026-08-04 21:00:23"}
+{"level":"info","message":"➕ [Queue] Adding: https://omunim.com/jewellery-billing-software (targetHost: omunim.com, hostNorm: omunim.com)","timestamp":"2026-08-04 21:00:23"}
+{"level":"info","message":"➕ [Queue] Adding: https://omunim.com/gold-loan-software (targetHost: omunim.com, hostNorm: omunim.com)","timestamp":"2026-08-04 21:00:23"}
+{"level":"info","message":"➕ [Queue] Adding: https://omunim.com/jewellery-mobile-app (targetHost: omunim.com, hostNorm: omunim.com)","timestamp":"2026-08-04 21:00:23"}
+{"level":"info","message":"➕ [Queue] Adding: https://omunim.com/ecommerce (targetHost: omunim.com, hostNorm: omunim.com)","timestamp":"2026-08-04 21:00:23"}
+{"level":"info","message":"➕ [Queue] Adding: https://omunim.com/jewellery-videos (targetHost: omunim.com, hostNorm: omunim.com)","timestamp":"2026-08-04 21:00:23"}
+{"level":"info","message":"➕ [Queue] Adding: https://omunim.com/all-features (targetHost: omunim.com, hostNorm: omunim.com)","timestamp":"2026-08-04 21:00:23"}
+{"level":"info","message":"➕ [Queue] Adding: https://omunim.com/jewellery-billing-software-free (targetHost: omunim.com, hostNorm: omunim.com)","timestamp":"2026-08-04 21:00:23"}
+{"level":"info","message":"➕ [Queue] Adding: https://omunim.com/best-jewellery-software (targetHost: omunim.com, hostNorm: omunim.com)","timestamp":"2026-08-04 21:00:23"}
+{"level":"info","message":"➕ [Queue] Adding: https://omunim.com/top-10-jewellery-software (targetHost: omunim.com, hostNorm: omunim.com)","timestamp":"2026-08-04 21:00:23"}
+{"level":"info","message":"➕ [Queue] Adding: https://omunim.com/downloads (targetHost: omunim.com, hostNorm: omunim.com)","timestamp":"2026-08-04 21:00:23"}
+{"level":"info","message":"➕ [Queue] Adding: https://omunim.com/aboutus (targetHost: omunim.com, hostNorm: omunim.com)","timestamp":"2026-08-04 21:00:23"}
+{"level":"info","message":"➕ [Queue] Adding: https://omunim.com/contactus (targetHost: omunim.com, hostNorm: omunim.com)","timestamp":"2026-08-04 21:00:23"}
+{"level":"info","message":"➕ [Queue] Adding: https://omunim.com/career (targetHost: omunim.com, hostNorm: omunim.com)","timestamp":"2026-08-04 21:00:23"}
+{"level":"info","message":"➕ [Queue] Adding: https://omunim.com/faq (targetHost: omunim.com, hostNorm: omunim.com)","timestamp":"2026-08-04 21:00:23"}
+{"level":"info","message":"➕ [Queue] Adding: https://omunim.com/feedback (targetHost: omunim.com, hostNorm: omunim.com)","timestamp":"2026-08-04 21:00:23"}
+{"level":"info","message":"➕ [Queue] Adding: https://omunim.com/terms (targetHost: omunim.com, hostNorm: omunim.com)","timestamp":"2026-08-04 21:00:23"}
+{"level":"info","message":"➕ [Queue] Adding: https://omunim.com/privacypolicy (targetHost: omunim.com, hostNorm: omunim.com)","timestamp":"2026-08-04 21:00:23"}
+{"level":"info","message":"➕ [Queue] Adding: https://omunim.com/site-map (targetHost: omunim.com, hostNorm: omunim.com)","timestamp":"2026-08-04 21:00:23"}
+{"level":"info","message":"🔍 [Crawl] Queue: 19 | Visited: 2 | Scanning: https://omunim.com/jewellery-software","timestamp":"2026-08-04 21:00:23"}
+{"level":"info","message":"🔍 [Domain: omunim.com] [Page 2/5] Scanning: https://omunim.com/jewellery-software","timestamp":"2026-08-04 21:00:23"}
+{"level":"info","message":"🔍 [Scraper] HTML length: 77507 | Body length: 20116 | Total <a> tags: 67","timestamp":"2026-08-04 21:00:28"}
+{"level":"info","message":"🔗 [Link Extraction] Page: https://omunim.com/jewellery-software | hostNorm: omunim.com | Found 67 total links (21 internal)","timestamp":"2026-08-04 21:00:28"}
+{"level":"info","message":"🚀 [PageSpeed API] Fetching metrics for https://omunim.com/jewellery-software...","timestamp":"2026-08-04 21:00:39"}
+{"level":"info","message":"✅ [PageSpeed API] Score for https://omunim.com/jewellery-software: 78","timestamp":"2026-08-04 21:00:59"}
+{"level":"info","message":"📊 [Lighthouse] Results for https://omunim.com/jewellery-software: Performance: 78, SEO: 92, Accessibility: 75","timestamp":"2026-08-04 21:00:59"}
+{"level":"info","message":"🔍 [Domain: omunim.com] [Page 2/5] Found 21 internal links on https://omunim.com/jewellery-software","timestamp":"2026-08-04 21:01:00"}
+{"level":"info","message":"🔍 [Crawl] Queue: 18 | Visited: 3 | Scanning: https://omunim.com/signin","timestamp":"2026-08-04 21:01:00"}
+{"level":"info","message":"🔍 [Domain: omunim.com] [Page 3/5] Scanning: https://omunim.com/signin","timestamp":"2026-08-04 21:01:00"}
+{"level":"info","message":"[Job repeat:c10eea93bf68cc56fd5c63b351df3d32:1785857460000] 🚀 Executing scheduled global orchestration...","timestamp":"2026-08-04 21:01:00"}
+{"level":"info","message":"Orchestrator: Starting global scan orchestration... ","timestamp":"2026-08-04 21:01:00"}
+{"level":"info","message":"🔗 Connecting to MASTER database: master","timestamp":"2026-08-04 21:01:00"}
+{"level":"info","message":"Orchestrator: Found 2 tenants to process.","timestamp":"2026-08-04 21:01:01"}
+{"level":"info","message":"📁 Switching to CLIENT database: tenant_rbi (Tenant: rbi)","timestamp":"2026-08-04 21:01:01"}
+{"level":"info","message":"Orchestrator: No domains found for tenant rbi (excluding those currently scanning).","timestamp":"2026-08-04 21:01:01"}
+{"level":"info","message":"📁 Switching to CLIENT database: tenant_sbi (Tenant: sbi)","timestamp":"2026-08-04 21:01:01"}
+{"level":"info","message":"Orchestrator: No domains found for tenant sbi (excluding those currently scanning).","timestamp":"2026-08-04 21:01:01"}
+{"level":"info","message":"Orchestrator: Master DB connection closed.","timestamp":"2026-08-04 21:01:01"}
+{"level":"info","message":"✅ Orchestrator: Finished. Total jobs enqueued: 0","timestamp":"2026-08-04 21:01:01"}
+{"level":"info","message":"Job repeat:c10eea93bf68cc56fd5c63b351df3d32:1785857460000 (Orchestrator) completed successfully.","timestamp":"2026-08-04 21:01:01"}
+{"level":"info","message":"🔍 [Scraper] HTML length: 58621 | Body length: 7926 | Total <a> tags: 46","timestamp":"2026-08-04 21:01:04"}
+{"level":"info","message":"🔗 [Link Extraction] Page: https://omunim.com/signin | hostNorm: omunim.com | Found 46 total links (18 internal)","timestamp":"2026-08-04 21:01:04"}
+{"level":"info","message":"🚀 [PageSpeed API] Fetching metrics for https://omunim.com/signin...","timestamp":"2026-08-04 21:01:13"}
+{"level":"info","message":"✅ [PageSpeed API] Score for https://omunim.com/signin: 40","timestamp":"2026-08-04 21:01:33"}
+{"level":"info","message":"📊 [Lighthouse] Results for https://omunim.com/signin: Performance: 40, SEO: 92, Accessibility: 87","timestamp":"2026-08-04 21:01:33"}
+{"level":"info","message":"🔍 [Domain: omunim.com] [Page 3/5] Found 18 internal links on https://omunim.com/signin","timestamp":"2026-08-04 21:01:33"}
+{"level":"info","message":"🔍 [Crawl] Queue: 17 | Visited: 4 | Scanning: https://omunim.com/jewellery-billing-software","timestamp":"2026-08-04 21:01:33"}
+{"level":"info","message":"🔍 [Domain: omunim.com] [Page 4/5] Scanning: https://omunim.com/jewellery-billing-software","timestamp":"2026-08-04 21:01:33"}
+{"level":"info","message":"🔍 [Scraper] HTML length: 50096 | Body length: 14709 | Total <a> tags: 50","timestamp":"2026-08-04 21:01:51"}
+{"level":"info","message":"🔗 [Link Extraction] Page: https://omunim.com/jewellery-billing-software | hostNorm: omunim.com | Found 50 total links (19 internal)","timestamp":"2026-08-04 21:01:51"}
+{"level":"info","message":"🚀 [PageSpeed API] Fetching metrics for https://omunim.com/jewellery-billing-software...","timestamp":"2026-08-04 21:02:00"}
+{"level":"info","message":"[Job repeat:c10eea93bf68cc56fd5c63b351df3d32:1785857520000] 🚀 Executing scheduled global orchestration...","timestamp":"2026-08-04 21:02:00"}
+{"level":"info","message":"Orchestrator: Starting global scan orchestration... ","timestamp":"2026-08-04 21:02:00"}
+{"level":"info","message":"🔗 Connecting to MASTER database: master","timestamp":"2026-08-04 21:02:00"}
+{"level":"info","message":"Orchestrator: Found 2 tenants to process.","timestamp":"2026-08-04 21:02:01"}
+{"level":"info","message":"📁 Switching to CLIENT database: tenant_rbi (Tenant: rbi)","timestamp":"2026-08-04 21:02:01"}
+{"level":"info","message":"Orchestrator: No domains found for tenant rbi (excluding those currently scanning).","timestamp":"2026-08-04 21:02:01"}
+{"level":"info","message":"📁 Switching to CLIENT database: tenant_sbi (Tenant: sbi)","timestamp":"2026-08-04 21:02:01"}
+{"level":"info","message":"Orchestrator: No domains found for tenant sbi (excluding those currently scanning).","timestamp":"2026-08-04 21:02:01"}
+{"level":"info","message":"Orchestrator: Master DB connection closed.","timestamp":"2026-08-04 21:02:01"}
+{"level":"info","message":"✅ Orchestrator: Finished. Total jobs enqueued: 0","timestamp":"2026-08-04 21:02:01"}
+{"level":"info","message":"Job repeat:c10eea93bf68cc56fd5c63b351df3d32:1785857520000 (Orchestrator) completed successfully.","timestamp":"2026-08-04 21:02:01"}
+{"level":"info","message":"✅ [PageSpeed API] Score for https://omunim.com/jewellery-billing-software: 57","timestamp":"2026-08-04 21:02:19"}
+{"level":"info","message":"📊 [Lighthouse] Results for https://omunim.com/jewellery-billing-software: Performance: 57, SEO: 92, Accessibility: 91","timestamp":"2026-08-04 21:02:19"}
+{"level":"info","message":"🔍 [Domain: omunim.com] [Page 4/5] Found 19 internal links on https://omunim.com/jewellery-billing-software","timestamp":"2026-08-04 21:02:19"}
+{"level":"info","message":"🔍 [Crawl] Queue: 16 | Visited: 5 | Scanning: https://omunim.com/gold-loan-software","timestamp":"2026-08-04 21:02:19"}
+{"level":"info","message":"🔍 [Domain: omunim.com] [Page 5/5] Scanning: https://omunim.com/gold-loan-software","timestamp":"2026-08-04 21:02:19"}
+{"level":"info","message":"🔍 [Scraper] HTML length: 46580 | Body length: 12042 | Total <a> tags: 49","timestamp":"2026-08-04 21:02:22"}
+{"level":"info","message":"🔗 [Link Extraction] Page: https://omunim.com/gold-loan-software | hostNorm: omunim.com | Found 49 total links (19 internal)","timestamp":"2026-08-04 21:02:22"}
+{"level":"info","message":"🚀 [PageSpeed API] Fetching metrics for https://omunim.com/gold-loan-software...","timestamp":"2026-08-04 21:02:31"}
+{"level":"info","message":"✅ [PageSpeed API] Score for https://omunim.com/gold-loan-software: 44","timestamp":"2026-08-04 21:02:50"}
+{"level":"info","message":"📊 [Lighthouse] Results for https://omunim.com/gold-loan-software: Performance: 44, SEO: 92, Accessibility: 90","timestamp":"2026-08-04 21:02:50"}
+{"level":"info","message":"🔍 [Domain: omunim.com] [Page 5/5] Found 19 internal links on https://omunim.com/gold-loan-software","timestamp":"2026-08-04 21:02:50"}
+{"level":"info","message":"[CompetitorScan] Completed successfully for https://sitemonitor.in","timestamp":"2026-08-04 21:02:51"}
+{"level":"info","message":"Job 4 (https://sitemonitor.in) completed successfully.","timestamp":"2026-08-04 21:02:51"}
+{"level":"info","message":"[Job repeat:c10eea93bf68cc56fd5c63b351df3d32:1785857580000] 🚀 Executing scheduled global orchestration...","timestamp":"2026-08-04 21:03:01"}
+{"level":"info","message":"Orchestrator: Starting global scan orchestration... ","timestamp":"2026-08-04 21:03:01"}
+{"level":"info","message":"🔗 Connecting to MASTER database: master","timestamp":"2026-08-04 21:03:01"}
+{"level":"info","message":"Orchestrator: Found 2 tenants to process.","timestamp":"2026-08-04 21:03:01"}
+{"level":"info","message":"📁 Switching to CLIENT database: tenant_rbi (Tenant: rbi)","timestamp":"2026-08-04 21:03:01"}
+{"level":"info","message":"Orchestrator: No domains found for tenant rbi (excluding those currently scanning).","timestamp":"2026-08-04 21:03:01"}
+{"level":"info","message":"📁 Switching to CLIENT database: tenant_sbi (Tenant: sbi)","timestamp":"2026-08-04 21:03:01"}
+{"level":"info","message":"Orchestrator: No domains found for tenant sbi (excluding those currently scanning).","timestamp":"2026-08-04 21:03:01"}
+{"level":"info","message":"Orchestrator: Master DB connection closed.","timestamp":"2026-08-04 21:03:01"}
+{"level":"info","message":"✅ Orchestrator: Finished. Total jobs enqueued: 0","timestamp":"2026-08-04 21:03:01"}
+{"level":"info","message":"Job repeat:c10eea93bf68cc56fd5c63b351df3d32:1785857580000 (Orchestrator) completed successfully.","timestamp":"2026-08-04 21:03:01"}
+{"level":"info","message":"[Job repeat:c10eea93bf68cc56fd5c63b351df3d32:1785857640000] 🚀 Executing scheduled global orchestration...","timestamp":"2026-08-04 21:04:00"}
+{"level":"info","message":"Orchestrator: Starting global scan orchestration... ","timestamp":"2026-08-04 21:04:00"}
+{"level":"info","message":"🔗 Connecting to MASTER database: master","timestamp":"2026-08-04 21:04:00"}
+{"level":"info","message":"Orchestrator: Found 2 tenants to process.","timestamp":"2026-08-04 21:04:01"}
+{"level":"info","message":"📁 Switching to CLIENT database: tenant_rbi (Tenant: rbi)","timestamp":"2026-08-04 21:04:01"}
+{"level":"info","message":"Orchestrator: No domains found for tenant rbi (excluding those currently scanning).","timestamp":"2026-08-04 21:04:01"}
+{"level":"info","message":"📁 Switching to CLIENT database: tenant_sbi (Tenant: sbi)","timestamp":"2026-08-04 21:04:01"}
+{"level":"info","message":"Orchestrator: No domains found for tenant sbi (excluding those currently scanning).","timestamp":"2026-08-04 21:04:01"}
+{"level":"info","message":"Orchestrator: Master DB connection closed.","timestamp":"2026-08-04 21:04:01"}
+{"level":"info","message":"✅ Orchestrator: Finished. Total jobs enqueued: 0","timestamp":"2026-08-04 21:04:01"}
+{"level":"info","message":"Job repeat:c10eea93bf68cc56fd5c63b351df3d32:1785857640000 (Orchestrator) completed successfully.","timestamp":"2026-08-04 21:04:01"}
+{"level":"info","message":"[Job repeat:c10eea93bf68cc56fd5c63b351df3d32:1785857700000] 🚀 Executing scheduled global orchestration...","timestamp":"2026-08-04 21:05:00"}
+{"level":"info","message":"Orchestrator: Starting global scan orchestration... ","timestamp":"2026-08-04 21:05:00"}
+{"level":"info","message":"🔗 Connecting to MASTER database: master","timestamp":"2026-08-04 21:05:00"}
+{"level":"info","message":"Orchestrator: Found 2 tenants to process.","timestamp":"2026-08-04 21:05:00"}
+{"level":"info","message":"📁 Switching to CLIENT database: tenant_rbi (Tenant: rbi)","timestamp":"2026-08-04 21:05:00"}
+{"level":"info","message":"Orchestrator: No domains found for tenant rbi (excluding those currently scanning).","timestamp":"2026-08-04 21:05:00"}
+{"level":"info","message":"📁 Switching to CLIENT database: tenant_sbi (Tenant: sbi)","timestamp":"2026-08-04 21:05:00"}
+{"level":"info","message":"Orchestrator: No domains found for tenant sbi (excluding those currently scanning).","timestamp":"2026-08-04 21:05:00"}
+{"level":"info","message":"Orchestrator: Master DB connection closed.","timestamp":"2026-08-04 21:05:00"}
+{"level":"info","message":"✅ Orchestrator: Finished. Total jobs enqueued: 0","timestamp":"2026-08-04 21:05:00"}
+{"level":"info","message":"Job repeat:c10eea93bf68cc56fd5c63b351df3d32:1785857700000 (Orchestrator) completed successfully.","timestamp":"2026-08-04 21:05:00"}
+{"level":"info","message":"[Job repeat:c10eea93bf68cc56fd5c63b351df3d32:1785857760000] 🚀 Executing scheduled global orchestration...","timestamp":"2026-08-04 21:06:00"}
+{"level":"info","message":"Orchestrator: Starting global scan orchestration... ","timestamp":"2026-08-04 21:06:00"}
+{"level":"info","message":"🔗 Connecting to MASTER database: master","timestamp":"2026-08-04 21:06:00"}
+{"level":"info","message":"Orchestrator: Found 2 tenants to process.","timestamp":"2026-08-04 21:06:01"}
+{"level":"info","message":"📁 Switching to CLIENT database: tenant_rbi (Tenant: rbi)","timestamp":"2026-08-04 21:06:01"}
+{"level":"info","message":"Orchestrator: No domains found for tenant rbi (excluding those currently scanning).","timestamp":"2026-08-04 21:06:01"}
+{"level":"info","message":"📁 Switching to CLIENT database: tenant_sbi (Tenant: sbi)","timestamp":"2026-08-04 21:06:01"}
+{"level":"info","message":"Orchestrator: No domains found for tenant sbi (excluding those currently scanning).","timestamp":"2026-08-04 21:06:01"}
+{"level":"info","message":"Orchestrator: Master DB connection closed.","timestamp":"2026-08-04 21:06:01"}
+{"level":"info","message":"✅ Orchestrator: Finished. Total jobs enqueued: 0","timestamp":"2026-08-04 21:06:01"}
+{"level":"info","message":"Job repeat:c10eea93bf68cc56fd5c63b351df3d32:1785857760000 (Orchestrator) completed successfully.","timestamp":"2026-08-04 21:06:01"}
+{"level":"info","message":"[Job repeat:c10eea93bf68cc56fd5c63b351df3d32:1785857820000] 🚀 Executing scheduled global orchestration...","timestamp":"2026-08-04 21:07:00"}
+{"level":"info","message":"Orchestrator: Starting global scan orchestration... ","timestamp":"2026-08-04 21:07:00"}
+{"level":"info","message":"🔗 Connecting to MASTER database: master","timestamp":"2026-08-04 21:07:00"}
+{"level":"info","message":"Orchestrator: Found 2 tenants to process.","timestamp":"2026-08-04 21:07:01"}
+{"level":"info","message":"📁 Switching to CLIENT database: tenant_rbi (Tenant: rbi)","timestamp":"2026-08-04 21:07:01"}
+{"level":"info","message":"Orchestrator: No domains found for tenant rbi (excluding those currently scanning).","timestamp":"2026-08-04 21:07:01"}
+{"level":"info","message":"📁 Switching to CLIENT database: tenant_sbi (Tenant: sbi)","timestamp":"2026-08-04 21:07:01"}
+{"level":"info","message":"Orchestrator: No domains found for tenant sbi (excluding those currently scanning).","timestamp":"2026-08-04 21:07:01"}
+{"level":"info","message":"Orchestrator: Master DB connection closed.","timestamp":"2026-08-04 21:07:01"}
+{"level":"info","message":"✅ Orchestrator: Finished. Total jobs enqueued: 0","timestamp":"2026-08-04 21:07:01"}
+{"level":"info","message":"Job repeat:c10eea93bf68cc56fd5c63b351df3d32:1785857820000 (Orchestrator) completed successfully.","timestamp":"2026-08-04 21:07:01"}
+{"level":"info","message":"[Job repeat:c10eea93bf68cc56fd5c63b351df3d32:1785857880000] 🚀 Executing scheduled global orchestration...","timestamp":"2026-08-04 21:08:00"}
+{"level":"info","message":"Orchestrator: Starting global scan orchestration... ","timestamp":"2026-08-04 21:08:00"}
+{"level":"info","message":"🔗 Connecting to MASTER database: master","timestamp":"2026-08-04 21:08:00"}
+{"level":"info","message":"Orchestrator: Found 2 tenants to process.","timestamp":"2026-08-04 21:08:01"}
+{"level":"info","message":"📁 Switching to CLIENT database: tenant_rbi (Tenant: rbi)","timestamp":"2026-08-04 21:08:01"}
+{"level":"info","message":"Orchestrator: No domains found for tenant rbi (excluding those currently scanning).","timestamp":"2026-08-04 21:08:01"}
+{"level":"info","message":"📁 Switching to CLIENT database: tenant_sbi (Tenant: sbi)","timestamp":"2026-08-04 21:08:01"}
+{"level":"info","message":"Orchestrator: No domains found for tenant sbi (excluding those currently scanning).","timestamp":"2026-08-04 21:08:01"}
+{"level":"info","message":"Orchestrator: Master DB connection closed.","timestamp":"2026-08-04 21:08:01"}
+{"level":"info","message":"✅ Orchestrator: Finished. Total jobs enqueued: 0","timestamp":"2026-08-04 21:08:01"}
+{"level":"info","message":"Job repeat:c10eea93bf68cc56fd5c63b351df3d32:1785857880000 (Orchestrator) completed successfully.","timestamp":"2026-08-04 21:08:01"}
+{"level":"info","message":"[Job repeat:c10eea93bf68cc56fd5c63b351df3d32:1785857940000] 🚀 Executing scheduled global orchestration...","timestamp":"2026-08-04 21:09:00"}
+{"level":"info","message":"Orchestrator: Starting global scan orchestration... ","timestamp":"2026-08-04 21:09:00"}
+{"level":"info","message":"🔗 Connecting to MASTER database: master","timestamp":"2026-08-04 21:09:00"}
+{"level":"info","message":"Orchestrator: Found 2 tenants to process.","timestamp":"2026-08-04 21:09:00"}
+{"level":"info","message":"📁 Switching to CLIENT database: tenant_rbi (Tenant: rbi)","timestamp":"2026-08-04 21:09:00"}
+{"level":"info","message":"Orchestrator: No domains found for tenant rbi (excluding those currently scanning).","timestamp":"2026-08-04 21:09:00"}
+{"level":"info","message":"📁 Switching to CLIENT database: tenant_sbi (Tenant: sbi)","timestamp":"2026-08-04 21:09:00"}
+{"level":"info","message":"Orchestrator: No domains found for tenant sbi (excluding those currently scanning).","timestamp":"2026-08-04 21:09:01"}
+{"level":"info","message":"Orchestrator: Master DB connection closed.","timestamp":"2026-08-04 21:09:01"}
+{"level":"info","message":"✅ Orchestrator: Finished. Total jobs enqueued: 0","timestamp":"2026-08-04 21:09:01"}
+{"level":"info","message":"Job repeat:c10eea93bf68cc56fd5c63b351df3d32:1785857940000 (Orchestrator) completed successfully.","timestamp":"2026-08-04 21:09:01"}
+{"level":"info","message":"[Job repeat:c10eea93bf68cc56fd5c63b351df3d32:1785858000000] 🚀 Executing scheduled global orchestration...","timestamp":"2026-08-04 21:10:00"}
+{"level":"info","message":"Orchestrator: Starting global scan orchestration... ","timestamp":"2026-08-04 21:10:00"}
+{"level":"info","message":"🔗 Connecting to MASTER database: master","timestamp":"2026-08-04 21:10:00"}
+{"level":"info","message":"Orchestrator: Found 2 tenants to process.","timestamp":"2026-08-04 21:10:01"}
+{"level":"info","message":"📁 Switching to CLIENT database: tenant_rbi (Tenant: rbi)","timestamp":"2026-08-04 21:10:01"}
+{"level":"info","message":"Orchestrator: No domains found for tenant rbi (excluding those currently scanning).","timestamp":"2026-08-04 21:10:01"}
+{"level":"info","message":"📁 Switching to CLIENT database: tenant_sbi (Tenant: sbi)","timestamp":"2026-08-04 21:10:01"}
+{"level":"info","message":"Orchestrator: No domains found for tenant sbi (excluding those currently scanning).","timestamp":"2026-08-04 21:10:01"}
+{"level":"info","message":"Orchestrator: Master DB connection closed.","timestamp":"2026-08-04 21:10:01"}
+{"level":"info","message":"✅ Orchestrator: Finished. Total jobs enqueued: 0","timestamp":"2026-08-04 21:10:01"}
+{"level":"info","message":"Job repeat:c10eea93bf68cc56fd5c63b351df3d32:1785858000000 (Orchestrator) completed successfully.","timestamp":"2026-08-04 21:10:01"}
+{"level":"info","message":"[Job repeat:c10eea93bf68cc56fd5c63b351df3d32:1785858060000] 🚀 Executing scheduled global orchestration...","timestamp":"2026-08-04 21:11:00"}
+{"level":"info","message":"Orchestrator: Starting global scan orchestration... ","timestamp":"2026-08-04 21:11:00"}
+{"level":"info","message":"🔗 Connecting to MASTER database: master","timestamp":"2026-08-04 21:11:00"}
+{"level":"info","message":"Orchestrator: Found 2 tenants to process.","timestamp":"2026-08-04 21:11:01"}
+{"level":"info","message":"📁 Switching to CLIENT database: tenant_rbi (Tenant: rbi)","timestamp":"2026-08-04 21:11:01"}
+{"level":"info","message":"Orchestrator: No domains found for tenant rbi (excluding those currently scanning).","timestamp":"2026-08-04 21:11:01"}
+{"level":"info","message":"📁 Switching to CLIENT database: tenant_sbi (Tenant: sbi)","timestamp":"2026-08-04 21:11:01"}
+{"level":"info","message":"Orchestrator: No domains found for tenant sbi (excluding those currently scanning).","timestamp":"2026-08-04 21:11:01"}
+{"level":"info","message":"Orchestrator: Master DB connection closed.","timestamp":"2026-08-04 21:11:01"}
+{"level":"info","message":"✅ Orchestrator: Finished. Total jobs enqueued: 0","timestamp":"2026-08-04 21:11:01"}
+{"level":"info","message":"Job repeat:c10eea93bf68cc56fd5c63b351df3d32:1785858060000 (Orchestrator) completed successfully.","timestamp":"2026-08-04 21:11:01"}
+{"level":"info","message":"[Job repeat:c10eea93bf68cc56fd5c63b351df3d32:1785858120000] 🚀 Executing scheduled global orchestration...","timestamp":"2026-08-04 21:12:00"}
+{"level":"info","message":"Orchestrator: Starting global scan orchestration... ","timestamp":"2026-08-04 21:12:00"}
+{"level":"info","message":"🔗 Connecting to MASTER database: master","timestamp":"2026-08-04 21:12:00"}
+{"level":"info","message":"Orchestrator: Found 2 tenants to process.","timestamp":"2026-08-04 21:12:01"}
+{"level":"info","message":"📁 Switching to CLIENT database: tenant_rbi (Tenant: rbi)","timestamp":"2026-08-04 21:12:01"}
+{"level":"info","message":"Orchestrator: No domains found for tenant rbi (excluding those currently scanning).","timestamp":"2026-08-04 21:12:01"}
+{"level":"info","message":"📁 Switching to CLIENT database: tenant_sbi (Tenant: sbi)","timestamp":"2026-08-04 21:12:01"}
+{"level":"info","message":"Orchestrator: No domains found for tenant sbi (excluding those currently scanning).","timestamp":"2026-08-04 21:12:01"}
+{"level":"info","message":"Orchestrator: Master DB connection closed.","timestamp":"2026-08-04 21:12:01"}
+{"level":"info","message":"✅ Orchestrator: Finished. Total jobs enqueued: 0","timestamp":"2026-08-04 21:12:01"}
+{"level":"info","message":"Job repeat:c10eea93bf68cc56fd5c63b351df3d32:1785858120000 (Orchestrator) completed successfully.","timestamp":"2026-08-04 21:12:01"}
+{"level":"info","message":"[Job repeat:c10eea93bf68cc56fd5c63b351df3d32:1785858180000] 🚀 Executing scheduled global orchestration...","timestamp":"2026-08-04 21:13:00"}
+{"level":"info","message":"Orchestrator: Starting global scan orchestration... ","timestamp":"2026-08-04 21:13:00"}
+{"level":"info","message":"🔗 Connecting to MASTER database: master","timestamp":"2026-08-04 21:13:00"}
+{"level":"info","message":"Orchestrator: Found 2 tenants to process.","timestamp":"2026-08-04 21:13:01"}
+{"level":"info","message":"📁 Switching to CLIENT database: tenant_rbi (Tenant: rbi)","timestamp":"2026-08-04 21:13:01"}
+{"level":"info","message":"Orchestrator: No domains found for tenant rbi (excluding those currently scanning).","timestamp":"2026-08-04 21:13:01"}
+{"level":"info","message":"📁 Switching to CLIENT database: tenant_sbi (Tenant: sbi)","timestamp":"2026-08-04 21:13:01"}
+{"level":"info","message":"Orchestrator: No domains found for tenant sbi (excluding those currently scanning).","timestamp":"2026-08-04 21:13:01"}
+{"level":"info","message":"Orchestrator: Master DB connection closed.","timestamp":"2026-08-04 21:13:01"}
+{"level":"info","message":"✅ Orchestrator: Finished. Total jobs enqueued: 0","timestamp":"2026-08-04 21:13:01"}
+{"level":"info","message":"Job repeat:c10eea93bf68cc56fd5c63b351df3d32:1785858180000 (Orchestrator) completed successfully.","timestamp":"2026-08-04 21:13:01"}
+{"level":"info","message":"[Job repeat:c10eea93bf68cc56fd5c63b351df3d32:1785858240000] 🚀 Executing scheduled global orchestration...","timestamp":"2026-08-04 21:14:01"}
+{"level":"info","message":"Orchestrator: Starting global scan orchestration... ","timestamp":"2026-08-04 21:14:01"}
+{"level":"info","message":"🔗 Connecting to MASTER database: master","timestamp":"2026-08-04 21:14:01"}
+{"level":"info","message":"Orchestrator: Found 2 tenants to process.","timestamp":"2026-08-04 21:14:01"}
+{"level":"info","message":"📁 Switching to CLIENT database: tenant_rbi (Tenant: rbi)","timestamp":"2026-08-04 21:14:01"}
+{"level":"info","message":"Orchestrator: No domains found for tenant rbi (excluding those currently scanning).","timestamp":"2026-08-04 21:14:01"}
+{"level":"info","message":"📁 Switching to CLIENT database: tenant_sbi (Tenant: sbi)","timestamp":"2026-08-04 21:14:01"}
+{"level":"info","message":"Orchestrator: No domains found for tenant sbi (excluding those currently scanning).","timestamp":"2026-08-04 21:14:02"}
+{"level":"info","message":"Orchestrator: Master DB connection closed.","timestamp":"2026-08-04 21:14:02"}
+{"level":"info","message":"✅ Orchestrator: Finished. Total jobs enqueued: 0","timestamp":"2026-08-04 21:14:02"}
+{"level":"info","message":"Job repeat:c10eea93bf68cc56fd5c63b351df3d32:1785858240000 (Orchestrator) completed successfully.","timestamp":"2026-08-04 21:14:02"}
+{"level":"info","message":"[Job repeat:c10eea93bf68cc56fd5c63b351df3d32:1785858300000] 🚀 Executing scheduled global orchestration...","timestamp":"2026-08-04 21:15:00"}
+{"level":"info","message":"Orchestrator: Starting global scan orchestration... ","timestamp":"2026-08-04 21:15:00"}
+{"level":"info","message":"🔗 Connecting to MASTER database: master","timestamp":"2026-08-04 21:15:00"}
+{"level":"info","message":"Orchestrator: Found 2 tenants to process.","timestamp":"2026-08-04 21:15:01"}
+{"level":"info","message":"📁 Switching to CLIENT database: tenant_rbi (Tenant: rbi)","timestamp":"2026-08-04 21:15:01"}
+{"level":"info","message":"Orchestrator: No domains found for tenant rbi (excluding those currently scanning).","timestamp":"2026-08-04 21:15:01"}
+{"level":"info","message":"📁 Switching to CLIENT database: tenant_sbi (Tenant: sbi)","timestamp":"2026-08-04 21:15:01"}
+{"level":"info","message":"Orchestrator: No domains found for tenant sbi (excluding those currently scanning).","timestamp":"2026-08-04 21:15:01"}
+{"level":"info","message":"Orchestrator: Master DB connection closed.","timestamp":"2026-08-04 21:15:01"}
+{"level":"info","message":"✅ Orchestrator: Finished. Total jobs enqueued: 0","timestamp":"2026-08-04 21:15:01"}
+{"level":"info","message":"Job repeat:c10eea93bf68cc56fd5c63b351df3d32:1785858300000 (Orchestrator) completed successfully.","timestamp":"2026-08-04 21:15:01"}
+{"level":"info","message":"[Job repeat:c10eea93bf68cc56fd5c63b351df3d32:1785858360000] 🚀 Executing scheduled global orchestration...","timestamp":"2026-08-04 21:16:01"}
+{"level":"info","message":"Orchestrator: Starting global scan orchestration... ","timestamp":"2026-08-04 21:16:01"}
+{"level":"info","message":"🔗 Connecting to MASTER database: master","timestamp":"2026-08-04 21:16:01"}
+{"level":"info","message":"Orchestrator: Found 2 tenants to process.","timestamp":"2026-08-04 21:16:01"}
+{"level":"info","message":"📁 Switching to CLIENT database: tenant_rbi (Tenant: rbi)","timestamp":"2026-08-04 21:16:01"}
+{"level":"info","message":"Orchestrator: No domains found for tenant rbi (excluding those currently scanning).","timestamp":"2026-08-04 21:16:02"}
+{"level":"info","message":"📁 Switching to CLIENT database: tenant_sbi (Tenant: sbi)","timestamp":"2026-08-04 21:16:02"}
+{"level":"info","message":"Orchestrator: No domains found for tenant sbi (excluding those currently scanning).","timestamp":"2026-08-04 21:16:02"}
+{"level":"info","message":"Orchestrator: Master DB connection closed.","timestamp":"2026-08-04 21:16:02"}
+{"level":"info","message":"✅ Orchestrator: Finished. Total jobs enqueued: 0","timestamp":"2026-08-04 21:16:02"}
+{"level":"info","message":"Job repeat:c10eea93bf68cc56fd5c63b351df3d32:1785858360000 (Orchestrator) completed successfully.","timestamp":"2026-08-04 21:16:02"}
+{"level":"info","message":"[Job repeat:c10eea93bf68cc56fd5c63b351df3d32:1785858420000] 🚀 Executing scheduled global orchestration...","timestamp":"2026-08-04 21:17:00"}
+{"level":"info","message":"Orchestrator: Starting global scan orchestration... ","timestamp":"2026-08-04 21:17:00"}
+{"level":"info","message":"🔗 Connecting to MASTER database: master","timestamp":"2026-08-04 21:17:00"}
+{"level":"info","message":"Orchestrator: Found 2 tenants to process.","timestamp":"2026-08-04 21:17:02"}
+{"level":"info","message":"📁 Switching to CLIENT database: tenant_rbi (Tenant: rbi)","timestamp":"2026-08-04 21:17:02"}
+{"level":"info","message":"Orchestrator: No domains found for tenant rbi (excluding those currently scanning).","timestamp":"2026-08-04 21:17:02"}
+{"level":"info","message":"📁 Switching to CLIENT database: tenant_sbi (Tenant: sbi)","timestamp":"2026-08-04 21:17:02"}
+{"level":"info","message":"Orchestrator: No domains found for tenant sbi (excluding those currently scanning).","timestamp":"2026-08-04 21:17:02"}
+{"level":"info","message":"Orchestrator: Master DB connection closed.","timestamp":"2026-08-04 21:17:02"}
+{"level":"info","message":"✅ Orchestrator: Finished. Total jobs enqueued: 0","timestamp":"2026-08-04 21:17:02"}
+{"level":"info","message":"Job repeat:c10eea93bf68cc56fd5c63b351df3d32:1785858420000 (Orchestrator) completed successfully.","timestamp":"2026-08-04 21:17:02"}
+{"level":"info","message":"[Job repeat:c10eea93bf68cc56fd5c63b351df3d32:1785858480000] 🚀 Executing scheduled global orchestration...","timestamp":"2026-08-04 21:18:00"}
+{"level":"info","message":"Orchestrator: Starting global scan orchestration... ","timestamp":"2026-08-04 21:18:00"}
+{"level":"info","message":"🔗 Connecting to MASTER database: master","timestamp":"2026-08-04 21:18:00"}
+{"level":"info","message":"Orchestrator: Found 2 tenants to process.","timestamp":"2026-08-04 21:18:01"}
+{"level":"info","message":"📁 Switching to CLIENT database: tenant_rbi (Tenant: rbi)","timestamp":"2026-08-04 21:18:01"}
+{"level":"info","message":"Orchestrator: No domains found for tenant rbi (excluding those currently scanning).","timestamp":"2026-08-04 21:18:01"}
+{"level":"info","message":"📁 Switching to CLIENT database: tenant_sbi (Tenant: sbi)","timestamp":"2026-08-04 21:18:01"}
+{"level":"info","message":"Orchestrator: No domains found for tenant sbi (excluding those currently scanning).","timestamp":"2026-08-04 21:18:01"}
+{"level":"info","message":"Orchestrator: Master DB connection closed.","timestamp":"2026-08-04 21:18:01"}
+{"level":"info","message":"✅ Orchestrator: Finished. Total jobs enqueued: 0","timestamp":"2026-08-04 21:18:01"}
+{"level":"info","message":"Job repeat:c10eea93bf68cc56fd5c63b351df3d32:1785858480000 (Orchestrator) completed successfully.","timestamp":"2026-08-04 21:18:01"}
+{"level":"info","message":"[Job repeat:c10eea93bf68cc56fd5c63b351df3d32:1785858540000] 🚀 Executing scheduled global orchestration...","timestamp":"2026-08-04 21:19:00"}
+{"level":"info","message":"Orchestrator: Starting global scan orchestration... ","timestamp":"2026-08-04 21:19:00"}
+{"level":"info","message":"🔗 Connecting to MASTER database: master","timestamp":"2026-08-04 21:19:00"}
+{"level":"info","message":"Orchestrator: Found 2 tenants to process.","timestamp":"2026-08-04 21:19:01"}
+{"level":"info","message":"📁 Switching to CLIENT database: tenant_rbi (Tenant: rbi)","timestamp":"2026-08-04 21:19:01"}
+{"level":"info","message":"Orchestrator: No domains found for tenant rbi (excluding those currently scanning).","timestamp":"2026-08-04 21:19:01"}
+{"level":"info","message":"📁 Switching to CLIENT database: tenant_sbi (Tenant: sbi)","timestamp":"2026-08-04 21:19:01"}
+{"level":"info","message":"Orchestrator: No domains found for tenant sbi (excluding those currently scanning).","timestamp":"2026-08-04 21:19:01"}
+{"level":"info","message":"Orchestrator: Master DB connection closed.","timestamp":"2026-08-04 21:19:01"}
+{"level":"info","message":"✅ Orchestrator: Finished. Total jobs enqueued: 0","timestamp":"2026-08-04 21:19:01"}
+{"level":"info","message":"Job repeat:c10eea93bf68cc56fd5c63b351df3d32:1785858540000 (Orchestrator) completed successfully.","timestamp":"2026-08-04 21:19:01"}
+{"level":"info","message":"[Job repeat:c10eea93bf68cc56fd5c63b351df3d32:1785858600000] 🚀 Executing scheduled global orchestration...","timestamp":"2026-08-04 21:20:00"}
+{"level":"info","message":"Orchestrator: Starting global scan orchestration... ","timestamp":"2026-08-04 21:20:00"}
+{"level":"info","message":"🔗 Connecting to MASTER database: master","timestamp":"2026-08-04 21:20:00"}
+{"level":"info","message":"Orchestrator: Found 2 tenants to process.","timestamp":"2026-08-04 21:20:00"}
+{"level":"info","message":"📁 Switching to CLIENT database: tenant_rbi (Tenant: rbi)","timestamp":"2026-08-04 21:20:00"}
+{"level":"info","message":"Orchestrator: No domains found for tenant rbi (excluding those currently scanning).","timestamp":"2026-08-04 21:20:01"}
+{"level":"info","message":"📁 Switching to CLIENT database: tenant_sbi (Tenant: sbi)","timestamp":"2026-08-04 21:20:01"}
+{"level":"info","message":"Orchestrator: No domains found for tenant sbi (excluding those currently scanning).","timestamp":"2026-08-04 21:20:01"}
+{"level":"info","message":"Orchestrator: Master DB connection closed.","timestamp":"2026-08-04 21:20:01"}
+{"level":"info","message":"✅ Orchestrator: Finished. Total jobs enqueued: 0","timestamp":"2026-08-04 21:20:01"}
+{"level":"info","message":"Job repeat:c10eea93bf68cc56fd5c63b351df3d32:1785858600000 (Orchestrator) completed successfully.","timestamp":"2026-08-04 21:20:01"}
+{"level":"info","message":"[Job repeat:c10eea93bf68cc56fd5c63b351df3d32:1785858660000] 🚀 Executing scheduled global orchestration...","timestamp":"2026-08-04 21:21:00"}
+{"level":"info","message":"Orchestrator: Starting global scan orchestration... ","timestamp":"2026-08-04 21:21:00"}
+{"level":"info","message":"🔗 Connecting to MASTER database: master","timestamp":"2026-08-04 21:21:00"}
+{"level":"error","message":"Orchestrator: Critical error in global scan: querySrv EREFUSED _mongodb._tcp.cluster0.ev4p3qf.mongodb.net","timestamp":"2026-08-04 21:21:00"}
+{"level":"error","message":"Job repeat:c10eea93bf68cc56fd5c63b351df3d32:1785858660000 (Orchestrator) failed: querySrv EREFUSED _mongodb._tcp.cluster0.ev4p3qf.mongodb.net","timestamp":"2026-08-04 21:21:00"}
+{"level":"info","message":"[Job repeat:c10eea93bf68cc56fd5c63b351df3d32:1785858660000] 🚀 Executing scheduled global orchestration...","timestamp":"2026-08-04 21:21:02"}
+{"level":"info","message":"Orchestrator: Starting global scan orchestration... ","timestamp":"2026-08-04 21:21:02"}
+{"level":"info","message":"🔗 Connecting to MASTER database: master","timestamp":"2026-08-04 21:21:02"}
+{"level":"error","message":"Orchestrator: Critical error in global scan: querySrv EREFUSED _mongodb._tcp.cluster0.ev4p3qf.mongodb.net","timestamp":"2026-08-04 21:21:02"}
+{"level":"error","message":"Job repeat:c10eea93bf68cc56fd5c63b351df3d32:1785858660000 (Orchestrator) failed: querySrv EREFUSED _mongodb._tcp.cluster0.ev4p3qf.mongodb.net","timestamp":"2026-08-04 21:21:02"}
+{"level":"info","message":"[Job repeat:c10eea93bf68cc56fd5c63b351df3d32:1785858660000] 🚀 Executing scheduled global orchestration...","timestamp":"2026-08-04 21:21:04"}
+{"level":"info","message":"Orchestrator: Starting global scan orchestration... ","timestamp":"2026-08-04 21:21:04"}
+{"level":"info","message":"🔗 Connecting to MASTER database: master","timestamp":"2026-08-04 21:21:04"}
+{"level":"error","message":"Orchestrator: Critical error in global scan: querySrv EREFUSED _mongodb._tcp.cluster0.ev4p3qf.mongodb.net","timestamp":"2026-08-04 21:21:04"}
+{"level":"error","message":"Job repeat:c10eea93bf68cc56fd5c63b351df3d32:1785858660000 (Orchestrator) failed: querySrv EREFUSED _mongodb._tcp.cluster0.ev4p3qf.mongodb.net","timestamp":"2026-08-04 21:21:04"}
+{"level":"info","message":"[Job repeat:c10eea93bf68cc56fd5c63b351df3d32:1785858720000] 🚀 Executing scheduled global orchestration...","timestamp":"2026-08-04 21:22:00"}
+{"level":"info","message":"Orchestrator: Starting global scan orchestration... ","timestamp":"2026-08-04 21:22:00"}
+{"level":"info","message":"🔗 Connecting to MASTER database: master","timestamp":"2026-08-04 21:22:00"}
+{"level":"error","message":"Orchestrator: Critical error in global scan: querySrv EREFUSED _mongodb._tcp.cluster0.ev4p3qf.mongodb.net","timestamp":"2026-08-04 21:22:00"}
+{"level":"error","message":"Job repeat:c10eea93bf68cc56fd5c63b351df3d32:1785858720000 (Orchestrator) failed: querySrv EREFUSED _mongodb._tcp.cluster0.ev4p3qf.mongodb.net","timestamp":"2026-08-04 21:22:00"}
+{"level":"info","message":"[Job repeat:c10eea93bf68cc56fd5c63b351df3d32:1785858720000] 🚀 Executing scheduled global orchestration...","timestamp":"2026-08-04 21:22:01"}
+{"level":"info","message":"Orchestrator: Starting global scan orchestration... ","timestamp":"2026-08-04 21:22:01"}
+{"level":"info","message":"🔗 Connecting to MASTER database: master","timestamp":"2026-08-04 21:22:01"}
+{"level":"error","message":"Orchestrator: Critical error in global scan: querySrv EREFUSED _mongodb._tcp.cluster0.ev4p3qf.mongodb.net","timestamp":"2026-08-04 21:22:01"}
+{"level":"error","message":"Job repeat:c10eea93bf68cc56fd5c63b351df3d32:1785858720000 (Orchestrator) failed: querySrv EREFUSED _mongodb._tcp.cluster0.ev4p3qf.mongodb.net","timestamp":"2026-08-04 21:22:01"}
+{"level":"info","message":"[Job repeat:c10eea93bf68cc56fd5c63b351df3d32:1785858720000] 🚀 Executing scheduled global orchestration...","timestamp":"2026-08-04 21:22:03"}
+{"level":"info","message":"Orchestrator: Starting global scan orchestration... ","timestamp":"2026-08-04 21:22:03"}
+{"level":"info","message":"🔗 Connecting to MASTER database: master","timestamp":"2026-08-04 21:22:03"}
+{"level":"error","message":"Orchestrator: Critical error in global scan: querySrv EREFUSED _mongodb._tcp.cluster0.ev4p3qf.mongodb.net","timestamp":"2026-08-04 21:22:03"}
+{"level":"error","message":"Job repeat:c10eea93bf68cc56fd5c63b351df3d32:1785858720000 (Orchestrator) failed: querySrv EREFUSED _mongodb._tcp.cluster0.ev4p3qf.mongodb.net","timestamp":"2026-08-04 21:22:03"}
+{"level":"info","message":"[Job repeat:c10eea93bf68cc56fd5c63b351df3d32:1785858780000] 🚀 Executing scheduled global orchestration...","timestamp":"2026-08-04 21:23:00"}
+{"level":"info","message":"Orchestrator: Starting global scan orchestration... ","timestamp":"2026-08-04 21:23:00"}
+{"level":"info","message":"🔗 Connecting to MASTER database: master","timestamp":"2026-08-04 21:23:00"}
+{"level":"error","message":"Orchestrator: Critical error in global scan: querySrv ECONNREFUSED _mongodb._tcp.cluster0.ev4p3qf.mongodb.net","timestamp":"2026-08-04 21:23:20"}
+{"level":"error","message":"Job repeat:c10eea93bf68cc56fd5c63b351df3d32:1785858780000 (Orchestrator) failed: querySrv ECONNREFUSED _mongodb._tcp.cluster0.ev4p3qf.mongodb.net","timestamp":"2026-08-04 21:23:20"}
+{"level":"info","message":"[Job repeat:c10eea93bf68cc56fd5c63b351df3d32:1785858780000] 🚀 Executing scheduled global orchestration...","timestamp":"2026-08-04 21:23:21"}
+{"level":"info","message":"Orchestrator: Starting global scan orchestration... ","timestamp":"2026-08-04 21:23:21"}
+{"level":"info","message":"🔗 Connecting to MASTER database: master","timestamp":"2026-08-04 21:23:21"}
+{"level":"error","message":"Orchestrator: Critical error in global scan: querySrv ECONNREFUSED _mongodb._tcp.cluster0.ev4p3qf.mongodb.net","timestamp":"2026-08-04 21:23:51"}
+{"level":"error","message":"Job repeat:c10eea93bf68cc56fd5c63b351df3d32:1785858780000 (Orchestrator) failed: querySrv ECONNREFUSED _mongodb._tcp.cluster0.ev4p3qf.mongodb.net","timestamp":"2026-08-04 21:23:51"}
+{"level":"info","message":"[Job repeat:c10eea93bf68cc56fd5c63b351df3d32:1785858780000] 🚀 Executing scheduled global orchestration...","timestamp":"2026-08-04 21:23:53"}
+{"level":"info","message":"Orchestrator: Starting global scan orchestration... ","timestamp":"2026-08-04 21:23:53"}
+{"level":"info","message":"🔗 Connecting to MASTER database: master","timestamp":"2026-08-04 21:23:53"}
+{"level":"info","message":"[Job repeat:c10eea93bf68cc56fd5c63b351df3d32:1785858840000] 🚀 Executing scheduled global orchestration...","timestamp":"2026-08-04 21:24:00"}
+{"level":"info","message":"Orchestrator: Starting global scan orchestration... ","timestamp":"2026-08-04 21:24:00"}
+{"level":"info","message":"🔗 Connecting to MASTER database: master","timestamp":"2026-08-04 21:24:00"}
+{"level":"error","message":"Orchestrator: Critical error in global scan: querySrv EREFUSED _mongodb._tcp.cluster0.ev4p3qf.mongodb.net","timestamp":"2026-08-04 21:24:00"}
+{"level":"error","message":"Job repeat:c10eea93bf68cc56fd5c63b351df3d32:1785858840000 (Orchestrator) failed: querySrv EREFUSED _mongodb._tcp.cluster0.ev4p3qf.mongodb.net","timestamp":"2026-08-04 21:24:00"}
+{"level":"info","message":"[Job repeat:c10eea93bf68cc56fd5c63b351df3d32:1785858840000] 🚀 Executing scheduled global orchestration...","timestamp":"2026-08-04 21:24:02"}
+{"level":"info","message":"Orchestrator: Starting global scan orchestration... ","timestamp":"2026-08-04 21:24:02"}
+{"level":"info","message":"🔗 Connecting to MASTER database: master","timestamp":"2026-08-04 21:24:02"}
+{"level":"error","message":"Orchestrator: Critical error in global scan: querySrv EREFUSED _mongodb._tcp.cluster0.ev4p3qf.mongodb.net","timestamp":"2026-08-04 21:24:02"}
+{"level":"error","message":"Job repeat:c10eea93bf68cc56fd5c63b351df3d32:1785858840000 (Orchestrator) failed: querySrv EREFUSED _mongodb._tcp.cluster0.ev4p3qf.mongodb.net","timestamp":"2026-08-04 21:24:02"}
+{"level":"info","message":"[Job repeat:c10eea93bf68cc56fd5c63b351df3d32:1785858840000] 🚀 Executing scheduled global orchestration...","timestamp":"2026-08-04 21:24:04"}
+{"level":"info","message":"Orchestrator: Starting global scan orchestration... ","timestamp":"2026-08-04 21:24:04"}
+{"level":"info","message":"🔗 Connecting to MASTER database: master","timestamp":"2026-08-04 21:24:04"}
+{"level":"error","message":"Orchestrator: Critical error in global scan: querySrv EREFUSED _mongodb._tcp.cluster0.ev4p3qf.mongodb.net","timestamp":"2026-08-04 21:24:04"}
+{"level":"error","message":"Job repeat:c10eea93bf68cc56fd5c63b351df3d32:1785858840000 (Orchestrator) failed: querySrv EREFUSED _mongodb._tcp.cluster0.ev4p3qf.mongodb.net","timestamp":"2026-08-04 21:24:04"}
+{"level":"error","message":"Orchestrator: Critical error in global scan: querySrv EREFUSED _mongodb._tcp.cluster0.ev4p3qf.mongodb.net","timestamp":"2026-08-04 21:24:08"}
+{"level":"error","message":"Job repeat:c10eea93bf68cc56fd5c63b351df3d32:1785858780000 (Orchestrator) failed: querySrv EREFUSED _mongodb._tcp.cluster0.ev4p3qf.mongodb.net","timestamp":"2026-08-04 21:24:08"}
+{"level":"info","message":"[Job repeat:c10eea93bf68cc56fd5c63b351df3d32:1785858900000] 🚀 Executing scheduled global orchestration...","timestamp":"2026-08-04 21:25:00"}
+{"level":"info","message":"Orchestrator: Starting global scan orchestration... ","timestamp":"2026-08-04 21:25:00"}
+{"level":"info","message":"🔗 Connecting to MASTER database: master","timestamp":"2026-08-04 21:25:00"}
+{"level":"error","message":"Orchestrator: Critical error in global scan: querySrv EREFUSED _mongodb._tcp.cluster0.ev4p3qf.mongodb.net","timestamp":"2026-08-04 21:25:00"}
+{"level":"error","message":"Job repeat:c10eea93bf68cc56fd5c63b351df3d32:1785858900000 (Orchestrator) failed: querySrv EREFUSED _mongodb._tcp.cluster0.ev4p3qf.mongodb.net","timestamp":"2026-08-04 21:25:00"}
+{"level":"info","message":"[Job repeat:c10eea93bf68cc56fd5c63b351df3d32:1785858900000] 🚀 Executing scheduled global orchestration...","timestamp":"2026-08-04 21:25:01"}
+{"level":"info","message":"Orchestrator: Starting global scan orchestration... ","timestamp":"2026-08-04 21:25:01"}
+{"level":"info","message":"🔗 Connecting to MASTER database: master","timestamp":"2026-08-04 21:25:01"}
+{"level":"error","message":"Orchestrator: Critical error in global scan: querySrv EREFUSED _mongodb._tcp.cluster0.ev4p3qf.mongodb.net","timestamp":"2026-08-04 21:25:01"}
+{"level":"error","message":"Job repeat:c10eea93bf68cc56fd5c63b351df3d32:1785858900000 (Orchestrator) failed: querySrv EREFUSED _mongodb._tcp.cluster0.ev4p3qf.mongodb.net","timestamp":"2026-08-04 21:25:01"}
+{"level":"info","message":"[Job repeat:c10eea93bf68cc56fd5c63b351df3d32:1785858900000] 🚀 Executing scheduled global orchestration...","timestamp":"2026-08-04 21:25:03"}
+{"level":"info","message":"Orchestrator: Starting global scan orchestration... ","timestamp":"2026-08-04 21:25:03"}
+{"level":"info","message":"🔗 Connecting to MASTER database: master","timestamp":"2026-08-04 21:25:03"}
+{"level":"error","message":"Orchestrator: Critical error in global scan: querySrv EREFUSED _mongodb._tcp.cluster0.ev4p3qf.mongodb.net","timestamp":"2026-08-04 21:25:03"}
+{"level":"error","message":"Job repeat:c10eea93bf68cc56fd5c63b351df3d32:1785858900000 (Orchestrator) failed: querySrv EREFUSED _mongodb._tcp.cluster0.ev4p3qf.mongodb.net","timestamp":"2026-08-04 21:25:03"}
+{"level":"info","message":"[Job repeat:c10eea93bf68cc56fd5c63b351df3d32:1785858960000] 🚀 Executing scheduled global orchestration...","timestamp":"2026-08-04 21:26:00"}
+{"level":"info","message":"Orchestrator: Starting global scan orchestration... ","timestamp":"2026-08-04 21:26:00"}
+{"level":"info","message":"🔗 Connecting to MASTER database: master","timestamp":"2026-08-04 21:26:00"}
+{"level":"error","message":"Orchestrator: Critical error in global scan: querySrv EREFUSED _mongodb._tcp.cluster0.ev4p3qf.mongodb.net","timestamp":"2026-08-04 21:26:00"}
+{"level":"error","message":"Job repeat:c10eea93bf68cc56fd5c63b351df3d32:1785858960000 (Orchestrator) failed: querySrv EREFUSED _mongodb._tcp.cluster0.ev4p3qf.mongodb.net","timestamp":"2026-08-04 21:26:00"}
+{"level":"info","message":"[Job repeat:c10eea93bf68cc56fd5c63b351df3d32:1785858960000] 🚀 Executing scheduled global orchestration...","timestamp":"2026-08-04 21:26:01"}
+{"level":"info","message":"Orchestrator: Starting global scan orchestration... ","timestamp":"2026-08-04 21:26:01"}
+{"level":"info","message":"🔗 Connecting to MASTER database: master","timestamp":"2026-08-04 21:26:01"}
+{"level":"error","message":"Orchestrator: Critical error in global scan: querySrv EREFUSED _mongodb._tcp.cluster0.ev4p3qf.mongodb.net","timestamp":"2026-08-04 21:26:01"}
+{"level":"error","message":"Job repeat:c10eea93bf68cc56fd5c63b351df3d32:1785858960000 (Orchestrator) failed: querySrv EREFUSED _mongodb._tcp.cluster0.ev4p3qf.mongodb.net","timestamp":"2026-08-04 21:26:01"}
+{"level":"info","message":"[Job repeat:c10eea93bf68cc56fd5c63b351df3d32:1785858960000] 🚀 Executing scheduled global orchestration...","timestamp":"2026-08-04 21:26:03"}
+{"level":"info","message":"Orchestrator: Starting global scan orchestration... ","timestamp":"2026-08-04 21:26:03"}
+{"level":"info","message":"🔗 Connecting to MASTER database: master","timestamp":"2026-08-04 21:26:03"}
+{"level":"error","message":"Orchestrator: Critical error in global scan: querySrv EREFUSED _mongodb._tcp.cluster0.ev4p3qf.mongodb.net","timestamp":"2026-08-04 21:26:03"}
+{"level":"error","message":"Job repeat:c10eea93bf68cc56fd5c63b351df3d32:1785858960000 (Orchestrator) failed: querySrv EREFUSED _mongodb._tcp.cluster0.ev4p3qf.mongodb.net","timestamp":"2026-08-04 21:26:03"}
+{"level":"info","message":"[Job repeat:c10eea93bf68cc56fd5c63b351df3d32:1785859020000] 🚀 Executing scheduled global orchestration...","timestamp":"2026-08-04 21:27:01"}
+{"level":"info","message":"Orchestrator: Starting global scan orchestration... ","timestamp":"2026-08-04 21:27:01"}
+{"level":"info","message":"🔗 Connecting to MASTER database: master","timestamp":"2026-08-04 21:27:01"}
+{"level":"error","message":"Orchestrator: Critical error in global scan: querySrv EREFUSED _mongodb._tcp.cluster0.ev4p3qf.mongodb.net","timestamp":"2026-08-04 21:27:01"}
+{"level":"error","message":"Job repeat:c10eea93bf68cc56fd5c63b351df3d32:1785859020000 (Orchestrator) failed: querySrv EREFUSED _mongodb._tcp.cluster0.ev4p3qf.mongodb.net","timestamp":"2026-08-04 21:27:01"}
+{"level":"info","message":"[Job repeat:c10eea93bf68cc56fd5c63b351df3d32:1785859020000] 🚀 Executing scheduled global orchestration...","timestamp":"2026-08-04 21:27:02"}
+{"level":"info","message":"Orchestrator: Starting global scan orchestration... ","timestamp":"2026-08-04 21:27:02"}
+{"level":"info","message":"🔗 Connecting to MASTER database: master","timestamp":"2026-08-04 21:27:02"}
+{"level":"error","message":"Orchestrator: Critical error in global scan: querySrv EREFUSED _mongodb._tcp.cluster0.ev4p3qf.mongodb.net","timestamp":"2026-08-04 21:27:02"}
+{"level":"error","message":"Job repeat:c10eea93bf68cc56fd5c63b351df3d32:1785859020000 (Orchestrator) failed: querySrv EREFUSED _mongodb._tcp.cluster0.ev4p3qf.mongodb.net","timestamp":"2026-08-04 21:27:02"}
+{"level":"info","message":"[Job repeat:c10eea93bf68cc56fd5c63b351df3d32:1785859020000] 🚀 Executing scheduled global orchestration...","timestamp":"2026-08-04 21:27:04"}
+{"level":"info","message":"Orchestrator: Starting global scan orchestration... ","timestamp":"2026-08-04 21:27:04"}
+{"level":"info","message":"🔗 Connecting to MASTER database: master","timestamp":"2026-08-04 21:27:04"}
+{"level":"error","message":"Orchestrator: Critical error in global scan: querySrv EREFUSED _mongodb._tcp.cluster0.ev4p3qf.mongodb.net","timestamp":"2026-08-04 21:27:04"}
+{"level":"error","message":"Job repeat:c10eea93bf68cc56fd5c63b351df3d32:1785859020000 (Orchestrator) failed: querySrv EREFUSED _mongodb._tcp.cluster0.ev4p3qf.mongodb.net","timestamp":"2026-08-04 21:27:04"}
+{"level":"info","message":"[Job repeat:c10eea93bf68cc56fd5c63b351df3d32:1785859080000] 🚀 Executing scheduled global orchestration...","timestamp":"2026-08-04 21:28:00"}
+{"level":"info","message":"Orchestrator: Starting global scan orchestration... ","timestamp":"2026-08-04 21:28:00"}
+{"level":"info","message":"🔗 Connecting to MASTER database: master","timestamp":"2026-08-04 21:28:00"}
+{"level":"error","message":"Orchestrator: Critical error in global scan: querySrv EREFUSED _mongodb._tcp.cluster0.ev4p3qf.mongodb.net","timestamp":"2026-08-04 21:28:00"}
+{"level":"error","message":"Job repeat:c10eea93bf68cc56fd5c63b351df3d32:1785859080000 (Orchestrator) failed: querySrv EREFUSED _mongodb._tcp.cluster0.ev4p3qf.mongodb.net","timestamp":"2026-08-04 21:28:00"}
+{"level":"info","message":"[Job repeat:c10eea93bf68cc56fd5c63b351df3d32:1785859080000] 🚀 Executing scheduled global orchestration...","timestamp":"2026-08-04 21:28:01"}
+{"level":"info","message":"Orchestrator: Starting global scan orchestration... ","timestamp":"2026-08-04 21:28:01"}
+{"level":"info","message":"🔗 Connecting to MASTER database: master","timestamp":"2026-08-04 21:28:01"}
+{"level":"error","message":"Orchestrator: Critical error in global scan: querySrv EREFUSED _mongodb._tcp.cluster0.ev4p3qf.mongodb.net","timestamp":"2026-08-04 21:28:01"}
+{"level":"error","message":"Job repeat:c10eea93bf68cc56fd5c63b351df3d32:1785859080000 (Orchestrator) failed: querySrv EREFUSED _mongodb._tcp.cluster0.ev4p3qf.mongodb.net","timestamp":"2026-08-04 21:28:01"}
+{"level":"info","message":"[Job repeat:c10eea93bf68cc56fd5c63b351df3d32:1785859080000] 🚀 Executing scheduled global orchestration...","timestamp":"2026-08-04 21:28:03"}
+{"level":"info","message":"Orchestrator: Starting global scan orchestration... ","timestamp":"2026-08-04 21:28:03"}
+{"level":"info","message":"🔗 Connecting to MASTER database: master","timestamp":"2026-08-04 21:28:03"}
+{"level":"error","message":"Orchestrator: Critical error in global scan: querySrv EREFUSED _mongodb._tcp.cluster0.ev4p3qf.mongodb.net","timestamp":"2026-08-04 21:28:03"}
+{"level":"error","message":"Job repeat:c10eea93bf68cc56fd5c63b351df3d32:1785859080000 (Orchestrator) failed: querySrv EREFUSED _mongodb._tcp.cluster0.ev4p3qf.mongodb.net","timestamp":"2026-08-04 21:28:03"}
+{"level":"info","message":"[Job repeat:c10eea93bf68cc56fd5c63b351df3d32:1785859140000] 🚀 Executing scheduled global orchestration...","timestamp":"2026-08-04 21:29:00"}
+{"level":"info","message":"Orchestrator: Starting global scan orchestration... ","timestamp":"2026-08-04 21:29:00"}
+{"level":"info","message":"🔗 Connecting to MASTER database: master","timestamp":"2026-08-04 21:29:00"}
+{"level":"error","message":"Orchestrator: Critical error in global scan: querySrv EREFUSED _mongodb._tcp.cluster0.ev4p3qf.mongodb.net","timestamp":"2026-08-04 21:29:00"}
+{"level":"error","message":"Job repeat:c10eea93bf68cc56fd5c63b351df3d32:1785859140000 (Orchestrator) failed: querySrv EREFUSED _mongodb._tcp.cluster0.ev4p3qf.mongodb.net","timestamp":"2026-08-04 21:29:00"}
+{"level":"info","message":"[Job repeat:c10eea93bf68cc56fd5c63b351df3d32:1785859140000] 🚀 Executing scheduled global orchestration...","timestamp":"2026-08-04 21:29:02"}
+{"level":"info","message":"Orchestrator: Starting global scan orchestration... ","timestamp":"2026-08-04 21:29:02"}
+{"level":"info","message":"🔗 Connecting to MASTER database: master","timestamp":"2026-08-04 21:29:02"}
+{"level":"error","message":"Orchestrator: Critical error in global scan: querySrv EREFUSED _mongodb._tcp.cluster0.ev4p3qf.mongodb.net","timestamp":"2026-08-04 21:29:02"}
+{"level":"error","message":"Job repeat:c10eea93bf68cc56fd5c63b351df3d32:1785859140000 (Orchestrator) failed: querySrv EREFUSED _mongodb._tcp.cluster0.ev4p3qf.mongodb.net","timestamp":"2026-08-04 21:29:02"}
+{"level":"info","message":"[Job repeat:c10eea93bf68cc56fd5c63b351df3d32:1785859140000] 🚀 Executing scheduled global orchestration...","timestamp":"2026-08-04 21:29:04"}
+{"level":"info","message":"Orchestrator: Starting global scan orchestration... ","timestamp":"2026-08-04 21:29:04"}
+{"level":"info","message":"🔗 Connecting to MASTER database: master","timestamp":"2026-08-04 21:29:04"}
+{"level":"error","message":"Orchestrator: Critical error in global scan: querySrv EREFUSED _mongodb._tcp.cluster0.ev4p3qf.mongodb.net","timestamp":"2026-08-04 21:29:04"}
+{"level":"error","message":"Job repeat:c10eea93bf68cc56fd5c63b351df3d32:1785859140000 (Orchestrator) failed: querySrv EREFUSED _mongodb._tcp.cluster0.ev4p3qf.mongodb.net","timestamp":"2026-08-04 21:29:04"}
+{"level":"info","message":"[Job repeat:c10eea93bf68cc56fd5c63b351df3d32:1785859200000] 🚀 Executing scheduled global orchestration...","timestamp":"2026-08-04 21:30:00"}
+{"level":"info","message":"Orchestrator: Starting global scan orchestration... ","timestamp":"2026-08-04 21:30:00"}
+{"level":"info","message":"🔗 Connecting to MASTER database: master","timestamp":"2026-08-04 21:30:00"}
+{"level":"error","message":"Orchestrator: Critical error in global scan: querySrv EREFUSED _mongodb._tcp.cluster0.ev4p3qf.mongodb.net","timestamp":"2026-08-04 21:30:00"}
+{"level":"error","message":"Job repeat:c10eea93bf68cc56fd5c63b351df3d32:1785859200000 (Orchestrator) failed: querySrv EREFUSED _mongodb._tcp.cluster0.ev4p3qf.mongodb.net","timestamp":"2026-08-04 21:30:00"}
+{"level":"info","message":"[Job repeat:c10eea93bf68cc56fd5c63b351df3d32:1785859200000] 🚀 Executing scheduled global orchestration...","timestamp":"2026-08-04 21:30:01"}
+{"level":"info","message":"Orchestrator: Starting global scan orchestration... ","timestamp":"2026-08-04 21:30:01"}
+{"level":"info","message":"🔗 Connecting to MASTER database: master","timestamp":"2026-08-04 21:30:01"}
+{"level":"error","message":"Orchestrator: Critical error in global scan: querySrv EREFUSED _mongodb._tcp.cluster0.ev4p3qf.mongodb.net","timestamp":"2026-08-04 21:30:01"}
+{"level":"error","message":"Job repeat:c10eea93bf68cc56fd5c63b351df3d32:1785859200000 (Orchestrator) failed: querySrv EREFUSED _mongodb._tcp.cluster0.ev4p3qf.mongodb.net","timestamp":"2026-08-04 21:30:01"}
+{"level":"info","message":"[Job repeat:c10eea93bf68cc56fd5c63b351df3d32:1785859200000] 🚀 Executing scheduled global orchestration...","timestamp":"2026-08-04 21:30:03"}
+{"level":"info","message":"Orchestrator: Starting global scan orchestration... ","timestamp":"2026-08-04 21:30:03"}
+{"level":"info","message":"🔗 Connecting to MASTER database: master","timestamp":"2026-08-04 21:30:03"}
+{"level":"error","message":"Orchestrator: Critical error in global scan: querySrv EREFUSED _mongodb._tcp.cluster0.ev4p3qf.mongodb.net","timestamp":"2026-08-04 21:30:03"}
+{"level":"error","message":"Job repeat:c10eea93bf68cc56fd5c63b351df3d32:1785859200000 (Orchestrator) failed: querySrv EREFUSED _mongodb._tcp.cluster0.ev4p3qf.mongodb.net","timestamp":"2026-08-04 21:30:03"}
+{"level":"info","message":"[Job repeat:c10eea93bf68cc56fd5c63b351df3d32:1785859260000] 🚀 Executing scheduled global orchestration...","timestamp":"2026-08-04 21:31:00"}
+{"level":"info","message":"Orchestrator: Starting global scan orchestration... ","timestamp":"2026-08-04 21:31:00"}
+{"level":"info","message":"🔗 Connecting to MASTER database: master","timestamp":"2026-08-04 21:31:00"}
+{"level":"error","message":"Orchestrator: Critical error in global scan: querySrv EREFUSED _mongodb._tcp.cluster0.ev4p3qf.mongodb.net","timestamp":"2026-08-04 21:31:00"}
+{"level":"error","message":"Job repeat:c10eea93bf68cc56fd5c63b351df3d32:1785859260000 (Orchestrator) failed: querySrv EREFUSED _mongodb._tcp.cluster0.ev4p3qf.mongodb.net","timestamp":"2026-08-04 21:31:00"}
+{"level":"info","message":"[Job repeat:c10eea93bf68cc56fd5c63b351df3d32:1785859260000] 🚀 Executing scheduled global orchestration...","timestamp":"2026-08-04 21:31:01"}
+{"level":"info","message":"Orchestrator: Starting global scan orchestration... ","timestamp":"2026-08-04 21:31:01"}
+{"level":"info","message":"🔗 Connecting to MASTER database: master","timestamp":"2026-08-04 21:31:01"}
+{"level":"error","message":"Orchestrator: Critical error in global scan: querySrv EREFUSED _mongodb._tcp.cluster0.ev4p3qf.mongodb.net","timestamp":"2026-08-04 21:31:01"}
+{"level":"error","message":"Job repeat:c10eea93bf68cc56fd5c63b351df3d32:1785859260000 (Orchestrator) failed: querySrv EREFUSED _mongodb._tcp.cluster0.ev4p3qf.mongodb.net","timestamp":"2026-08-04 21:31:01"}
+{"level":"info","message":"[Job repeat:c10eea93bf68cc56fd5c63b351df3d32:1785859260000] 🚀 Executing scheduled global orchestration...","timestamp":"2026-08-04 21:31:03"}
+{"level":"info","message":"Orchestrator: Starting global scan orchestration... ","timestamp":"2026-08-04 21:31:03"}
+{"level":"info","message":"🔗 Connecting to MASTER database: master","timestamp":"2026-08-04 21:31:03"}
+{"level":"error","message":"Orchestrator: Critical error in global scan: querySrv EREFUSED _mongodb._tcp.cluster0.ev4p3qf.mongodb.net","timestamp":"2026-08-04 21:31:03"}
+{"level":"error","message":"Job repeat:c10eea93bf68cc56fd5c63b351df3d32:1785859260000 (Orchestrator) failed: querySrv EREFUSED _mongodb._tcp.cluster0.ev4p3qf.mongodb.net","timestamp":"2026-08-04 21:31:03"}
+{"level":"info","message":"[Job repeat:c10eea93bf68cc56fd5c63b351df3d32:1785859320000] 🚀 Executing scheduled global orchestration...","timestamp":"2026-08-04 21:32:00"}
+{"level":"info","message":"Orchestrator: Starting global scan orchestration... ","timestamp":"2026-08-04 21:32:00"}
+{"level":"info","message":"🔗 Connecting to MASTER database: master","timestamp":"2026-08-04 21:32:00"}
+{"level":"info","message":"Orchestrator: Found 2 tenants to process.","timestamp":"2026-08-04 21:32:00"}
+{"level":"info","message":"📁 Switching to CLIENT database: tenant_rbi (Tenant: rbi)","timestamp":"2026-08-04 21:32:00"}
+{"level":"info","message":"Orchestrator: No domains found for tenant rbi (excluding those currently scanning).","timestamp":"2026-08-04 21:32:01"}
+{"level":"info","message":"📁 Switching to CLIENT database: tenant_sbi (Tenant: sbi)","timestamp":"2026-08-04 21:32:01"}
+{"level":"info","message":"Orchestrator: No domains found for tenant sbi (excluding those currently scanning).","timestamp":"2026-08-04 21:32:01"}
+{"level":"info","message":"Orchestrator: Master DB connection closed.","timestamp":"2026-08-04 21:32:01"}
+{"level":"info","message":"✅ Orchestrator: Finished. Total jobs enqueued: 0","timestamp":"2026-08-04 21:32:01"}
+{"level":"info","message":"Job repeat:c10eea93bf68cc56fd5c63b351df3d32:1785859320000 (Orchestrator) completed successfully.","timestamp":"2026-08-04 21:32:01"}
+{"level":"info","message":"[Job repeat:c10eea93bf68cc56fd5c63b351df3d32:1785859380000] 🚀 Executing scheduled global orchestration...","timestamp":"2026-08-04 21:33:00"}
+{"level":"info","message":"Orchestrator: Starting global scan orchestration... ","timestamp":"2026-08-04 21:33:00"}
+{"level":"info","message":"🔗 Connecting to MASTER database: master","timestamp":"2026-08-04 21:33:00"}
+{"level":"error","message":"Orchestrator: Critical error in global scan: querySrv EREFUSED _mongodb._tcp.cluster0.ev4p3qf.mongodb.net","timestamp":"2026-08-04 21:33:00"}
+{"level":"error","message":"Job repeat:c10eea93bf68cc56fd5c63b351df3d32:1785859380000 (Orchestrator) failed: querySrv EREFUSED _mongodb._tcp.cluster0.ev4p3qf.mongodb.net","timestamp":"2026-08-04 21:33:00"}
+{"level":"info","message":"[Job repeat:c10eea93bf68cc56fd5c63b351df3d32:1785859380000] 🚀 Executing scheduled global orchestration...","timestamp":"2026-08-04 21:33:01"}
+{"level":"info","message":"Orchestrator: Starting global scan orchestration... ","timestamp":"2026-08-04 21:33:01"}
+{"level":"info","message":"🔗 Connecting to MASTER database: master","timestamp":"2026-08-04 21:33:01"}
+{"level":"error","message":"Orchestrator: Critical error in global scan: querySrv EREFUSED _mongodb._tcp.cluster0.ev4p3qf.mongodb.net","timestamp":"2026-08-04 21:33:01"}
+{"level":"error","message":"Job repeat:c10eea93bf68cc56fd5c63b351df3d32:1785859380000 (Orchestrator) failed: querySrv EREFUSED _mongodb._tcp.cluster0.ev4p3qf.mongodb.net","timestamp":"2026-08-04 21:33:01"}
+{"level":"info","message":"[Job repeat:c10eea93bf68cc56fd5c63b351df3d32:1785859380000] 🚀 Executing scheduled global orchestration...","timestamp":"2026-08-04 21:33:03"}
+{"level":"info","message":"Orchestrator: Starting global scan orchestration... ","timestamp":"2026-08-04 21:33:03"}
+{"level":"info","message":"🔗 Connecting to MASTER database: master","timestamp":"2026-08-04 21:33:03"}
+{"level":"error","message":"Orchestrator: Critical error in global scan: querySrv EREFUSED _mongodb._tcp.cluster0.ev4p3qf.mongodb.net","timestamp":"2026-08-04 21:33:03"}
+{"level":"error","message":"Job repeat:c10eea93bf68cc56fd5c63b351df3d32:1785859380000 (Orchestrator) failed: querySrv EREFUSED _mongodb._tcp.cluster0.ev4p3qf.mongodb.net","timestamp":"2026-08-04 21:33:03"}
+{"level":"info","message":"[Job repeat:c10eea93bf68cc56fd5c63b351df3d32:1785859440000] 🚀 Executing scheduled global orchestration...","timestamp":"2026-08-04 21:34:00"}
+{"level":"info","message":"Orchestrator: Starting global scan orchestration... ","timestamp":"2026-08-04 21:34:00"}
+{"level":"info","message":"🔗 Connecting to MASTER database: master","timestamp":"2026-08-04 21:34:00"}
+{"level":"error","message":"Orchestrator: Critical error in global scan: querySrv ECONNREFUSED _mongodb._tcp.cluster0.ev4p3qf.mongodb.net","timestamp":"2026-08-04 21:34:00"}
+{"level":"error","message":"Job repeat:c10eea93bf68cc56fd5c63b351df3d32:1785859440000 (Orchestrator) failed: querySrv ECONNREFUSED _mongodb._tcp.cluster0.ev4p3qf.mongodb.net","timestamp":"2026-08-04 21:34:00"}
+{"level":"info","message":"[Job repeat:c10eea93bf68cc56fd5c63b351df3d32:1785859440000] 🚀 Executing scheduled global orchestration...","timestamp":"2026-08-04 21:34:01"}
+{"level":"info","message":"Orchestrator: Starting global scan orchestration... ","timestamp":"2026-08-04 21:34:01"}
+{"level":"info","message":"🔗 Connecting to MASTER database: master","timestamp":"2026-08-04 21:34:01"}
+{"level":"error","message":"Orchestrator: Critical error in global scan: querySrv ECONNREFUSED _mongodb._tcp.cluster0.ev4p3qf.mongodb.net","timestamp":"2026-08-04 21:34:01"}
+{"level":"error","message":"Job repeat:c10eea93bf68cc56fd5c63b351df3d32:1785859440000 (Orchestrator) failed: querySrv ECONNREFUSED _mongodb._tcp.cluster0.ev4p3qf.mongodb.net","timestamp":"2026-08-04 21:34:01"}
+{"level":"info","message":"[Job repeat:c10eea93bf68cc56fd5c63b351df3d32:1785859440000] 🚀 Executing scheduled global orchestration...","timestamp":"2026-08-04 21:34:03"}
+{"level":"info","message":"Orchestrator: Starting global scan orchestration... ","timestamp":"2026-08-04 21:34:03"}
+{"level":"info","message":"🔗 Connecting to MASTER database: master","timestamp":"2026-08-04 21:34:03"}
+{"level":"error","message":"Orchestrator: Critical error in global scan: querySrv EREFUSED _mongodb._tcp.cluster0.ev4p3qf.mongodb.net","timestamp":"2026-08-04 21:34:03"}
+{"level":"error","message":"Job repeat:c10eea93bf68cc56fd5c63b351df3d32:1785859440000 (Orchestrator) failed: querySrv EREFUSED _mongodb._tcp.cluster0.ev4p3qf.mongodb.net","timestamp":"2026-08-04 21:34:03"}
+{"level":"info","message":"[Job repeat:c10eea93bf68cc56fd5c63b351df3d32:1785859500000] 🚀 Executing scheduled global orchestration...","timestamp":"2026-08-04 21:35:01"}
+{"level":"info","message":"Orchestrator: Starting global scan orchestration... ","timestamp":"2026-08-04 21:35:01"}
+{"level":"info","message":"🔗 Connecting to MASTER database: master","timestamp":"2026-08-04 21:35:01"}
+{"level":"error","message":"Orchestrator: Critical error in global scan: querySrv EREFUSED _mongodb._tcp.cluster0.ev4p3qf.mongodb.net","timestamp":"2026-08-04 21:35:01"}
+{"level":"error","message":"Job repeat:c10eea93bf68cc56fd5c63b351df3d32:1785859500000 (Orchestrator) failed: querySrv EREFUSED _mongodb._tcp.cluster0.ev4p3qf.mongodb.net","timestamp":"2026-08-04 21:35:01"}
+{"level":"info","message":"[Job repeat:c10eea93bf68cc56fd5c63b351df3d32:1785859500000] 🚀 Executing scheduled global orchestration...","timestamp":"2026-08-04 21:35:02"}
+{"level":"info","message":"Orchestrator: Starting global scan orchestration... ","timestamp":"2026-08-04 21:35:02"}
+{"level":"info","message":"🔗 Connecting to MASTER database: master","timestamp":"2026-08-04 21:35:02"}
+{"level":"error","message":"Orchestrator: Critical error in global scan: querySrv EREFUSED _mongodb._tcp.cluster0.ev4p3qf.mongodb.net","timestamp":"2026-08-04 21:35:02"}
+{"level":"error","message":"Job repeat:c10eea93bf68cc56fd5c63b351df3d32:1785859500000 (Orchestrator) failed: querySrv EREFUSED _mongodb._tcp.cluster0.ev4p3qf.mongodb.net","timestamp":"2026-08-04 21:35:02"}
+{"level":"info","message":"[Job repeat:c10eea93bf68cc56fd5c63b351df3d32:1785859500000] 🚀 Executing scheduled global orchestration...","timestamp":"2026-08-04 21:35:04"}
+{"level":"info","message":"Orchestrator: Starting global scan orchestration... ","timestamp":"2026-08-04 21:35:04"}
+{"level":"info","message":"🔗 Connecting to MASTER database: master","timestamp":"2026-08-04 21:35:04"}
+{"level":"error","message":"Orchestrator: Critical error in global scan: querySrv EREFUSED _mongodb._tcp.cluster0.ev4p3qf.mongodb.net","timestamp":"2026-08-04 21:35:04"}
+{"level":"error","message":"Job repeat:c10eea93bf68cc56fd5c63b351df3d32:1785859500000 (Orchestrator) failed: querySrv EREFUSED _mongodb._tcp.cluster0.ev4p3qf.mongodb.net","timestamp":"2026-08-04 21:35:04"}
+{"level":"info","message":"[Job repeat:c10eea93bf68cc56fd5c63b351df3d32:1785859560000] 🚀 Executing scheduled global orchestration...","timestamp":"2026-08-04 21:36:00"}
+{"level":"info","message":"Orchestrator: Starting global scan orchestration... ","timestamp":"2026-08-04 21:36:00"}
+{"level":"info","message":"🔗 Connecting to MASTER database: master","timestamp":"2026-08-04 21:36:00"}
+{"level":"error","message":"Orchestrator: Critical error in global scan: querySrv EREFUSED _mongodb._tcp.cluster0.ev4p3qf.mongodb.net","timestamp":"2026-08-04 21:36:08"}
+{"level":"error","message":"Job repeat:c10eea93bf68cc56fd5c63b351df3d32:1785859560000 (Orchestrator) failed: querySrv EREFUSED _mongodb._tcp.cluster0.ev4p3qf.mongodb.net","timestamp":"2026-08-04 21:36:08"}
+{"level":"info","message":"[Job repeat:c10eea93bf68cc56fd5c63b351df3d32:1785859560000] 🚀 Executing scheduled global orchestration...","timestamp":"2026-08-04 21:36:09"}
+{"level":"info","message":"Orchestrator: Starting global scan orchestration... ","timestamp":"2026-08-04 21:36:09"}
+{"level":"info","message":"🔗 Connecting to MASTER database: master","timestamp":"2026-08-04 21:36:09"}
+{"level":"error","message":"Orchestrator: Critical error in global scan: querySrv EREFUSED _mongodb._tcp.cluster0.ev4p3qf.mongodb.net","timestamp":"2026-08-04 21:36:09"}
+{"level":"error","message":"Job repeat:c10eea93bf68cc56fd5c63b351df3d32:1785859560000 (Orchestrator) failed: querySrv EREFUSED _mongodb._tcp.cluster0.ev4p3qf.mongodb.net","timestamp":"2026-08-04 21:36:09"}
+{"level":"info","message":"[Job repeat:c10eea93bf68cc56fd5c63b351df3d32:1785859560000] 🚀 Executing scheduled global orchestration...","timestamp":"2026-08-04 21:36:11"}
+{"level":"info","message":"Orchestrator: Starting global scan orchestration... ","timestamp":"2026-08-04 21:36:11"}
+{"level":"info","message":"🔗 Connecting to MASTER database: master","timestamp":"2026-08-04 21:36:11"}
+{"level":"error","message":"Orchestrator: Critical error in global scan: querySrv EREFUSED _mongodb._tcp.cluster0.ev4p3qf.mongodb.net","timestamp":"2026-08-04 21:36:12"}
+{"level":"error","message":"Job repeat:c10eea93bf68cc56fd5c63b351df3d32:1785859560000 (Orchestrator) failed: querySrv EREFUSED _mongodb._tcp.cluster0.ev4p3qf.mongodb.net","timestamp":"2026-08-04 21:36:12"}
+{"level":"info","message":"[Job repeat:c10eea93bf68cc56fd5c63b351df3d32:1785859620000] 🚀 Executing scheduled global orchestration...","timestamp":"2026-08-04 21:37:00"}
+{"level":"info","message":"Orchestrator: Starting global scan orchestration... ","timestamp":"2026-08-04 21:37:00"}
+{"level":"info","message":"🔗 Connecting to MASTER database: master","timestamp":"2026-08-04 21:37:00"}
+{"level":"error","message":"Orchestrator: Critical error in global scan: querySrv EREFUSED _mongodb._tcp.cluster0.ev4p3qf.mongodb.net","timestamp":"2026-08-04 21:37:00"}
+{"level":"error","message":"Job repeat:c10eea93bf68cc56fd5c63b351df3d32:1785859620000 (Orchestrator) failed: querySrv EREFUSED _mongodb._tcp.cluster0.ev4p3qf.mongodb.net","timestamp":"2026-08-04 21:37:00"}
+{"level":"info","message":"[Job repeat:c10eea93bf68cc56fd5c63b351df3d32:1785859620000] 🚀 Executing scheduled global orchestration...","timestamp":"2026-08-04 21:37:01"}
+{"level":"info","message":"Orchestrator: Starting global scan orchestration... ","timestamp":"2026-08-04 21:37:01"}
+{"level":"info","message":"🔗 Connecting to MASTER database: master","timestamp":"2026-08-04 21:37:01"}
+{"level":"error","message":"Orchestrator: Critical error in global scan: querySrv EREFUSED _mongodb._tcp.cluster0.ev4p3qf.mongodb.net","timestamp":"2026-08-04 21:37:01"}
+{"level":"error","message":"Job repeat:c10eea93bf68cc56fd5c63b351df3d32:1785859620000 (Orchestrator) failed: querySrv EREFUSED _mongodb._tcp.cluster0.ev4p3qf.mongodb.net","timestamp":"2026-08-04 21:37:01"}
+{"level":"info","message":"[Job repeat:c10eea93bf68cc56fd5c63b351df3d32:1785859620000] 🚀 Executing scheduled global orchestration...","timestamp":"2026-08-04 21:37:03"}
+{"level":"info","message":"Orchestrator: Starting global scan orchestration... ","timestamp":"2026-08-04 21:37:03"}
+{"level":"info","message":"🔗 Connecting to MASTER database: master","timestamp":"2026-08-04 21:37:03"}
+{"level":"error","message":"Orchestrator: Critical error in global scan: querySrv EREFUSED _mongodb._tcp.cluster0.ev4p3qf.mongodb.net","timestamp":"2026-08-04 21:37:03"}
+{"level":"error","message":"Job repeat:c10eea93bf68cc56fd5c63b351df3d32:1785859620000 (Orchestrator) failed: querySrv EREFUSED _mongodb._tcp.cluster0.ev4p3qf.mongodb.net","timestamp":"2026-08-04 21:37:03"}
+{"level":"info","message":"[Job repeat:c10eea93bf68cc56fd5c63b351df3d32:1785859680000] 🚀 Executing scheduled global orchestration...","timestamp":"2026-08-04 21:38:00"}
+{"level":"info","message":"Orchestrator: Starting global scan orchestration... ","timestamp":"2026-08-04 21:38:00"}
+{"level":"info","message":"🔗 Connecting to MASTER database: master","timestamp":"2026-08-04 21:38:00"}
+{"level":"error","message":"Orchestrator: Critical error in global scan: querySrv EREFUSED _mongodb._tcp.cluster0.ev4p3qf.mongodb.net","timestamp":"2026-08-04 21:38:00"}
+{"level":"error","message":"Job repeat:c10eea93bf68cc56fd5c63b351df3d32:1785859680000 (Orchestrator) failed: querySrv EREFUSED _mongodb._tcp.cluster0.ev4p3qf.mongodb.net","timestamp":"2026-08-04 21:38:00"}
+{"level":"info","message":"[Job repeat:c10eea93bf68cc56fd5c63b351df3d32:1785859680000] 🚀 Executing scheduled global orchestration...","timestamp":"2026-08-04 21:38:01"}
+{"level":"info","message":"Orchestrator: Starting global scan orchestration... ","timestamp":"2026-08-04 21:38:01"}
+{"level":"info","message":"🔗 Connecting to MASTER database: master","timestamp":"2026-08-04 21:38:01"}
+{"level":"error","message":"Orchestrator: Critical error in global scan: querySrv EREFUSED _mongodb._tcp.cluster0.ev4p3qf.mongodb.net","timestamp":"2026-08-04 21:38:01"}
+{"level":"error","message":"Job repeat:c10eea93bf68cc56fd5c63b351df3d32:1785859680000 (Orchestrator) failed: querySrv EREFUSED _mongodb._tcp.cluster0.ev4p3qf.mongodb.net","timestamp":"2026-08-04 21:38:01"}
+{"level":"info","message":"[Job repeat:c10eea93bf68cc56fd5c63b351df3d32:1785859680000] 🚀 Executing scheduled global orchestration...","timestamp":"2026-08-04 21:38:03"}
+{"level":"info","message":"Orchestrator: Starting global scan orchestration... ","timestamp":"2026-08-04 21:38:03"}
+{"level":"info","message":"🔗 Connecting to MASTER database: master","timestamp":"2026-08-04 21:38:03"}
+{"level":"error","message":"Orchestrator: Critical error in global scan: querySrv EREFUSED _mongodb._tcp.cluster0.ev4p3qf.mongodb.net","timestamp":"2026-08-04 21:38:03"}
+{"level":"error","message":"Job repeat:c10eea93bf68cc56fd5c63b351df3d32:1785859680000 (Orchestrator) failed: querySrv EREFUSED _mongodb._tcp.cluster0.ev4p3qf.mongodb.net","timestamp":"2026-08-04 21:38:03"}
+{"level":"info","message":"[Job repeat:c10eea93bf68cc56fd5c63b351df3d32:1785859740000] 🚀 Executing scheduled global orchestration...","timestamp":"2026-08-04 21:39:00"}
+{"level":"info","message":"Orchestrator: Starting global scan orchestration... ","timestamp":"2026-08-04 21:39:00"}
+{"level":"info","message":"🔗 Connecting to MASTER database: master","timestamp":"2026-08-04 21:39:00"}
+{"level":"info","message":"[Job repeat:c10eea93bf68cc56fd5c63b351df3d32:1785859800000] 🚀 Executing scheduled global orchestration...","timestamp":"2026-08-04 21:40:00"}
+{"level":"info","message":"Orchestrator: Starting global scan orchestration... ","timestamp":"2026-08-04 21:40:00"}
+{"level":"info","message":"🔗 Connecting to MASTER database: master","timestamp":"2026-08-04 21:40:00"}
+{"level":"error","message":"Orchestrator: Critical error in global scan: querySrv ETIMEOUT _mongodb._tcp.cluster0.ev4p3qf.mongodb.net","timestamp":"2026-08-04 21:40:27"}
+{"level":"error","message":"Job repeat:c10eea93bf68cc56fd5c63b351df3d32:1785859740000 (Orchestrator) failed: querySrv ETIMEOUT _mongodb._tcp.cluster0.ev4p3qf.mongodb.net","timestamp":"2026-08-04 21:40:27"}
+{"level":"info","message":"[Job repeat:c10eea93bf68cc56fd5c63b351df3d32:1785859740000] 🚀 Executing scheduled global orchestration...","timestamp":"2026-08-04 21:40:28"}
+{"level":"info","message":"Orchestrator: Starting global scan orchestration... ","timestamp":"2026-08-04 21:40:28"}
+{"level":"info","message":"🔗 Connecting to MASTER database: master","timestamp":"2026-08-04 21:40:28"}
+{"level":"error","message":"Orchestrator: Critical error in global scan: querySrv ETIMEOUT _mongodb._tcp.cluster0.ev4p3qf.mongodb.net","timestamp":"2026-08-04 21:40:57"}
+{"level":"error","message":"Job repeat:c10eea93bf68cc56fd5c63b351df3d32:1785859800000 (Orchestrator) failed: querySrv ETIMEOUT _mongodb._tcp.cluster0.ev4p3qf.mongodb.net","timestamp":"2026-08-04 21:40:57"}
+{"level":"info","message":"[Job repeat:c10eea93bf68cc56fd5c63b351df3d32:1785859800000] 🚀 Executing scheduled global orchestration...","timestamp":"2026-08-04 21:40:58"}
+{"level":"info","message":"Orchestrator: Starting global scan orchestration... ","timestamp":"2026-08-04 21:40:58"}
+{"level":"info","message":"🔗 Connecting to MASTER database: master","timestamp":"2026-08-04 21:40:58"}
+{"level":"info","message":"[Job repeat:c10eea93bf68cc56fd5c63b351df3d32:1785859860000] 🚀 Executing scheduled global orchestration...","timestamp":"2026-08-04 21:41:00"}
+{"level":"info","message":"Orchestrator: Starting global scan orchestration... ","timestamp":"2026-08-04 21:41:00"}
+{"level":"info","message":"🔗 Connecting to MASTER database: master","timestamp":"2026-08-04 21:41:00"}
+{"level":"error","message":"Orchestrator: Critical error in global scan: querySrv ETIMEOUT _mongodb._tcp.cluster0.ev4p3qf.mongodb.net","timestamp":"2026-08-04 21:41:31"}
+{"level":"error","message":"Job repeat:c10eea93bf68cc56fd5c63b351df3d32:1785859740000 (Orchestrator) failed: querySrv ETIMEOUT _mongodb._tcp.cluster0.ev4p3qf.mongodb.net","timestamp":"2026-08-04 21:41:31"}
+{"level":"info","message":"[Job repeat:c10eea93bf68cc56fd5c63b351df3d32:1785859740000] 🚀 Executing scheduled global orchestration...","timestamp":"2026-08-04 21:41:33"}
+{"level":"info","message":"Orchestrator: Starting global scan orchestration... ","timestamp":"2026-08-04 21:41:33"}
+{"level":"info","message":"🔗 Connecting to MASTER database: master","timestamp":"2026-08-04 21:41:33"}
+{"level":"info","message":"BullBoard dashboard available at http://localhost:4100/admin/queues","timestamp":"2026-08-04 21:41:53"}
+{"level":"info","message":"Running startup recovery for stuck scans...","timestamp":"2026-08-04 21:41:53"}
+{"level":"info","message":"Orchestrator: Initiating startup recovery for stuck scans...","timestamp":"2026-08-04 21:41:53"}
+{"level":"info","message":"✅ Successfully connected to database: tenant_rbi","timestamp":"2026-08-04 21:41:54"}
+{"level":"info","message":"✅ Successfully connected to database: tenant_sbi","timestamp":"2026-08-04 21:41:54"}
+{"level":"info","message":"✅ Orchestrator: Startup recovery complete. Reset 0 stuck domains.","timestamp":"2026-08-04 21:41:55"}
+{"level":"info","message":"SEO Scan Worker initialized.","timestamp":"2026-08-04 21:41:55"}
+{"level":"info","message":"🧹 Queue \"seo-scan-queue\" cleared recursively.","timestamp":"2026-08-04 21:41:55"}
+{"level":"info","message":"⏰ Scheduled global orchestration every 1 minutes.","timestamp":"2026-08-04 21:41:55"}
+{"level":"info","message":"SEO Scanner Service running on port 4100","timestamp":"2026-08-04 21:41:55"}
+{"level":"info","message":"🚀 SCAN_ON_STARTUP is enabled. Triggering global orchestration...","timestamp":"2026-08-04 21:41:55"}
+{"level":"info","message":"Orchestrator: Starting global scan orchestration... [STARTUP MODE]","timestamp":"2026-08-04 21:41:55"}
+{"level":"info","message":"🔗 Connecting to MASTER database: master","timestamp":"2026-08-04 21:41:55"}
+{"level":"info","message":"Orchestrator: Found 2 tenants to process.","timestamp":"2026-08-04 21:41:55"}
+{"level":"info","message":"📁 Switching to CLIENT database: tenant_rbi (Tenant: rbi)","timestamp":"2026-08-04 21:41:55"}
+{"level":"info","message":"Orchestrator: No domains found for tenant rbi (excluding those currently scanning).","timestamp":"2026-08-04 21:41:55"}
+{"level":"info","message":"📁 Switching to CLIENT database: tenant_sbi (Tenant: sbi)","timestamp":"2026-08-04 21:41:55"}
+{"level":"info","message":"Orchestrator: No domains found for tenant sbi (excluding those currently scanning).","timestamp":"2026-08-04 21:41:55"}
+{"level":"info","message":"Orchestrator: Master DB connection closed.","timestamp":"2026-08-04 21:41:55"}
+{"level":"info","message":"✅ Orchestrator: Finished. Total jobs enqueued: 0","timestamp":"2026-08-04 21:41:55"}
+{"level":"info","message":"✅ Initial global scan orchestration completed.","timestamp":"2026-08-04 21:41:55"}
+{"level":"info","message":"[Job repeat:c10eea93bf68cc56fd5c63b351df3d32:1785859920000] 🚀 Executing scheduled global orchestration...","timestamp":"2026-08-04 21:42:00"}
+{"level":"info","message":"Orchestrator: Starting global scan orchestration... ","timestamp":"2026-08-04 21:42:00"}
+{"level":"info","message":"🔗 Connecting to MASTER database: master","timestamp":"2026-08-04 21:42:00"}
+{"level":"info","message":"Orchestrator: Found 2 tenants to process.","timestamp":"2026-08-04 21:42:00"}
+{"level":"info","message":"📁 Switching to CLIENT database: tenant_rbi (Tenant: rbi)","timestamp":"2026-08-04 21:42:00"}
+{"level":"info","message":"Orchestrator: No domains found for tenant rbi (excluding those currently scanning).","timestamp":"2026-08-04 21:42:00"}
+{"level":"info","message":"📁 Switching to CLIENT database: tenant_sbi (Tenant: sbi)","timestamp":"2026-08-04 21:42:00"}
+{"level":"info","message":"Orchestrator: No domains found for tenant sbi (excluding those currently scanning).","timestamp":"2026-08-04 21:42:00"}
+{"level":"info","message":"Orchestrator: Master DB connection closed.","timestamp":"2026-08-04 21:42:00"}
+{"level":"info","message":"✅ Orchestrator: Finished. Total jobs enqueued: 0","timestamp":"2026-08-04 21:42:00"}
+{"level":"info","message":"Job repeat:c10eea93bf68cc56fd5c63b351df3d32:1785859920000 (Orchestrator) completed successfully.","timestamp":"2026-08-04 21:42:00"}
+{"level":"info","message":"[Job repeat:c10eea93bf68cc56fd5c63b351df3d32:1785859980000] 🚀 Executing scheduled global orchestration...","timestamp":"2026-08-04 21:43:00"}
+{"level":"info","message":"Orchestrator: Starting global scan orchestration... ","timestamp":"2026-08-04 21:43:00"}
+{"level":"info","message":"🔗 Connecting to MASTER database: master","timestamp":"2026-08-04 21:43:00"}
+{"level":"info","message":"Orchestrator: Found 2 tenants to process.","timestamp":"2026-08-04 21:43:01"}
+{"level":"info","message":"📁 Switching to CLIENT database: tenant_rbi (Tenant: rbi)","timestamp":"2026-08-04 21:43:01"}
+{"level":"info","message":"Orchestrator: No domains found for tenant rbi (excluding those currently scanning).","timestamp":"2026-08-04 21:43:01"}
+{"level":"info","message":"📁 Switching to CLIENT database: tenant_sbi (Tenant: sbi)","timestamp":"2026-08-04 21:43:01"}
+{"level":"info","message":"Orchestrator: No domains found for tenant sbi (excluding those currently scanning).","timestamp":"2026-08-04 21:43:01"}
+{"level":"info","message":"Orchestrator: Master DB connection closed.","timestamp":"2026-08-04 21:43:01"}
+{"level":"info","message":"✅ Orchestrator: Finished. Total jobs enqueued: 0","timestamp":"2026-08-04 21:43:01"}
+{"level":"info","message":"Job repeat:c10eea93bf68cc56fd5c63b351df3d32:1785859980000 (Orchestrator) completed successfully.","timestamp":"2026-08-04 21:43:01"}
+{"level":"info","message":"[Job repeat:c10eea93bf68cc56fd5c63b351df3d32:1785860040000] 🚀 Executing scheduled global orchestration...","timestamp":"2026-08-04 21:44:00"}
+{"level":"info","message":"Orchestrator: Starting global scan orchestration... ","timestamp":"2026-08-04 21:44:00"}
+{"level":"info","message":"🔗 Connecting to MASTER database: master","timestamp":"2026-08-04 21:44:00"}
+{"level":"info","message":"Orchestrator: Found 2 tenants to process.","timestamp":"2026-08-04 21:44:01"}
+{"level":"info","message":"📁 Switching to CLIENT database: tenant_rbi (Tenant: rbi)","timestamp":"2026-08-04 21:44:01"}
+{"level":"info","message":"Orchestrator: No domains found for tenant rbi (excluding those currently scanning).","timestamp":"2026-08-04 21:44:01"}
+{"level":"info","message":"📁 Switching to CLIENT database: tenant_sbi (Tenant: sbi)","timestamp":"2026-08-04 21:44:01"}
+{"level":"info","message":"Orchestrator: No domains found for tenant sbi (excluding those currently scanning).","timestamp":"2026-08-04 21:44:01"}
+{"level":"info","message":"Orchestrator: Master DB connection closed.","timestamp":"2026-08-04 21:44:01"}
+{"level":"info","message":"✅ Orchestrator: Finished. Total jobs enqueued: 0","timestamp":"2026-08-04 21:44:01"}
+{"level":"info","message":"Job repeat:c10eea93bf68cc56fd5c63b351df3d32:1785860040000 (Orchestrator) completed successfully.","timestamp":"2026-08-04 21:44:01"}
+{"level":"info","message":"[Job repeat:c10eea93bf68cc56fd5c63b351df3d32:1785860100000] 🚀 Executing scheduled global orchestration...","timestamp":"2026-08-04 21:45:00"}
+{"level":"info","message":"Orchestrator: Starting global scan orchestration... ","timestamp":"2026-08-04 21:45:00"}
+{"level":"info","message":"🔗 Connecting to MASTER database: master","timestamp":"2026-08-04 21:45:00"}
+{"level":"info","message":"Orchestrator: Found 2 tenants to process.","timestamp":"2026-08-04 21:45:01"}
+{"level":"info","message":"📁 Switching to CLIENT database: tenant_rbi (Tenant: rbi)","timestamp":"2026-08-04 21:45:01"}
+{"level":"info","message":"Orchestrator: No domains found for tenant rbi (excluding those currently scanning).","timestamp":"2026-08-04 21:45:01"}
+{"level":"info","message":"📁 Switching to CLIENT database: tenant_sbi (Tenant: sbi)","timestamp":"2026-08-04 21:45:01"}
+{"level":"info","message":"Orchestrator: No domains found for tenant sbi (excluding those currently scanning).","timestamp":"2026-08-04 21:45:01"}
+{"level":"info","message":"Orchestrator: Master DB connection closed.","timestamp":"2026-08-04 21:45:01"}
+{"level":"info","message":"✅ Orchestrator: Finished. Total jobs enqueued: 0","timestamp":"2026-08-04 21:45:01"}
+{"level":"info","message":"Job repeat:c10eea93bf68cc56fd5c63b351df3d32:1785860100000 (Orchestrator) completed successfully.","timestamp":"2026-08-04 21:45:01"}
+{"level":"info","message":"[Job repeat:c10eea93bf68cc56fd5c63b351df3d32:1785860160000] 🚀 Executing scheduled global orchestration...","timestamp":"2026-08-04 21:46:00"}
+{"level":"info","message":"Orchestrator: Starting global scan orchestration... ","timestamp":"2026-08-04 21:46:00"}
+{"level":"info","message":"🔗 Connecting to MASTER database: master","timestamp":"2026-08-04 21:46:00"}
+{"level":"info","message":"Orchestrator: Found 2 tenants to process.","timestamp":"2026-08-04 21:46:01"}
+{"level":"info","message":"📁 Switching to CLIENT database: tenant_rbi (Tenant: rbi)","timestamp":"2026-08-04 21:46:01"}
+{"level":"info","message":"Orchestrator: No domains found for tenant rbi (excluding those currently scanning).","timestamp":"2026-08-04 21:46:01"}
+{"level":"info","message":"📁 Switching to CLIENT database: tenant_sbi (Tenant: sbi)","timestamp":"2026-08-04 21:46:01"}
+{"level":"info","message":"Orchestrator: No domains found for tenant sbi (excluding those currently scanning).","timestamp":"2026-08-04 21:46:01"}
+{"level":"info","message":"Orchestrator: Master DB connection closed.","timestamp":"2026-08-04 21:46:01"}
+{"level":"info","message":"✅ Orchestrator: Finished. Total jobs enqueued: 0","timestamp":"2026-08-04 21:46:01"}
+{"level":"info","message":"Job repeat:c10eea93bf68cc56fd5c63b351df3d32:1785860160000 (Orchestrator) completed successfully.","timestamp":"2026-08-04 21:46:01"}
+{"level":"info","message":"[Job repeat:c10eea93bf68cc56fd5c63b351df3d32:1785860220000] 🚀 Executing scheduled global orchestration...","timestamp":"2026-08-04 21:47:00"}
+{"level":"info","message":"Orchestrator: Starting global scan orchestration... ","timestamp":"2026-08-04 21:47:00"}
+{"level":"info","message":"🔗 Connecting to MASTER database: master","timestamp":"2026-08-04 21:47:00"}
+{"level":"info","message":"Orchestrator: Found 2 tenants to process.","timestamp":"2026-08-04 21:47:00"}
+{"level":"info","message":"📁 Switching to CLIENT database: tenant_rbi (Tenant: rbi)","timestamp":"2026-08-04 21:47:00"}
+{"level":"info","message":"Orchestrator: No domains found for tenant rbi (excluding those currently scanning).","timestamp":"2026-08-04 21:47:00"}
+{"level":"info","message":"📁 Switching to CLIENT database: tenant_sbi (Tenant: sbi)","timestamp":"2026-08-04 21:47:00"}
+{"level":"info","message":"Orchestrator: No domains found for tenant sbi (excluding those currently scanning).","timestamp":"2026-08-04 21:47:00"}
+{"level":"info","message":"Orchestrator: Master DB connection closed.","timestamp":"2026-08-04 21:47:00"}
+{"level":"info","message":"✅ Orchestrator: Finished. Total jobs enqueued: 0","timestamp":"2026-08-04 21:47:00"}
+{"level":"info","message":"Job repeat:c10eea93bf68cc56fd5c63b351df3d32:1785860220000 (Orchestrator) completed successfully.","timestamp":"2026-08-04 21:47:00"}
+{"level":"info","message":"SIGINT signal received. Closing resources...","timestamp":"2026-08-04 21:47:06"}

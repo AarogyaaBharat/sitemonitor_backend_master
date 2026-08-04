@@ -14,7 +14,7 @@ import scanRoutes from './routes/scan.routes.js';
 import darkPatternRoutes from './routes/darkPattern.routes.js';
 import competitorRoutes from './routes/competitor.routes.js';
 import { mongoMultiConnector } from './services/mongoMultiConnector.js';
-import { encryptionMiddleware } from './middlewares/encryption.middleware.js';
+
 import { seoScanQueue, initWorker, setupScheduledScans } from './services/queue.js';
 import { runGlobalScan, resetStuckScans } from './services/orchestrator.service.js';
 
@@ -50,7 +50,7 @@ app.use(
 );
 
 app.use(express.json());
-app.use(encryptionMiddleware);
+
 
 
 
